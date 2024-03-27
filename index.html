@@ -7,6 +7,45 @@
     <link rel="stylesheet" href="dist/css/styles.css">
 </head>
 <body>
+    <!-- Header Section Start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="">
+                        <img src="/dist/assets/images/logo_cropped.png" alt="" class="w-10 pt-3 pb-3">
+                    </a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburder" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-cream shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-umber">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-umber">About</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-umber">Portfolio</a>
+                            </li>
+                            <li class="group">
+                                <a href="#clients" class="text-base text-dark py-2 mx-8 flex group-hover:text-umber">Clients</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contacts" class="text-base text-dark py-2 mx-8 flex group-hover:text-umber">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
     <!-- Hero Section Start -->
     <section id="home" class="pt-36">
         <div class="container">
@@ -58,5 +97,6 @@
         </div>
     </section>
     <!-- About Section End -->
+    <script src="dist/js/script.js"></script>
 </body>
 </html>
