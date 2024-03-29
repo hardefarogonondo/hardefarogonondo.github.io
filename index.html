@@ -1,306 +1,691 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hardefa Rogonondo</title>
-    <link rel="stylesheet" href="dist/css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="dist/css/styles.css" />
+    <script>
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+  </head>
+  <body>
     <!-- Header Section Start -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
-        <div class="container">
-            <div class="flex items-center justify-between relative">
-                <div class="px-4">
-                    <a href="#home" class="">
-                        <img src="/dist/assets/images/logo_cropped.png" alt="" class="w-10 pt-3 pb-3">
-                    </a>
-                </div>
-                <div class="flex items-center px-4">
-                    <button id="hamburger" name="hamburder" type="button" class="block absolute right-4 lg:hidden">
-                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
-                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
-                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
-                    </button>
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-cream shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
-                        <ul class="block lg:flex">
-                            <li class="group">
-                                <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-umber">Home</a>
-                            </li>
-                            <li class="group">
-                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-umber">About</a>
-                            </li>
-                            <li class="group">
-                                <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-umber">Portfolio</a>
-                            </li>
-                            <li class="group">
-                                <a href="#clients" class="text-base text-dark py-2 mx-8 flex group-hover:text-umber">Clients</a>
-                            </li>
-                            <li class="group">
-                                <a href="#contacts" class="text-base text-dark py-2 mx-8 flex group-hover:text-umber">Contacts</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+    <header
+      class="absolute left-0 top-0 z-10 flex w-full items-center bg-transparent"
+    >
+      <div class="container">
+        <div class="relative flex items-center justify-between">
+          <div class="px-4">
+            <a href="#home" class="">
+              <img
+                src="/dist/assets/images/logo_cropped.png"
+                alt=""
+                class="w-10 pb-3 pt-3"
+              />
+            </a>
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburder"
+              type="button"
+              class="absolute right-4 block lg:hidden"
+            >
+              <span
+                class="hamburger-line origin-top-left transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
+              ></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-cream py-5 shadow-lg dark:bg-dark-charcoal dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="text-dark mx-8 flex py-2 text-base group-hover:text-umber dark:text-cream"
+                    >Home</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-dark mx-8 flex py-2 text-base group-hover:text-umber dark:text-cream"
+                    >About</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#portfolio"
+                    class="text-dark mx-8 flex py-2 text-base group-hover:text-umber dark:text-cream"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#clients"
+                    class="text-dark mx-8 flex py-2 text-base group-hover:text-umber dark:text-cream"
+                    >Clients</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#contacts"
+                    class="text-dark mx-8 flex py-2 text-base group-hover:text-umber dark:text-cream"
+                    >Contacts</a
+                  >
+                </li>
+                <li class="mt-3 flex items-center pl-8 lg:mt-0">
+                  <div class="flex">
+                    <span class="mr-2 text-sm text-slate-500">light</span>
+                    <input
+                      type="checkbox"
+                      class="hidden"
+                      id="dark-mode-toggle"
+                    />
+                    <label for="dark-mode-toggle">
+                      <div
+                        class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1"
+                      >
+                        <div
+                          class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"
+                        ></div>
+                      </div>
+                    </label>
+                    <span class="ml-2 text-sm text-slate-500">dark</span>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
+      </div>
     </header>
     <!-- Header Section End -->
     <!-- Hero Section Start -->
-    <section id="home" class="pt-36">
-        <div class="container">
-            <div class="flex flex-wrap">
-                <div class="w-full self-center px-4 lg:w-1/2">
-                    <h1 class="text-base font-semibold text-charcoal md:text-xl">Hi 👋🏻, I'm <span class="block font-bold text-teal text-4xl mt-1 lg:text-5xl">Hardefa Rogonondo</span></h1>
-                    <h2 class="font-medium text-lg mb-5 lg:text-2xl">Data Scientist & <span class="text-metallic-gold">AI/ML Engineer</span></h2>
-                    <p class="font-medium text-terra-cotta mb-10 leading-relaxed">Transforming data into actionable <span class="text-dark-charcoal text-bold">insights!</span></p>
-                    <a href="#" class="text-base font-semibold text-cream bg-umber py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Contact Me!</a>
-                </div>
-                <div class="w-full self-end px-4 lg:w-1/2">
-                    <div class="relative mt-10 lg:mt-9 lg:right-0">
-                        <img src="dist/assets/images/hero_himmel.webp" alt="Hardefa Rogonondo" class="max-w-full mx-auto ">
-                        <span class="absolute -bottom-20 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
-                            <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#C0A080" d="M67,-16.5C75.4,4.1,62.8,36.7,41.7,50.3C20.6,64,-9.1,58.7,-32.9,42.1C-56.7,25.5,-74.7,-2.3,-68.2,-20.2C-61.7,-38.2,-30.9,-46.2,-0.8,-46C29.3,-45.7,58.6,-37.1,67,-16.5Z" transform="translate(100 100) scale(1.1)" />
-                            </svg>
-                        </span>
-                    </div>
-                </div>
+    <section id="home" class="pt-36 dark:bg-dark-charcoal">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-base font-semibold text-charcoal md:text-xl">
+              Hi 👋🏻, I'm
+              <span class="mt-1 block text-4xl font-bold text-teal lg:text-5xl"
+                >Hardefa Rogonondo</span
+              >
+            </h1>
+            <h2 class="mb-5 text-lg font-medium lg:text-2xl">
+              Data Scientist &
+              <span class="text-metallic-gold">AI/ML Engineer</span>
+            </h2>
+            <p class="mb-10 font-medium leading-relaxed text-terra-cotta">
+              Transforming data into actionable
+              <span class="text-bold text-dark-charcoal">insights!</span>
+            </p>
+            <a
+              href="#"
+              class="rounded-full bg-umber px-8 py-3 text-base font-semibold text-cream transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+              >Contact Me!</a
+            >
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="relative mt-10 lg:right-0 lg:mt-9">
+              <img
+                src="dist/assets/images/hero_himmel.webp"
+                alt="Hardefa Rogonondo"
+                class="relative z-10 mx-auto max-w-full"
+              />
+              <span
+                class="absolute -bottom-20 left-1/2 -translate-x-1/2 md:scale-125"
+              >
+                <svg
+                  width="400"
+                  height="400"
+                  viewBox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#C0A080"
+                    d="M67,-16.5C75.4,4.1,62.8,36.7,41.7,50.3C20.6,64,-9.1,58.7,-32.9,42.1C-56.7,25.5,-74.7,-2.3,-68.2,-20.2C-61.7,-38.2,-30.9,-46.2,-0.8,-46C29.3,-45.7,58.6,-37.1,67,-16.5Z"
+                    transform="translate(100 100) scale(1.1)"
+                  />
+                </svg>
+              </span>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Hero Section End -->
     <!-- About Section Start -->
-    <section id="about" class="pt-36 pb-32">
-        <div class="container">
-            <div class="flex flex-wrap">
-                <div class="w-full px-4 mb-10 lg:w-1/2">
-                    <h4 class="font-bold uppercase text-charcoal text-lg mb-3">About Me</h4>
-                    <h2 class="font-bold text-terra-cotta text-3xl mb-5 max-w-md lg:text-4xl">Lorem ipsum dolor sit amet consectetur.</h2>
-                    <p class="font-medium text-base text-warm-gray max-w-xl lg:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est blanditiis, maxime recusandae quasi incidunt distinctio ipsum.</p>
-                </div>
-                <div class="w-full px-4 lg:w-1/2">
-                    <h3 class="font-semibold text-dark-charcoal text-2xl mb-4 lg:text-3xl lg:pt-10">Connect with Me</h3>
-                    <p class="font-medium text-base text-smoky-gray mb-6 lg:text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque fuga molestiae eveniet, quisquam totam quod nihil.</p>
-                    <div class="flex items-center">
-                        <!-- LinkedIn -->
-                        <a href="https://www.linkedin.com/in/hardefa-rogonondo/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-umber hover:border-charcoal hover:bg-terra-cotta hover:text-cream">
-                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                        </a>
-                        <!-- Instagram -->
-                        <a href="https://www.instagram.com/hardefarogonondo/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-umber hover:border-charcoal hover:bg-terra-cotta hover:text-cream">
-                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
-                        </a>
-                    </div>
-                </div>
+    <section id="about" class="pb-32 pt-36">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="mb-10 w-full px-4 lg:w-1/2">
+            <h4 class="mb-3 text-lg font-bold uppercase text-charcoal">
+              About Me
+            </h4>
+            <h2
+              class="mb-5 max-w-md text-3xl font-bold text-terra-cotta lg:text-4xl"
+            >
+              Lorem ipsum dolor sit amet consectetur.
+            </h2>
+            <p class="max-w-xl text-base font-medium text-warm-gray lg:text-lg">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
+              blanditiis, maxime recusandae quasi incidunt distinctio ipsum.
+            </p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+            <h3
+              class="mb-4 text-2xl font-semibold text-dark-charcoal lg:pt-10 lg:text-3xl"
+            >
+              Connect with Me
+            </h3>
+            <p class="mb-6 text-base font-medium text-smoky-gray lg:text-lg">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
+              fuga molestiae eveniet, quisquam totam quod nihil.
+            </p>
+            <div class="flex items-center">
+              <!-- LinkedIn -->
+              <a
+                href="https://www.linkedin.com/in/hardefa-rogonondo/"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-umber hover:border-charcoal hover:bg-terra-cotta hover:text-cream"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>LinkedIn</title>
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+              </a>
+              <!-- Instagram -->
+              <a
+                href="https://www.instagram.com/hardefarogonondo/"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-umber hover:border-charcoal hover:bg-terra-cotta hover:text-cream"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Instagram</title>
+                  <path
+                    d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+                  />
+                </svg>
+              </a>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- About Section End -->
     <!-- Portfolio Section Start -->
-    <section id="portfolio" class="pt-36 pb-16 bg-cream">
-        <div class="container">
-            <div class="w-full px-4">
-                <div class="max-w-xl mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-dark-charcoal mb-2">Portfolio</h4>
-                    <h2 class="font-bold text-metallic-gold text-3xl- mb-4 sm:text-4xl lg:text-5xl">Latest Projects</h2>
-                    <p class="font-medium text-md text-dark-charcoal md:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem debitis corrupti suscipit. Ducimus alias molestias quam.</p>
-                </div>
-            </div>
-            <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="dist/assets/images/placeholder_1.jpg" alt="" width="w-full">
-                    </div>
-                    <h3 class="font-semibold text-xl text-dark-charcoal mt-5 mb-3">Research Paper Summarization Engine</h3>
-                    <p class="font-medium text-base text-dark-charcoal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus temporibus debitis!</p>
-                </div>
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="dist/assets/images/placeholder_1.jpg" alt="" width="w-full">
-                    </div>
-                    <h3 class="font-semibold text-xl text-dark-charcoal mt-5 mb-3">IMDb Sentiment Prediction Engine</h3>
-                    <p class="font-medium text-base text-dark-charcoal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus temporibus debitis!</p>
-                </div>
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="dist/assets/images/placeholder_1.jpg" alt="" width="w-full">
-                    </div>
-                    <h3 class="font-semibold text-xl text-dark-charcoal mt-5 mb-3">Research Paper Summarization Engine</h3>
-                    <p class="font-medium text-base text-dark-charcoal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus temporibus debitis!</p>
-                </div>
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="dist/assets/images/placeholder_1.jpg" alt="" width="w-full">
-                    </div>
-                    <h3 class="font-semibold text-xl text-dark-charcoal mt-5 mb-3">Research Paper Summarization Engine</h3>
-                    <p class="font-medium text-base text-dark-charcoal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus temporibus debitis!</p>
-                </div>
-            </div>
+    <section id="portfolio" class="bg-cream pb-16 pt-36">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h4 class="mb-2 text-lg font-semibold text-dark-charcoal">
+              Portfolio
+            </h4>
+            <h2
+              class="text-3xl- mb-4 font-bold text-metallic-gold sm:text-4xl lg:text-5xl"
+            >
+              Latest Projects
+            </h2>
+            <p class="text-md font-medium text-dark-charcoal md:text-lg">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
+              debitis corrupti suscipit. Ducimus alias molestias quam.
+            </p>
+          </div>
         </div>
+        <div
+          class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12"
+        >
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img
+                src="dist/assets/images/placeholder_1.jpg"
+                alt=""
+                width="w-full"
+              />
+            </div>
+            <h3 class="mb-3 mt-5 text-xl font-semibold text-dark-charcoal">
+              Research Paper Summarization Engine
+            </h3>
+            <p class="text-base font-medium text-dark-charcoal">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+              voluptatibus temporibus debitis!
+            </p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img
+                src="dist/assets/images/placeholder_1.jpg"
+                alt=""
+                width="w-full"
+              />
+            </div>
+            <h3 class="mb-3 mt-5 text-xl font-semibold text-dark-charcoal">
+              IMDb Sentiment Prediction Engine
+            </h3>
+            <p class="text-base font-medium text-dark-charcoal">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+              voluptatibus temporibus debitis!
+            </p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img
+                src="dist/assets/images/placeholder_1.jpg"
+                alt=""
+                width="w-full"
+              />
+            </div>
+            <h3 class="mb-3 mt-5 text-xl font-semibold text-dark-charcoal">
+              Research Paper Summarization Engine
+            </h3>
+            <p class="text-base font-medium text-dark-charcoal">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+              voluptatibus temporibus debitis!
+            </p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img
+                src="dist/assets/images/placeholder_1.jpg"
+                alt=""
+                width="w-full"
+              />
+            </div>
+            <h3 class="mb-3 mt-5 text-xl font-semibold text-dark-charcoal">
+              Research Paper Summarization Engine
+            </h3>
+            <p class="text-base font-medium text-dark-charcoal">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+              voluptatibus temporibus debitis!
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Portfolio Section End -->
     <!-- Clients Section Start -->
-    <section id="clients" class="pt-36 pb-32 bg-dark-charcoal">
-        <div class="container">
-            <div class="w-full px-4">
-                <div class="mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-cream mb-2">Clients</h4>
-                    <h2 class="font-bold text-metallic-gold text-3xl- mb-4 sm:text-4xl lg:text-5xl">Past Clients</h2>
-                    <p class="font-medium text-md text-cream md:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem debitis corrupti suscipit. Ducimus alias molestias quam.</p>
-                </div>
-            </div>
-            <div class="w-full px-4">
-                <div class="flex flex-wrap items-center justify-center">
-                    <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-50 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="dist/assets/images/Google_2015_logo.svg.png" alt="">
-                    </a>
-                    <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-50 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="dist/assets/images/Gojek_logo_2022.svg.png" alt="">
-                    </a>
-                    <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-50 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="dist/assets/images/1280px-CIMB_Niaga_logo.svg.png" alt="">
-                    </a>
-                    <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-50 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="dist/assets/images/Amazon_logo.svg" alt="">
-                    </a>
-                </div>
-            </div>
+    <section id="clients" class="bg-dark-charcoal pb-32 pt-36">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 text-center">
+            <h4 class="mb-2 text-lg font-semibold text-cream">Clients</h4>
+            <h2
+              class="text-3xl- mb-4 font-bold text-metallic-gold sm:text-4xl lg:text-5xl"
+            >
+              Past Clients
+            </h2>
+            <p class="text-md font-medium text-cream md:text-lg">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
+              debitis corrupti suscipit. Ducimus alias molestias quam.
+            </p>
+          </div>
         </div>
+        <div class="w-full px-4">
+          <div class="flex flex-wrap items-center justify-center">
+            <a
+              href="#"
+              class="mx-4 max-w-[120px] py-4 opacity-50 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <img src="dist/assets/images/Google_2015_logo.svg.png" alt="" />
+            </a>
+            <a
+              href="#"
+              class="mx-4 max-w-[120px] py-4 opacity-50 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <img src="dist/assets/images/Gojek_logo_2022.svg.png" alt="" />
+            </a>
+            <a
+              href="#"
+              class="mx-4 max-w-[120px] py-4 opacity-50 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <img
+                src="dist/assets/images/1280px-CIMB_Niaga_logo.svg.png"
+                alt=""
+              />
+            </a>
+            <a
+              href="#"
+              class="mx-4 max-w-[120px] py-4 opacity-50 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <img src="dist/assets/images/Amazon_logo.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Clients Section End -->
     <!-- Blog Section Start -->
-    <section id="blog" class="pt-36 pb-32 bg-cream">
-        <div class="container">
-            <div class="w-full px-4">
-                <div class="max-w-xl mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-dark-charcoal mb-2">Blog</h4>
-                    <h2 class="font-bold text-metallic-gold text-3xl- mb-4 sm:text-4xl lg:text-5xl">Latest Blogs</h2>
-                    <p class="font-medium text-md text-dark-charcoal md:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem debitis corrupti suscipit. Ducimus alias molestias quam.</p>
-                </div>
-            </div>
-            <div class="flex flex-wrap">
-                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-                    <div class="bg-cream rounded-xl shadow-lg overflow-hidden mb-10">
-                        <img src="https://source.unsplash.com/360x200?anime" alt="" class="w-full">
-                        <div class="py-8 px-6">
-                            <h3><a href="" class="block mb-3 font-semibold text-xl text-dark-charcoal hover:text-metallic-gold truncate">Title of The Blogs</a></h3>
-                            <p class="font-medium text-dark-charcoal mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, minima!</p>
-                            <a href="#" class="font-medium text-sm text-cream bg-dark-charcoal py-2 px-4 rounded-lg hover:opacity-80">Read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-                    <div class="bg-cream rounded-xl shadow-lg overflow-hidden mb-10">
-                        <img src="https://source.unsplash.com/360x200?cosplay" alt="" class="w-full">
-                        <div class="py-8 px-6">
-                            <h3><a href="" class="block mb-3 font-semibold text-xl text-dark-charcoal hover:text-metallic-gold truncate">Title of The Blogs</a></h3>
-                            <p class="font-medium text-dark-charcoal mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, minima!</p>
-                            <a href="#" class="font-medium text-sm text-cream bg-dark-charcoal py-2 px-4 rounded-lg hover:opacity-80">Read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-                    <div class="bg-cream rounded-xl shadow-lg overflow-hidden mb-10">
-                        <img src="https://source.unsplash.com/360x200?tech" alt="" class="w-full">
-                        <div class="py-8 px-6">
-                            <h3><a href="" class="block mb-3 font-semibold text-xl text-dark-charcoal hover:text-metallic-gold truncate">Title of The Blogs</a></h3>
-                            <p class="font-medium text-dark-charcoal mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, minima!</p>
-                            <a href="#" class="font-medium text-sm text-cream bg-dark-charcoal py-2 px-4 rounded-lg hover:opacity-80">Read more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="blog" class="bg-cream pb-32 pt-36">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h4 class="mb-2 text-lg font-semibold text-dark-charcoal">Blog</h4>
+            <h2
+              class="text-3xl- mb-4 font-bold text-metallic-gold sm:text-4xl lg:text-5xl"
+            >
+              Latest Blogs
+            </h2>
+            <p class="text-md font-medium text-dark-charcoal md:text-lg">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
+              debitis corrupti suscipit. Ducimus alias molestias quam.
+            </p>
+          </div>
         </div>
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="mb-10 overflow-hidden rounded-xl bg-cream shadow-lg">
+              <img
+                src="https://source.unsplash.com/360x200?anime"
+                alt=""
+                class="w-full"
+              />
+              <div class="px-6 py-8">
+                <h3>
+                  <a
+                    href=""
+                    class="mb-3 block truncate text-xl font-semibold text-dark-charcoal hover:text-metallic-gold"
+                    >Title of The Blogs</a
+                  >
+                </h3>
+                <p class="mb-6 font-medium text-dark-charcoal">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, minima!
+                </p>
+                <a
+                  href="#"
+                  class="rounded-lg bg-dark-charcoal px-4 py-2 text-sm font-medium text-cream hover:opacity-80"
+                  >Read more</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="mb-10 overflow-hidden rounded-xl bg-cream shadow-lg">
+              <img
+                src="https://source.unsplash.com/360x200?cosplay"
+                alt=""
+                class="w-full"
+              />
+              <div class="px-6 py-8">
+                <h3>
+                  <a
+                    href=""
+                    class="mb-3 block truncate text-xl font-semibold text-dark-charcoal hover:text-metallic-gold"
+                    >Title of The Blogs</a
+                  >
+                </h3>
+                <p class="mb-6 font-medium text-dark-charcoal">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, minima!
+                </p>
+                <a
+                  href="#"
+                  class="rounded-lg bg-dark-charcoal px-4 py-2 text-sm font-medium text-cream hover:opacity-80"
+                  >Read more</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="mb-10 overflow-hidden rounded-xl bg-cream shadow-lg">
+              <img
+                src="https://source.unsplash.com/360x200?tech"
+                alt=""
+                class="w-full"
+              />
+              <div class="px-6 py-8">
+                <h3>
+                  <a
+                    href=""
+                    class="mb-3 block truncate text-xl font-semibold text-dark-charcoal hover:text-metallic-gold"
+                    >Title of The Blogs</a
+                  >
+                </h3>
+                <p class="mb-6 font-medium text-dark-charcoal">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, minima!
+                </p>
+                <a
+                  href="#"
+                  class="rounded-lg bg-dark-charcoal px-4 py-2 text-sm font-medium text-cream hover:opacity-80"
+                  >Read more</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Blog Section End -->
     <!-- Contacts Section Start -->
-    <section id="contacts" class="pt-36 pb-32">
-        <div class="container">
-            <div class="w-full px-4">
-                <div class="max-w-xl mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-dark-charcoal mb-2">Contacts</h4>
-                    <h2 class="font-bold text-metallic-gold text-3xl- mb-4 sm:text-4xl lg:text-5xl">Get in Touch</h2>
-                    <p class="font-medium text-md text-dark-charcoal md:text-lg">Lorem ipsum dolor sit amet.</p>
-                </div>
-            </div>
-            <form action="">
-                <div class="w-full px-4 lg:w-2/3 lg:mx-auto">
-                    <div class="w-full px-4 mb-8">
-                        <label for="name" class="text-base font-bold text-dark-charcoal">Name</label>
-                        <input type="text" id="name" class="w-full bg-slate-200 text-dark-charcoal p-3 rounded-md focus:outline-none focus:ring-metallic-gold focus:ring-1 focus:border-metallic-gold">
-                    </div>
-                    <div class="w-full px-4 mb-8">
-                        <label for="email" class="text-base font-bold text-dark-charcoal">Email</label>
-                        <input type="text" id="email" class="w-full bg-slate-200 text-dark-charcoal p-3 rounded-md focus:outline-none focus:ring-metallic-gold focus:ring-1 focus:border-metallic-gold">
-                    </div>
-                    <div class="w-full px-4 mb-8">
-                        <label for="messages" class="text-base font-bold text-dark-charcoal">Messages</label>
-                        <textarea type="text" id="messages" class="w-full bg-slate-200 text-dark-charcoal p-3 rounded-md focus:outline-none focus:ring-metallic-gold focus:ring-1 focus:border-metallic-gold h-32"></textarea>
-                    </div>
-                    <div class="w-full px-4">
-                        <button class="text-base font-semibold text-cream bg-umber py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Send</button>
-                    </div>
-                </div>
-            </form>
+    <section id="contacts" class="pb-32 pt-36">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h4 class="mb-2 text-lg font-semibold text-dark-charcoal">
+              Contacts
+            </h4>
+            <h2
+              class="text-3xl- mb-4 font-bold text-metallic-gold sm:text-4xl lg:text-5xl"
+            >
+              Get in Touch
+            </h2>
+            <p class="text-md font-medium text-dark-charcoal md:text-lg">
+              Lorem ipsum dolor sit amet.
+            </p>
+          </div>
         </div>
+        <form action="">
+          <div class="w-full px-4 lg:mx-auto lg:w-2/3">
+            <div class="mb-8 w-full px-4">
+              <label for="name" class="text-base font-bold text-dark-charcoal"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                class="w-full rounded-md bg-slate-200 p-3 text-dark-charcoal focus:border-metallic-gold focus:outline-none focus:ring-1 focus:ring-metallic-gold"
+              />
+            </div>
+            <div class="mb-8 w-full px-4">
+              <label for="email" class="text-base font-bold text-dark-charcoal"
+                >Email</label
+              >
+              <input
+                type="text"
+                id="email"
+                class="w-full rounded-md bg-slate-200 p-3 text-dark-charcoal focus:border-metallic-gold focus:outline-none focus:ring-1 focus:ring-metallic-gold"
+              />
+            </div>
+            <div class="mb-8 w-full px-4">
+              <label
+                for="messages"
+                class="text-base font-bold text-dark-charcoal"
+                >Messages</label
+              >
+              <textarea
+                type="text"
+                id="messages"
+                class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark-charcoal focus:border-metallic-gold focus:outline-none focus:ring-1 focus:ring-metallic-gold"
+              ></textarea>
+            </div>
+            <div class="w-full px-4">
+              <button
+                class="w-full rounded-full bg-umber px-8 py-3 text-base font-semibold text-cream transition duration-500 hover:opacity-80 hover:shadow-lg"
+              >
+                Send
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
     </section>
     <!-- Contacts Section End -->
     <!-- Footer Start -->
-    <footer class="bg-dark-charcoal pt-24 pb-12">
-        <div class="container">
-            <div class="flex flex-wrap">
-                <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
-                    <h2 class="font-bold text-4xl text-cream mb-5">VLTR</h2>
-                    <h3 class="font-bold text-2xl mb-2">Contact Us</h3>
-                    <p>hardefarogonondo@gmail.com</p>
-                    <p>Malang</p>
-                </div>
-                <div class="w-full px-4 mb-12 md:w-1/3">
-                    <h3 class="font-semibold text-xl text-cream mb-5">My Writings</h3>
-                    <ul class="text-slate-300">
-                        <li>
-                            <a href="#" class="inline-block text-base text-cream hover:text-metallic-gold mb-3">Article</a>
-                        </li>
-                        <li>
-                            <a href="#" class="inline-block text-base text-cream hover:text-metallic-gold mb-3">Cosplay</a>
-                        </li>
-                        <li>
-                            <a href="#" class="inline-block text-base text-cream hover:text-metallic-gold mb-3">Tech</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="w-full px-4 mb-12 md:w-1/3">
-                    <h3 class="font-semibold text-xl text-cream mb-5">Links</h3>
-                    <ul class="text-slate-300">
-                        <li>
-                            <a href="#home" class="inline-block text-base text-cream hover:text-metallic-gold mb-3">Home</a>
-                        </li>
-                        <li>
-                            <a href="#about" class="inline-block text-base text-cream hover:text-metallic-gold mb-3">About</a>
-                        </li>
-                        <li>
-                            <a href="#clients" class="inline-block text-base text-cream hover:text-metallic-gold mb-3">Clients</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w-full pt-10 border-t border-slate-700">
-                <div class="flex items-center justify-center mb-5">
-                    <!-- LinkedIn -->
-                    <a href="https://www.linkedin.com/in/hardefa-rogonondo/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-umber hover:border-charcoal hover:bg-terra-cotta hover:text-cream">
-                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                    </a>
-                    <!-- Instagram -->
-                    <a href="https://www.instagram.com/hardefarogonondo/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-umber hover:border-charcoal hover:bg-terra-cotta hover:text-cream">
-                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
-                    </a>
-                </div>
-                <p class="font-medium text-xs text-slate-500 text-center">Made with ☕ by  <a href="https://www.linkedin.com/in/hardefa-rogonondo/" target="_blank" class="font-bold text-teal">Hardefa Rogonondo</a> with <a href="https://tailwindcss.com/" target="_blank" class="text-bold text-teal">Tailwind CSS</a></p>
-            </div>
+    <footer class="bg-dark-charcoal pb-12 pt-24">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/3">
+            <h2 class="mb-5 text-4xl font-bold text-cream">VLTR</h2>
+            <h3 class="mb-2 text-2xl font-bold">Contact Us</h3>
+            <p>hardefarogonondo@gmail.com</p>
+            <p>Malang</p>
+          </div>
+          <div class="mb-12 w-full px-4 md:w-1/3">
+            <h3 class="mb-5 text-xl font-semibold text-cream">My Writings</h3>
+            <ul class="text-slate-300">
+              <li>
+                <a
+                  href="#"
+                  class="mb-3 inline-block text-base text-cream hover:text-metallic-gold"
+                  >Article</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="mb-3 inline-block text-base text-cream hover:text-metallic-gold"
+                  >Cosplay</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="mb-3 inline-block text-base text-cream hover:text-metallic-gold"
+                  >Tech</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mb-12 w-full px-4 md:w-1/3">
+            <h3 class="mb-5 text-xl font-semibold text-cream">Links</h3>
+            <ul class="text-slate-300">
+              <li>
+                <a
+                  href="#home"
+                  class="mb-3 inline-block text-base text-cream hover:text-metallic-gold"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="mb-3 inline-block text-base text-cream hover:text-metallic-gold"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#clients"
+                  class="mb-3 inline-block text-base text-cream hover:text-metallic-gold"
+                  >Clients</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="w-full border-t border-slate-700 pt-10">
+          <div class="mb-5 flex items-center justify-center">
+            <!-- LinkedIn -->
+            <a
+              href="https://www.linkedin.com/in/hardefa-rogonondo/"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-umber hover:border-charcoal hover:bg-terra-cotta hover:text-cream"
+            >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>LinkedIn</title>
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+            </a>
+            <!-- Instagram -->
+            <a
+              href="https://www.instagram.com/hardefarogonondo/"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-umber hover:border-charcoal hover:bg-terra-cotta hover:text-cream"
+            >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Instagram</title>
+                <path
+                  d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+                />
+              </svg>
+            </a>
+          </div>
+          <p class="text-center text-xs font-medium text-slate-500">
+            Made with ☕ by
+            <a
+              href="https://www.linkedin.com/in/hardefa-rogonondo/"
+              target="_blank"
+              class="font-bold text-teal"
+              >Hardefa Rogonondo</a
+            >
+            with
+            <a
+              href="https://tailwindcss.com/"
+              target="_blank"
+              class="text-bold text-teal"
+              >Tailwind CSS</a
+            >
+          </p>
+        </div>
+      </div>
     </footer>
     <!-- Footer End -->
+    <!-- Back to Top Button Start -->
+    <a
+      id="to-top"
+      href="#home"
+      class="fixed bottom-4 right-4 z-[999] hidden h-14 w-14 items-center justify-center rounded-full bg-umber p-4 hover:animate-pulse"
+    >
+      <span class="mt-2 block h-5 w-5 rotate-45 border-l-2 border-t-2"></span
+    ></a>
+    <!-- Back to Top Button End -->
+    <div></div>
     <script src="dist/js/script.js"></script>
-</body>
+  </body>
 </html>
