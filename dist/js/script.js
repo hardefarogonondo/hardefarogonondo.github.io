@@ -32,26 +32,66 @@ window.addEventListener("click", function(event) {
     }
 });
 
-// dark mode toggle
-const darkModeToggle = document.querySelector("#dark-mode-toggle");
-const html = document.querySelector("html");
+// // dark mode toggle
+// const darkModeToggle = document.querySelector("#dark-mode-toggle");
+// const html = document.querySelector("html");
 
-darkModeToggle.addEventListener("click", function() {
-    if (darkModeToggle.checked) {
-        html.classList.add("dark");
-        localStorage.theme = "dark";
-    } else {
-        html.classList.remove("dark");
-        localStorage.theme = "light";
-    }
+// darkModeToggle.addEventListener("click", function() {
+//     if (darkModeToggle.checked) {
+//         html.classList.add("dark");
+//         localStorage.theme = "dark";
+//     } else {
+//         html.classList.remove("dark");
+//         localStorage.theme = "light";
+//     }
+// });
+
+// // moved toggle
+// if (
+//     localStorage.theme === "dark" || (!("theme" in localStorage) &&
+//       window.matchMedia("(prefers-color-scheme: dark)").matches)
+//   ) {
+//     darkModeToggle.checked = true;
+//   } else {
+//     darkModeToggle.checked = false;
+//   }
+
+// Dark mode toggle
+const themeToggleBtn = document.querySelector("#theme-toggle");
+const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+function updateIcons() {
+  const isDarkMode = document.documentElement.classList.contains('dark');
+
+  if (isDarkMode) {
+    themeToggleDarkIcon.classList.add('hidden');
+    themeToggleLightIcon.classList.remove('hidden');
+  } else {
+    themeToggleDarkIcon.classList.remove('hidden');
+    themeToggleLightIcon.classList.add('hidden');
+  }
+}
+
+themeToggleBtn.addEventListener("click", function() {
+  document.documentElement.classList.toggle("dark");
+  
+  if (document.documentElement.classList.contains("dark")) {
+    localStorage.theme = "dark";
+  } else {
+    localStorage.theme = "light";
+  }
+  
+  updateIcons(); // Update the icons each time the theme is toggled
 });
 
-// moved toggle
+// Set the initial theme and icon state on page load
 if (
-    localStorage.theme === "dark" || (!("theme" in localStorage) &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches)
-  ) {
-    darkModeToggle.checked = true;
-  } else {
-    darkModeToggle.checked = false;
-  }
+  localStorage.theme === 'dark' ||
+  (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+) {
+  document.documentElement.classList.add('dark');
+} else {
+  document.documentElement.classList.remove('dark');
+}
+updateIcons(); // Ensure the correct icon is displayed based on the initial theme
