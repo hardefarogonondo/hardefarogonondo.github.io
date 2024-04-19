@@ -8,155 +8,109 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap"
     />
-    <script>
-      // Existing code to set initial theme
-      if (
-        localStorage.theme === "dark" ||
-        (!("theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
-
-      // Function to update the icons based on the current theme
-      function updateIcons() {
-        const themeToggleDarkIcon = document.getElementById(
-          "theme-toggle-dark-icon",
-        );
-        const themeToggleLightIcon = document.getElementById(
-          "theme-toggle-light-icon",
-        );
-        const isDarkMode = document.documentElement.classList.contains("dark");
-
-        if (isDarkMode) {
-          themeToggleDarkIcon.classList.add("hidden");
-          themeToggleLightIcon.classList.remove("hidden");
-        } else {
-          themeToggleDarkIcon.classList.remove("hidden");
-          themeToggleLightIcon.classList.add("hidden");
-        }
-      }
-
-      // Call updateIcons initially to set the correct icon on page load
-      updateIcons();
-
-      // Function to toggle dark mode and update icon visibility
-      function toggleDarkMode() {
-        if (document.documentElement.classList.contains("dark")) {
-          document.documentElement.classList.remove("dark");
-          localStorage.theme = "light";
-        } else {
-          document.documentElement.classList.add("dark");
-          localStorage.theme = "dark";
-        }
-        updateIcons(); // Update the icons each time the theme is toggled
-      }
-
-      // Add click event listener to the toggle button
-      document
-        .getElementById("theme-toggle")
-        .addEventListener("click", toggleDarkMode);
-    </script>
   </head>
   <body>
     <!-- Header Section Start -->
     <header
-      class="absolute left-0 top-0 flex w-full items-center bg-transparent"
+      class="absolute flex w-full items-center justify-between bg-transparent"
     >
       <div class="container">
         <div class="relative flex items-center justify-between">
-          <div class="flex items-center px-4">
-            <a href="#home" class="flex items-center">
-              <img
-                src="/dist/assets/images/logo_cropped.png"
-                alt="Hardefa Rogonondo's Logo"
-                class="w-10 pb-4 pt-4"
-              />
-              <p class="dark:text-off-white ml-4 font-montserrat text-charcoal">
-                <span class="font-bold">Hardefa</span>
-                <span class="font-normal">Rogonondo</span>
-              </p>
-            </a>
+          <div class="px-4">
+            <div class="flex items-center justify-between">
+              <a href="#home" class="hover:soft-violet flex items-center">
+                <!-- TODO: Change Logo Later -->
+                <img
+                  src="dist/assets/images/navbar/logo_cropped.png"
+                  alt="Hardefa Rogonondo's Logo"
+                  class="w-10 pb-4 pt-4"
+                />
+                <p
+                  class="text-color ml-4 font-montserrat text-night dark:text-off-white"
+                >
+                  <span class="font-bold">Hardefa</span>
+                  <span class="font-normal">Rogonondo</span>
+                </p>
+              </a>
+            </div>
           </div>
-          <div class="flex items-center px-4">
+          <div class="z-50 flex items-center justify-between px-4">
             <button
               id="hamburger"
-              name="hamburder"
+              name="hamburger"
               type="button"
               class="absolute right-4 block lg:hidden"
             >
               <span
-                class="hamburger-line origin-top-left transition duration-300 ease-in-out"
+                class="hamburger-line origin-top-right transition duration-300 ease-in-out"
               ></span>
               <span
                 class="hamburger-line transition duration-300 ease-in-out"
               ></span>
               <span
-                class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
+                class="hamburger-line origin-bottom-right transition duration-300 ease-in-out"
               ></span>
             </button>
             <nav
               id="nav-menu"
-              class="bg-off-white absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg py-5 shadow-lg dark:bg-dark dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
+              class="absolute right-4 top-full w-full max-w-64 rounded-b-3xl bg-off-white py-4 shadow-sm shadow-night dark:bg-night dark:shadow-soft-cloud lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
             >
               <ul class="block lg:flex">
                 <li class="group">
                   <a
                     href="#about"
-                    class="dark:text-off-white group-hover:text-soft-violet mx-8 flex py-2 font-montserrat text-base text-light-text"
+                    class="mx-8 flex py-2 font-montserrat text-base text-night group-hover:text-soft-violet dark:text-off-white"
                     >About</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#journey"
-                    class="dark:text-off-white group-hover:text-soft-violet mx-8 flex py-2 font-montserrat text-base text-light-text group-hover:text-umber"
+                    class="mx-8 flex py-2 font-montserrat text-base text-night group-hover:text-soft-violet dark:text-off-white"
                     >Journey</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#awards"
-                    class="dark:text-off-white group-hover:text-soft-violet mx-8 flex py-2 font-montserrat text-base text-light-text group-hover:text-umber"
+                    class="mx-8 flex py-2 font-montserrat text-base text-night group-hover:text-soft-violet dark:text-off-white"
                     >Awards</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#projects"
-                    class="dark:text-off-white group-hover:text-soft-violet mx-8 flex py-2 font-montserrat text-base text-light-text group-hover:text-umber"
+                    class="mx-8 flex py-2 font-montserrat text-base text-night group-hover:text-soft-violet dark:text-off-white"
                     >Projects</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#clients"
-                    class="dark:text-off-white group-hover:text-soft-violet mx-8 flex py-2 font-montserrat text-base text-light-text group-hover:text-umber"
+                    class="mx-8 flex py-2 font-montserrat text-base text-night group-hover:text-soft-violet dark:text-off-white"
                     >Clients</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#contacts"
-                    class="dark:text-off-white group-hover:text-soft-violet mx-8 flex py-2 font-montserrat text-base text-light-text group-hover:text-umber"
+                    class="mx-8 flex py-2 font-montserrat text-base text-night group-hover:text-soft-violet dark:text-off-white"
                     >Contacts</a
                   >
                 </li>
-                <li class="mt-3 flex items-center pl-8 lg:mt-0">
+                <li class="flex items-center pl-8">
                   <div class="flex">
                     <button
-                      id="theme-toggle"
+                      id="theme-toggle-button"
                       type="button"
-                      class="hover:bg-gradient-light dark:hover:bg-gradient-dark z-50 rounded-lg p-2.5 text-sm text-charcoal focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:focus:ring-gray-700"
+                      class="hover:bg-gradient-light dark:hover:bg-gradient-dark z-50 rounded-xl p-2.5 text-night dark:text-off-white"
                     >
                       <svg
-                        id="theme-toggle-dark-icon"
-                        class="hidden h-5 w-5"
+                        id="theme-toggle-button-dark-icon"
+                        class="h-5 w-5"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
@@ -166,8 +120,8 @@
                         ></path>
                       </svg>
                       <svg
-                        id="theme-toggle-light-icon"
-                        class="hidden h-5 w-5"
+                        id="theme-toggle-button-light-icon"
+                        class="h-5 w-5"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
@@ -189,12 +143,13 @@
     </header>
     <!-- Header Section End -->
     <!-- Hero Section Start -->
-    <section id="home" class="bg-off-white dark:bg-night pt-36">
+    <!-- Continue From Here -->
+    <section id="home" class="bg-off-white pt-36 dark:bg-night">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
             <h1
-              class="dark:text-off-white font-montserrat text-base text-charcoal md:text-xl"
+              class="font-montserrat text-base text-charcoal dark:text-off-white md:text-xl"
             >
               👋🏻 Hi, I'm
               <span
@@ -204,26 +159,26 @@
               </span>
             </h1>
             <h2
-              class="dark:text-off-white mb-5 text-lg font-medium text-charcoal lg:text-2xl"
+              class="mb-5 text-lg font-medium text-charcoal dark:text-off-white lg:text-2xl"
             >
               Data Scientist &
-              <span class="dark:text-off-white text-charcoal"
+              <span class="text-charcoal dark:text-off-white"
                 >AI/ML Engineer</span
               >
             </h2>
             <h2
-              class="dark:text-off-white mb-5 text-lg font-medium lg:text-2xl"
+              class="mb-5 text-lg font-medium dark:text-off-white lg:text-2xl"
             >
               Currently a Data Scientist at
               <a href="https://aiforesee.com/"
                 ><span
-                  class="text-soft-violet hover:text-lavender-love underline hover:opacity-50"
+                  class="text-soft-violet underline hover:text-lavender-love hover:opacity-50"
                   >AIForesee</span
                 ></a
               >
             </h2>
             <p
-              class="dark:text-off-white mb-10 font-montserrat text-xl font-bold leading-relaxed text-charcoal"
+              class="mb-10 font-montserrat text-xl font-bold leading-relaxed text-charcoal dark:text-off-white"
             >
               Elevate your business with
               <span class="text-soft-violet">data-driven strategies</span> and
@@ -231,13 +186,13 @@
             </p>
             <a
               href="#"
-              class="from-lavender-love to-soft-violet text-off-white rounded-xl bg-gradient-to-r px-8 py-3 text-base font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+              class="rounded-xl bg-gradient-to-r from-lavender-love to-soft-violet px-8 py-3 text-base font-semibold text-off-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
             >
               Let's Talk!
             </a>
             <a
               href="#"
-              class="from-lavender-love to-soft-violet text-off-white mx-2 rounded-xl bg-gradient-to-r px-8 py-3 text-base font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+              class="mx-2 rounded-xl bg-gradient-to-r from-lavender-love to-soft-violet px-8 py-3 text-base font-semibold text-off-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
             >
               Download My CV!
             </a>
@@ -245,7 +200,7 @@
           <div class="w-full self-end px-4 lg:w-1/2">
             <div class="relative mt-10 lg:right-0 lg:mt-9">
               <img
-                src="dist/assets/images/hero_himmel.webp"
+                src="dist/assets/images/hero/hero_himmel.webp"
                 alt="Hardefa Rogonondo"
                 class="relative z-10 mx-auto max-w-full"
               />
@@ -267,13 +222,9 @@
                       y2="100%"
                     >
                       <stop offset="0%" style="stop-color: #ffffff" />
-                      <!-- White start -->
                       <stop offset="20%" style="stop-color: #dcbced" />
-                      <!-- Very light violet -->
                       <stop offset="50%" style="stop-color: #ba6ae3" />
-                      <!-- Midway color: Soft violet -->
                       <stop offset="100%" style="stop-color: #9a84e8" />
-                      <!-- End color: Lavender love -->
                     </linearGradient>
                   </defs>
                   <path
@@ -290,7 +241,7 @@
     </section>
     <!-- Hero Section End -->
     <!-- About Section Start -->
-    <section id="about" class="bg-off-white dark:bg-night pb-32 pt-36">
+    <section id="about" class="bg-off-white pb-32 pt-36 dark:bg-night">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="mb-10 w-full px-4 lg:w-1/2">
@@ -300,7 +251,7 @@
               About Me
             </h2>
             <p
-              class="dark:text-off-white max-w-xl font-montserrat text-base font-medium text-charcoal lg:text-lg"
+              class="max-w-xl font-montserrat text-base font-medium text-charcoal dark:text-off-white lg:text-lg"
             >
               Data scientist with 3 years of experience in the financial
               technology sector, specializing in alternative credit scoring for
@@ -314,12 +265,12 @@
           </div>
           <div class="w-full px-4 lg:w-1/2">
             <h3
-              class="dark:text-off-white mb-4 text-2xl font-semibold text-charcoal lg:pt-10 lg:text-3xl"
+              class="mb-4 text-2xl font-semibold text-charcoal dark:text-off-white lg:pt-10 lg:text-3xl"
             >
               Connect with Me
             </h3>
             <p
-              class="dark:text-off-white mb-6 text-base font-medium text-charcoal lg:text-lg"
+              class="mb-6 text-base font-medium text-charcoal dark:text-off-white lg:text-lg"
             >
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
               fuga molestiae eveniet, quisquam totam quod nihil.
@@ -329,7 +280,7 @@
               <a
                 href="https://www.linkedin.com/in/hardefa-rogonondo/"
                 target="_blank"
-                class="hover:text-off-white hover:bg-soft-violet dark:text-off-white mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-umber hover:border-charcoal"
+                class="border-umber mr-3 flex h-9 w-9 items-center justify-center rounded-full border hover:border-charcoal hover:bg-soft-violet hover:text-off-white dark:text-off-white"
               >
                 <svg
                   role="img"
@@ -348,7 +299,7 @@
               <a
                 href="https://www.instagram.com/hardefarogonondo/"
                 target="_blank"
-                class="hover:text-off-white hover:bg-soft-violet dark:text-off-white mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-umber hover:border-charcoal"
+                class="border-umber mr-3 flex h-9 w-9 items-center justify-center rounded-full border hover:border-charcoal hover:bg-soft-violet hover:text-off-white dark:text-off-white"
               >
                 <svg
                   role="img"
@@ -370,7 +321,7 @@
     </section>
     <!-- About Section End -->
     <!-- Journey Section Start -->
-    <section id="Journey" class="bg-off-white dark:bg-night pb-16 pt-36">
+    <section id="Journey" class="bg-off-white pb-16 pt-36 dark:bg-night">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center">
@@ -379,10 +330,10 @@
             >
               Journey
             </h2>
-            <h4 class="dark:text-off-white text-lg font-semibold text-charcoal">
+            <h4 class="text-lg font-semibold text-charcoal dark:text-off-white">
               Professional Experiences
             </h4>
-            <h4 class="dark:text-off-white text-lg font-semibold text-charcoal">
+            <h4 class="text-lg font-semibold text-charcoal dark:text-off-white">
               Educations
             </h4>
           </div>
@@ -395,15 +346,15 @@
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center">
-            <h4 class="mb-2 text-lg font-semibold text-dark-charcoal">
+            <h4 class="text-dark-charcoal mb-2 text-lg font-semibold">
               Portfolio
             </h4>
             <h2
-              class="text-3xl- mb-4 font-bold text-metallic-gold sm:text-4xl lg:text-5xl"
+              class="text-3xl- text-metallic-gold mb-4 font-bold sm:text-4xl lg:text-5xl"
             >
               Latest Projects
             </h2>
-            <p class="text-md font-medium text-dark-charcoal md:text-lg">
+            <p class="text-md text-dark-charcoal font-medium md:text-lg">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
               debitis corrupti suscipit. Ducimus alias molestias quam.
             </p>
@@ -420,10 +371,10 @@
                 width="w-full"
               />
             </div>
-            <h3 class="mb-3 mt-5 text-xl font-semibold text-dark-charcoal">
+            <h3 class="text-dark-charcoal mb-3 mt-5 text-xl font-semibold">
               Research Paper Summarization Engine
             </h3>
-            <p class="text-base font-medium text-dark-charcoal">
+            <p class="text-dark-charcoal text-base font-medium">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
               voluptatibus temporibus debitis!
             </p>
@@ -436,10 +387,10 @@
                 width="w-full"
               />
             </div>
-            <h3 class="mb-3 mt-5 text-xl font-semibold text-dark-charcoal">
+            <h3 class="text-dark-charcoal mb-3 mt-5 text-xl font-semibold">
               IMDb Sentiment Prediction Engine
             </h3>
-            <p class="text-base font-medium text-dark-charcoal">
+            <p class="text-dark-charcoal text-base font-medium">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
               voluptatibus temporibus debitis!
             </p>
@@ -452,10 +403,10 @@
                 width="w-full"
               />
             </div>
-            <h3 class="mb-3 mt-5 text-xl font-semibold text-dark-charcoal">
+            <h3 class="text-dark-charcoal mb-3 mt-5 text-xl font-semibold">
               Research Paper Summarization Engine
             </h3>
-            <p class="text-base font-medium text-dark-charcoal">
+            <p class="text-dark-charcoal text-base font-medium">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
               voluptatibus temporibus debitis!
             </p>
@@ -468,10 +419,10 @@
                 width="w-full"
               />
             </div>
-            <h3 class="mb-3 mt-5 text-xl font-semibold text-dark-charcoal">
+            <h3 class="text-dark-charcoal mb-3 mt-5 text-xl font-semibold">
               Research Paper Summarization Engine
             </h3>
-            <p class="text-base font-medium text-dark-charcoal">
+            <p class="text-dark-charcoal text-base font-medium">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
               voluptatibus temporibus debitis!
             </p>
@@ -485,13 +436,13 @@
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 text-center">
-            <h4 class="text-night mb-2 text-lg font-semibold">Clients</h4>
+            <h4 class="mb-2 text-lg font-semibold text-night">Clients</h4>
             <h2
-              class="text-3xl- text-night mb-4 font-bold sm:text-4xl lg:text-5xl"
+              class="text-3xl- mb-4 font-bold text-night sm:text-4xl lg:text-5xl"
             >
               Past Clients
             </h2>
-            <p class="text-md font-medium text-cream md:text-lg">
+            <p class="text-md text-cream font-medium md:text-lg">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
               debitis corrupti suscipit. Ducimus alias molestias quam.
             </p>
@@ -536,13 +487,13 @@
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center">
-            <h4 class="mb-2 text-lg font-semibold text-dark-charcoal">Blog</h4>
+            <h4 class="text-dark-charcoal mb-2 text-lg font-semibold">Blog</h4>
             <h2
-              class="text-3xl- mb-4 font-bold text-metallic-gold sm:text-4xl lg:text-5xl"
+              class="text-3xl- text-metallic-gold mb-4 font-bold sm:text-4xl lg:text-5xl"
             >
               Latest Blogs
             </h2>
-            <p class="text-md font-medium text-dark-charcoal md:text-lg">
+            <p class="text-md text-dark-charcoal font-medium md:text-lg">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
               debitis corrupti suscipit. Ducimus alias molestias quam.
             </p>
@@ -550,7 +501,7 @@
         </div>
         <div class="flex flex-wrap">
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="mb-10 overflow-hidden rounded-xl bg-cream shadow-lg">
+            <div class="bg-cream mb-10 overflow-hidden rounded-xl shadow-lg">
               <img
                 src="https://source.unsplash.com/360x200?anime"
                 alt=""
@@ -560,24 +511,24 @@
                 <h3>
                   <a
                     href=""
-                    class="mb-3 block truncate text-xl font-semibold text-dark-charcoal hover:text-metallic-gold"
+                    class="text-dark-charcoal hover:text-metallic-gold mb-3 block truncate text-xl font-semibold"
                     >Title of The Blogs</a
                   >
                 </h3>
-                <p class="mb-6 font-medium text-dark-charcoal">
+                <p class="text-dark-charcoal mb-6 font-medium">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Incidunt, minima!
                 </p>
                 <a
                   href="#"
-                  class="rounded-lg bg-dark-charcoal px-4 py-2 text-sm font-medium text-cream hover:opacity-80"
+                  class="bg-dark-charcoal text-cream rounded-lg px-4 py-2 text-sm font-medium hover:opacity-80"
                   >Read more</a
                 >
               </div>
             </div>
           </div>
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="mb-10 overflow-hidden rounded-xl bg-cream shadow-lg">
+            <div class="bg-cream mb-10 overflow-hidden rounded-xl shadow-lg">
               <img
                 src="https://source.unsplash.com/360x200?cosplay"
                 alt=""
@@ -587,24 +538,24 @@
                 <h3>
                   <a
                     href=""
-                    class="mb-3 block truncate text-xl font-semibold text-dark-charcoal hover:text-metallic-gold"
+                    class="text-dark-charcoal hover:text-metallic-gold mb-3 block truncate text-xl font-semibold"
                     >Title of The Blogs</a
                   >
                 </h3>
-                <p class="mb-6 font-medium text-dark-charcoal">
+                <p class="text-dark-charcoal mb-6 font-medium">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Incidunt, minima!
                 </p>
                 <a
                   href="#"
-                  class="rounded-lg bg-dark-charcoal px-4 py-2 text-sm font-medium text-cream hover:opacity-80"
+                  class="bg-dark-charcoal text-cream rounded-lg px-4 py-2 text-sm font-medium hover:opacity-80"
                   >Read more</a
                 >
               </div>
             </div>
           </div>
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="mb-10 overflow-hidden rounded-xl bg-cream shadow-lg">
+            <div class="bg-cream mb-10 overflow-hidden rounded-xl shadow-lg">
               <img
                 src="https://source.unsplash.com/360x200?tech"
                 alt=""
@@ -614,17 +565,17 @@
                 <h3>
                   <a
                     href=""
-                    class="mb-3 block truncate text-xl font-semibold text-dark-charcoal hover:text-metallic-gold"
+                    class="text-dark-charcoal hover:text-metallic-gold mb-3 block truncate text-xl font-semibold"
                     >Title of The Blogs</a
                   >
                 </h3>
-                <p class="mb-6 font-medium text-dark-charcoal">
+                <p class="text-dark-charcoal mb-6 font-medium">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Incidunt, minima!
                 </p>
                 <a
                   href="#"
-                  class="rounded-lg bg-dark-charcoal px-4 py-2 text-sm font-medium text-cream hover:opacity-80"
+                  class="bg-dark-charcoal text-cream rounded-lg px-4 py-2 text-sm font-medium hover:opacity-80"
                   >Read more</a
                 >
               </div>
@@ -639,15 +590,15 @@
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center">
-            <h4 class="mb-2 text-lg font-semibold text-dark-charcoal">
+            <h4 class="text-dark-charcoal mb-2 text-lg font-semibold">
               Contacts
             </h4>
             <h2
-              class="text-3xl- mb-4 font-bold text-metallic-gold sm:text-4xl lg:text-5xl"
+              class="text-3xl- text-metallic-gold mb-4 font-bold sm:text-4xl lg:text-5xl"
             >
               Get in Touch
             </h2>
-            <p class="text-md font-medium text-dark-charcoal md:text-lg">
+            <p class="text-md text-dark-charcoal font-medium md:text-lg">
               Lorem ipsum dolor sit amet.
             </p>
           </div>
@@ -655,40 +606,40 @@
         <form action="">
           <div class="w-full px-4 lg:mx-auto lg:w-2/3">
             <div class="mb-8 w-full px-4">
-              <label for="name" class="text-base font-bold text-dark-charcoal"
+              <label for="name" class="text-dark-charcoal text-base font-bold"
                 >Name</label
               >
               <input
                 type="text"
                 id="name"
-                class="w-full rounded-md bg-slate-200 p-3 text-dark-charcoal focus:border-metallic-gold focus:outline-none focus:ring-1 focus:ring-metallic-gold"
+                class="text-dark-charcoal focus:border-metallic-gold focus:ring-metallic-gold w-full rounded-md bg-slate-200 p-3 focus:outline-none focus:ring-1"
               />
             </div>
             <div class="mb-8 w-full px-4">
-              <label for="email" class="text-base font-bold text-dark-charcoal"
+              <label for="email" class="text-dark-charcoal text-base font-bold"
                 >Email</label
               >
               <input
                 type="text"
                 id="email"
-                class="w-full rounded-md bg-slate-200 p-3 text-dark-charcoal focus:border-metallic-gold focus:outline-none focus:ring-1 focus:ring-metallic-gold"
+                class="text-dark-charcoal focus:border-metallic-gold focus:ring-metallic-gold w-full rounded-md bg-slate-200 p-3 focus:outline-none focus:ring-1"
               />
             </div>
             <div class="mb-8 w-full px-4">
               <label
                 for="messages"
-                class="text-base font-bold text-dark-charcoal"
+                class="text-dark-charcoal text-base font-bold"
                 >Messages</label
               >
               <textarea
                 type="text"
                 id="messages"
-                class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark-charcoal focus:border-metallic-gold focus:outline-none focus:ring-1 focus:ring-metallic-gold"
+                class="text-dark-charcoal focus:border-metallic-gold focus:ring-metallic-gold h-32 w-full rounded-md bg-slate-200 p-3 focus:outline-none focus:ring-1"
               ></textarea>
             </div>
             <div class="w-full px-4">
               <button
-                class="w-full rounded-full bg-umber px-8 py-3 text-base font-semibold text-cream transition duration-500 hover:opacity-80 hover:shadow-lg"
+                class="bg-umber text-cream w-full rounded-full px-8 py-3 text-base font-semibold transition duration-500 hover:opacity-80 hover:shadow-lg"
               >
                 Send
               </button>
@@ -703,58 +654,58 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/3">
-            <h2 class="mb-5 text-4xl font-bold text-cream">VLTR</h2>
+            <h2 class="text-cream mb-5 text-4xl font-bold">VLTR</h2>
             <h3 class="mb-2 text-2xl font-bold">Contact Us</h3>
             <p>hardefarogonondo@gmail.com</p>
             <p>Malang</p>
           </div>
           <div class="mb-12 w-full px-4 md:w-1/3">
-            <h3 class="mb-5 text-xl font-semibold text-cream">My Writings</h3>
+            <h3 class="text-cream mb-5 text-xl font-semibold">My Writings</h3>
             <ul class="text-slate-300">
               <li>
                 <a
                   href="#"
-                  class="mb-3 inline-block text-base text-cream hover:text-metallic-gold"
+                  class="text-cream hover:text-metallic-gold mb-3 inline-block text-base"
                   >Article</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="mb-3 inline-block text-base text-cream hover:text-metallic-gold"
+                  class="text-cream hover:text-metallic-gold mb-3 inline-block text-base"
                   >Cosplay</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="mb-3 inline-block text-base text-cream hover:text-metallic-gold"
+                  class="text-cream hover:text-metallic-gold mb-3 inline-block text-base"
                   >Tech</a
                 >
               </li>
             </ul>
           </div>
           <div class="mb-12 w-full px-4 md:w-1/3">
-            <h3 class="mb-5 text-xl font-semibold text-cream">Links</h3>
+            <h3 class="text-cream mb-5 text-xl font-semibold">Links</h3>
             <ul class="text-slate-300">
               <li>
                 <a
                   href="#home"
-                  class="mb-3 inline-block text-base text-cream hover:text-metallic-gold"
+                  class="text-cream hover:text-metallic-gold mb-3 inline-block text-base"
                   >Home</a
                 >
               </li>
               <li>
                 <a
                   href="#about"
-                  class="mb-3 inline-block text-base text-cream hover:text-metallic-gold"
+                  class="text-cream hover:text-metallic-gold mb-3 inline-block text-base"
                   >About</a
                 >
               </li>
               <li>
                 <a
                   href="#clients"
-                  class="mb-3 inline-block text-base text-cream hover:text-metallic-gold"
+                  class="text-cream hover:text-metallic-gold mb-3 inline-block text-base"
                   >Clients</a
                 >
               </li>
@@ -767,7 +718,7 @@
             <a
               href="https://www.linkedin.com/in/hardefa-rogonondo/"
               target="_blank"
-              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-umber hover:border-charcoal hover:bg-terra-cotta hover:text-cream"
+              class="border-umber hover:bg-terra-cotta hover:text-cream mr-3 flex h-9 w-9 items-center justify-center rounded-full border hover:border-charcoal"
             >
               <svg
                 role="img"
@@ -786,7 +737,7 @@
             <a
               href="https://www.instagram.com/hardefarogonondo/"
               target="_blank"
-              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-umber hover:border-charcoal hover:bg-terra-cotta hover:text-cream"
+              class="border-umber hover:bg-terra-cotta hover:text-cream mr-3 flex h-9 w-9 items-center justify-center rounded-full border hover:border-charcoal"
             >
               <svg
                 role="img"
@@ -807,7 +758,7 @@
             <a
               href="https://www.linkedin.com/in/hardefa-rogonondo/"
               target="_blank"
-              class="font-bold text-teal"
+              class="text-teal font-bold"
               >Hardefa Rogonondo</a
             >
             with
@@ -818,15 +769,18 @@
               >Tailwind CSS</a
             >
           </p>
+          <p class="text-center text-xs font-medium text-slate-500">
+            I Stand with Palestine 🇵🇸
+          </p>
         </div>
       </div>
     </footer>
     <!-- Footer End -->
     <!-- Back to Top Button Start -->
     <a
-      id="to-top"
+      id="to-top-button"
       href="#home"
-      class="fixed bottom-4 right-4 z-[999] hidden h-14 w-14 items-center justify-center rounded-full bg-umber p-4 hover:animate-pulse"
+      class="bg-umber fixed bottom-4 right-4 z-[999] hidden h-14 w-14 items-center justify-center rounded-full p-4 hover:animate-pulse"
     >
       <span class="mt-2 block h-5 w-5 rotate-45 border-l-2 border-t-2"></span
     ></a>

@@ -9,17 +9,17 @@ module.exports = {
     },
     extend: {
       colors: {
-        "off-white": "#f9fbfd",
-        "charcoal": "#333333",
+        "off-white": "#F9FBFD",
         "night": "#171717",
-        "lavender-love": "#ba6ae3",
-        "soft-violet": "#9a84e8",
-        "misty-lilac": "#f0edfc",
-        "sky-light": "#c5d1f5",
-        "soft-cloud": "#f2f2f6"
+        "soft-violet": "#9A84E8",
+        "lavender-love": "#BA6AE3",
+        "soft-cloud": "#F2F2F6",
+        "charcoal": "#333333",
+        "misty-lilac": "#F0EDFC",
+        "sky-light": "#C5D1F5",
       },
       fontFamily: {
-        montserrat: ['Montserrat', 'sans-serif'],
+        montserrat: ["Montserrat", "sans-serif"],
       },
       screens: {
         "2xl": "1320px"
