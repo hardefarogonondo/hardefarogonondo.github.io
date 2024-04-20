@@ -5,8 +5,8 @@ function initTheme() {
     const themeToggleButtonLightIcon = document.getElementById("theme-toggle-button-light-icon");
     function updateIcons() {
         const isDarkMode = document.documentElement.classList.contains("dark");
-        themeToggleButtonDarkIcon?.classList.toggle("hidden", !isDarkMode);
-        themeToggleButtonLightIcon?.classList.toggle("hidden", isDarkMode);
+        themeToggleButtonDarkIcon?.classList.toggle("hidden", isDarkMode);
+        themeToggleButtonLightIcon?.classList.toggle("hidden", !isDarkMode);
     }
     function toggleDarkMode() {
         document.documentElement.classList.toggle("dark");
