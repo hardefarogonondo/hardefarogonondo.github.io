@@ -52,7 +52,7 @@
                 <img
                   src="dist/assets/images/navbar/logo_cropped.png"
                   alt="Hardefa Rogonondo's Logo"
-                  class="w-10 pb-4 pt-4"
+                  class="w-10 py-4"
                 />
                 <p
                   class="text-color ml-4 font-montserrat text-night dark:text-off-white"
@@ -84,7 +84,7 @@
               id="nav-menu"
               class="absolute right-4 top-full hidden w-full max-w-64 rounded-b-3xl bg-off-white py-4 shadow-sm shadow-night dark:bg-night dark:shadow-soft-cloud lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
             >
-              <ul class="block lg:flex">
+              <ul class="block items-center lg:flex">
                 <li class="group">
                   <a
                     href="#about"
@@ -172,7 +172,7 @@
     <section id="home" class="bg-off-white pt-36 dark:bg-night">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full px-4 lg:w-1/2">
+          <div class="my-auto w-full px-4 lg:w-1/2">
             <p
               class="font-montserrat text-base text-night dark:text-off-white md:text-xl"
             >
@@ -212,7 +212,7 @@
                 >AI-enhanced solutions</span
               >
             </p>
-            <div class="flex flex-wrap gap-4 pt-4">
+            <div class="mt-4 flex flex-wrap gap-4">
               <a
                 href="#contacts"
                 class="rounded-full bg-gradient-to-r from-lavender-love to-soft-violet px-8 py-4 text-base font-semibold text-off-white transition duration-300 ease-in-out hover:opacity-75 hover:shadow-sm hover:shadow-sky-light"
@@ -228,18 +228,18 @@
               </a>
             </div>
           </div>
-          <div class="w-full px-4 lg:w-1/2">
+          <div class="w-full lg:w-1/2">
             <div class="relative">
-              <!-- Continue From Here -->
-              <!-- TODO: Change Logo Later -->
+              <!-- TODO: Change Picture Later -->
               <img
                 src="dist/assets/images/hero/hero.png"
                 alt="Hardefa Rogonondo"
                 class="relative z-10 mx-auto max-w-full"
               />
               <span
-                class="absolute -bottom-20 left-1/2 -translate-x-1/2 md:scale-125"
+                class="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-125"
               >
+                <!-- TODO: Change SVG Later and Center the SVG with Picture -->
                 <svg
                   width="400"
                   height="400"
@@ -256,14 +256,14 @@
                     >
                       <stop offset="0%" style="stop-color: #ffffff" />
                       <stop offset="20%" style="stop-color: #dcbced" />
-                      <stop offset="50%" style="stop-color: #ba6ae3" />
-                      <stop offset="100%" style="stop-color: #9a84e8" />
+                      <stop offset="50%" style="stop-color: #9a84e8" />
+                      <stop offset="100%" style="stop-color: #ba6ae3" />
                     </linearGradient>
                   </defs>
                   <path
                     fill="url(#blob-gradient)"
-                    d="M67,-16.5C75.4,4.1,62.8,36.7,41.7,50.3C20.6,64,-9.1,58.7,-32.9,42.1C-56.7,25.5,-74.7,-2.3,-68.2,-20.2C-61.7,-38.2,-30.9,-46.2,-0.8,-46C29.3,-45.7,58.6,-37.1,67,-16.5Z"
-                    transform="translate(100 100) scale(1.1)"
+                    d="M32.6,-53.8C42.1,-50.9,49.7,-42,52,-32C54.2,-22.1,51.2,-11,55.7,2.6C60.3,16.3,72.5,32.6,69.5,41.4C66.6,50.3,48.6,51.6,34.5,58.7C20.4,65.7,10.2,78.3,0,78.3C-10.1,78.2,-20.3,65.5,-31.2,56.6C-42.2,47.8,-53.9,42.9,-64.7,34.1C-75.5,25.3,-85.2,12.6,-80.4,2.8C-75.5,-7,-56.1,-14.1,-46.9,-25.6C-37.7,-37.1,-38.8,-53.2,-32.7,-58C-26.6,-62.9,-13.3,-56.5,-0.9,-55C11.5,-53.4,23,-56.7,32.6,-53.8Z"
+                    transform="translate(100 100)"
                   />
                 </svg>
               </span>
@@ -274,17 +274,18 @@
     </section>
     <!-- Hero Section End -->
     <!-- About Section Start -->
-    <section id="about" class="bg-off-white pb-32 pt-36 dark:bg-night">
+    <section id="about" class="bg-off-white pt-36 dark:bg-night">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="mb-10 w-full px-4 lg:w-1/2">
+          <div class="w-full px-4 lg:w-1/2">
+            <!-- Continue From Here -->
             <h2
               class="gradient-text mb-5 max-w-md font-montserrat text-3xl font-bold lg:text-4xl"
             >
               About Me
             </h2>
             <p
-              class="max-w-xl font-montserrat text-base font-medium text-charcoal dark:text-off-white lg:text-lg"
+              class="max-w-xl font-montserrat text-base text-night dark:text-off-white lg:text-lg"
             >
               Data scientist with 3 years of experience in the financial
               technology sector, specializing in alternative credit scoring for
