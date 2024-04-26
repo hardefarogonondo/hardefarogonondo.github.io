@@ -88,3 +88,13 @@ function type() {
     timeout = setTimeout(type, actionSpeed);
 }
 type();
+
+// Placeholder for View More toggle button
+function toggleSkills() {
+    var x = document.getElementById("more-skills");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+}
