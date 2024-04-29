@@ -89,12 +89,13 @@ function type() {
 }
 type();
 
-// Placeholder for View More toggle button
-function toggleSkills() {
-    var x = document.getElementById("more-skills");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-}
+// Skills Section See More Button
+let isSkillsHidden = true;
+document.getElementById("skills-see-more-button").addEventListener("click", () => {
+  const moreSkillsElements = document.querySelectorAll(".more-skills");
+  isSkillsHidden = !isSkillsHidden;
+  moreSkillsElements.forEach(elem => {
+    elem.classList.toggle("hidden", isSkillsHidden);
+  });
+  document.getElementById("skills-see-more-button").textContent = isSkillsHidden ? "See More" : "See Less";
+});

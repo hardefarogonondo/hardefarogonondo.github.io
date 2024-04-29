@@ -224,7 +224,7 @@
             <div class="mt-4 flex flex-wrap gap-4">
               <a
                 href="#contacts"
-                class="rounded-2xl bg-gradient-to-r from-lavender-love to-soft-violet px-8 py-4 text-base font-semibold text-off-white transition duration-300 ease-in-out hover:opacity-75"
+                class="rounded-2xl bg-gradient-to-r from-lavender-love to-soft-violet px-8 py-4 font-montserrat text-base font-semibold text-off-white transition duration-300 ease-in-out hover:opacity-75"
               >
                 Let's Talk
               </a>
@@ -232,7 +232,7 @@
                 href="https://drive.google.com/file/d/1JoiHAp_cwbASfYKeEQdI_kAo49Zend4C/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="rounded-2xl bg-gradient-to-r from-lavender-love to-soft-violet px-8 py-4 text-base font-semibold text-off-white transition duration-300 ease-in-out hover:opacity-75"
+                class="rounded-2xl bg-gradient-to-r from-lavender-love to-soft-violet px-8 py-4 font-montserrat text-base font-semibold text-off-white transition duration-300 ease-in-out hover:opacity-75"
               >
                 Download My Resume
               </a>
@@ -289,7 +289,7 @@
         <div class="flex flex-wrap">
           <div class="w-full px-4 lg:w-1/2">
             <h2
-              class="gradient-text mb-4 max-w-md font-montserrat text-3xl font-bold lg:text-4xl"
+              class="gradient-text mb-8 max-w-md font-montserrat text-3xl font-bold lg:text-4xl"
             >
               About Me
             </h2>
@@ -429,11 +429,11 @@
     <section id="skills" class="bg-soft-cloud pb-20 pt-20 dark:bg-charcoal">
       <div class="container">
         <h2
-          class="gradient-text mb-4 text-center font-montserrat text-3xl font-bold lg:text-4xl"
+          class="gradient-text mb-8 text-center font-montserrat text-3xl font-bold lg:text-4xl"
         >
           Skills
         </h2>
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div class="flex flex-wrap justify-center gap-4 md:gap-8">
           <!-- Programming Languages -->
           <div class="text-center">
             <h3
@@ -766,7 +766,7 @@
             </div>
           </div>
           <!-- Databases -->
-          <div class="text-center">
+          <div class="more-skills hidden text-center">
             <h3
               class="mb-4 font-montserrat text-2xl font-semibold text-night dark:text-off-white lg:text-3xl"
             >
@@ -816,7 +816,7 @@
             </div>
           </div>
           <!-- Cloud Platforms -->
-          <div class="text-center">
+          <div class="more-skills hidden text-center">
             <h3
               class="mb-4 font-montserrat text-2xl font-semibold text-night dark:text-off-white lg:text-3xl"
             >
@@ -866,7 +866,7 @@
             </div>
           </div>
           <!-- Web Frameworks -->
-          <div class="text-center">
+          <div class="more-skills hidden text-center">
             <h3
               class="mb-4 font-montserrat text-2xl font-semibold text-night dark:text-off-white lg:text-3xl"
             >
@@ -956,7 +956,7 @@
             </div>
           </div>
           <!-- Developer Tools -->
-          <div class="text-center">
+          <div class="more-skills hidden text-center">
             <h3
               class="mb-4 font-montserrat text-2xl font-semibold text-night dark:text-off-white lg:text-3xl"
             >
@@ -1105,12 +1105,12 @@
               </a>
             </div>
           </div>
-          <!-- Development Environment -->
-          <div class="text-center">
+          <!-- Development Environments -->
+          <div class="more-skills hidden text-center">
             <h3
               class="mb-4 font-montserrat text-2xl font-semibold text-night dark:text-off-white lg:text-3xl"
             >
-              Development Environment
+              Development Environments
             </h3>
             <div class="flex flex-wrap justify-center gap-4">
               <!-- Anaconda -->
@@ -1237,7 +1237,7 @@
             </div>
           </div>
           <!-- Operating Systems -->
-          <div class="text-center">
+          <div class="more-skills hidden text-center">
             <h3
               class="mb-4 font-montserrat text-2xl font-semibold text-night dark:text-off-white lg:text-3xl"
             >
@@ -1287,7 +1287,7 @@
             </div>
           </div>
           <!-- Collaboration Tools-->
-          <div class="text-center">
+          <div class="more-skills hidden text-center">
             <h3
               class="mb-4 font-montserrat text-2xl font-semibold text-night dark:text-off-white lg:text-3xl"
             >
@@ -1397,25 +1397,78 @@
             </div>
           </div>
         </div>
+        <div class="mt-12 text-center">
+          <button
+            id="skills-see-more-button"
+            class="rounded-2xl bg-gradient-to-r from-lavender-love to-soft-violet px-4 py-2 font-montserrat text-base font-semibold text-off-white transition duration-300 ease-in-out hover:opacity-75"
+          >
+            See More
+          </button>
+        </div>
       </div>
     </section>
     <!-- Skills Section End -->
     <!-- Journey Section Start -->
-    <section id="Journey" class="bg-off-white pb-16 pt-36 dark:bg-night">
+    <section id="journey" class="bg-off-white pb-20 pt-20 dark:bg-night">
       <div class="container">
-        <div class="w-full px-4">
-          <div class="mx-auto mb-16 max-w-xl text-center">
-            <h2
-              class="gradient-text mb-5 max-w-md font-montserrat text-3xl font-bold lg:text-4xl"
-            >
-              Journey
-            </h2>
-            <h4 class="text-lg font-semibold text-charcoal dark:text-off-white">
-              Professional Experiences
-            </h4>
-            <h4 class="text-lg font-semibold text-charcoal dark:text-off-white">
-              Educations
-            </h4>
+        <!-- Continue From Here -->
+        <h2
+          class="gradient-text mb-10 text-center font-montserrat text-3xl font-bold lg:text-4xl"
+        >
+          Journey
+        </h2>
+
+        <!-- Professional Experience Subsection -->
+        <div class="mb-10">
+          <h3
+            class="mb-6 text-center font-montserrat text-2xl font-semibold text-night dark:text-off-white lg:text-3xl"
+          >
+            Professional Experience
+          </h3>
+          <div class="space-y-6">
+            <!-- Job Entry -->
+            <div class="rounded bg-white p-4 shadow dark:bg-night">
+              <h4
+                class="font-montserrat text-xl font-semibold text-night dark:text-off-white"
+              >
+                Job Title - Company Name
+              </h4>
+              <p class="text-night dark:text-off-white">
+                Duration: Month Year - Month Year
+              </p>
+              <ul class="list-disc pl-5">
+                <li>Responsibility or achievement</li>
+                <li>Another responsibility</li>
+                <!-- More list items as needed -->
+              </ul>
+            </div>
+            <!-- Repeat for other job entries -->
+          </div>
+        </div>
+
+        <!-- Education Subsection -->
+        <div>
+          <h3
+            class="mb-6 text-center font-montserrat text-2xl font-semibold text-night dark:text-off-white lg:text-3xl"
+          >
+            Education
+          </h3>
+          <div class="space-y-6">
+            <!-- Education Entry -->
+            <div class="rounded bg-white p-4 shadow dark:bg-night">
+              <h4
+                class="font-montserrat text-xl font-semibold text-night dark:text-off-white"
+              >
+                Degree - Institution Name
+              </h4>
+              <p class="text-night dark:text-off-white">
+                Duration: Month Year - Month Year
+              </p>
+              <p class="text-night dark:text-off-white">
+                Description or relevant coursework.
+              </p>
+            </div>
+            <!-- Repeat for other education entries -->
           </div>
         </div>
       </div>
