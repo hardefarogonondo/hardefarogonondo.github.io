@@ -99,3 +99,18 @@ document.getElementById("skills-see-more-button").addEventListener("click", () =
   });
   document.getElementById("skills-see-more-button").textContent = isSkillsHidden ? "See More" : "See Less";
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const achievementsButton = document.querySelector(".achievements-button");
+    const responsibilitiesButton = document.querySelector(".responsibilities-button");
+    const achievementsList = document.querySelector(".lists .achievements");
+    const responsibilitiesList = document.querySelector(".lists .responsibilities");
+    achievementsButton.addEventListener("click", function() {
+        achievementsList.classList.toggle("hidden");
+        achievementsButton.classList.toggle("active");
+    });
+    responsibilitiesButton.addEventListener("click", function() {
+        responsibilitiesList.classList.toggle("hidden");
+        responsibilitiesButton.classList.toggle("active");
+    });
+});

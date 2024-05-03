@@ -49,6 +49,11 @@ a.hover\:soft-violet:hover .text-color {
     -webkit-text-fill-color: transparent;
 }
 
+.active {
+    opacity: 0.75;
+    transform: scale(0.975);
+}
+
 /* * {
     border: 1px solid red !important;
 } */
