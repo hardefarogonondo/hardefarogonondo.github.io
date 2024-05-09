@@ -92,25 +92,25 @@ type();
 // Skills Section See More Button
 let isSkillsHidden = true;
 document.getElementById("skills-see-more-button").addEventListener("click", () => {
-  const moreSkillsElements = document.querySelectorAll(".more-skills");
-  isSkillsHidden = !isSkillsHidden;
-  moreSkillsElements.forEach(elem => {
-    elem.classList.toggle("hidden", isSkillsHidden);
-  });
-  document.getElementById("skills-see-more-button").textContent = isSkillsHidden ? "See More" : "See Less";
+    const moreSkillsElements = document.querySelectorAll(".more-skills");
+    isSkillsHidden = !isSkillsHidden;
+    moreSkillsElements.forEach(elem => {
+        elem.classList.toggle("hidden", isSkillsHidden);
+    });
+    document.getElementById("skills-see-more-button").textContent = isSkillsHidden ? "See More" : "See Less";
 });
 
+// Key Achivements and Key Responsibilities Buttons
 document.addEventListener("DOMContentLoaded", function() {
-    const achievementsButton = document.querySelector(".achievements-button");
-    const responsibilitiesButton = document.querySelector(".responsibilities-button");
-    const achievementsList = document.querySelector(".lists .achievements");
-    const responsibilitiesList = document.querySelector(".lists .responsibilities");
-    achievementsButton.addEventListener("click", function() {
-        achievementsList.classList.toggle("hidden");
-        achievementsButton.classList.toggle("active");
-    });
-    responsibilitiesButton.addEventListener("click", function() {
-        responsibilitiesList.classList.toggle("hidden");
-        responsibilitiesButton.classList.toggle("active");
+    const workEntries = document.querySelectorAll(".work-entry");
+    workEntries.forEach(entry => {
+        const buttons = entry.querySelectorAll(".toggle-button");
+        const lists = entry.querySelectorAll(".lists ul");
+        buttons.forEach((button, index) => {
+            button.addEventListener("click", function() {
+                lists[index].classList.toggle("hidden");
+                button.classList.toggle("active");
+            });
+        });
     });
 });
