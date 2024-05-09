@@ -732,10 +732,6 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
 .block {
   display: block;
 }
@@ -1359,6 +1355,25 @@ a.hover\:soft-violet:hover .text-color {
   transform: scale(0.975);
 }
 
+@media (max-width: 415px) {
+  .custom-box {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+  }
+
+  .custom-img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media (max-width: 368px) {
+  .custom-box {
+    display: none;
+  }
+}
+
 /* * {
     border: 1px solid red !important;
 } */
@@ -1624,6 +1639,15 @@ a.hover\:soft-violet:hover .text-color {
     --tw-scale-x: .75;
     --tw-scale-y: .75;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .xs\:py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .xs\:font-medium {
+    font-weight: 500;
   }
 }
 
