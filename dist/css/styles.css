@@ -635,11 +635,6 @@ video {
   margin-right: 0.5rem;
 }
 
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
 .mx-8 {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -658,6 +653,11 @@ video {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .mb-12 {
@@ -812,10 +812,6 @@ video {
   max-width: 16rem;
 }
 
-.max-w-\[120px\] {
-  max-width: 120px;
-}
-
 .max-w-full {
   max-width: 100%;
 }
@@ -826,6 +822,10 @@ video {
 
 .max-w-xl {
   max-width: 36rem;
+}
+
+.max-w-\[120px\] {
+  max-width: 120px;
 }
 
 .flex-1 {
@@ -1367,16 +1367,16 @@ a.hover\:soft-violet:hover .text-color {
   color: rgb(186 106 227 / var(--tw-text-opacity));
 }
 
-.hover\:opacity-100:hover {
-  opacity: 1;
-}
-
 .hover\:opacity-75:hover {
   opacity: 0.75;
 }
 
 .hover\:opacity-80:hover {
   opacity: 0.8;
+}
+
+.hover\:opacity-100:hover {
+  opacity: 1;
 }
 
 .hover\:shadow-lg:hover {
@@ -1483,14 +1483,19 @@ a.hover\:soft-violet:hover .text-color {
     position: static;
   }
 
-  .lg\:mx-6 {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+  .lg\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .lg\:mx-6 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 
   .lg\:block {
@@ -1562,6 +1567,11 @@ a.hover\:soft-violet:hover .text-color {
 }
 
 @media (min-width: 1280px) {
+  .xl\:mx-6 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
   .xl\:mx-8 {
     margin-left: 2rem;
     margin-right: 2rem;
