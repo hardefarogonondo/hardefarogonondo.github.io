@@ -767,8 +767,16 @@ video {
   height: 2.25rem;
 }
 
+.h-\[500px\] {
+  height: 500px;
+}
+
 .h-\[50px\] {
   height: 50px;
+}
+
+.h-\[475px\] {
+  height: 475px;
 }
 
 .max-h-full {
@@ -835,6 +843,10 @@ video {
   flex: 1 1 0%;
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
 .origin-bottom-right {
   transform-origin: bottom right;
 }
@@ -859,6 +871,10 @@ video {
 
 .list-disc {
   list-style-type: disc;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .flex-wrap {
