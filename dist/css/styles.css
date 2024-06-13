@@ -913,6 +913,10 @@ video {
   overflow-wrap: break-word;
 }
 
+.break-all {
+  word-break: break-all;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -1590,6 +1594,10 @@ a.hover\:soft-violet:hover .text-color {
 @media (max-width: 359px) {
   .xxs\:hidden {
     display: none;
+  }
+
+  .xxs\:break-all {
+    word-break: break-all;
   }
 }
 
