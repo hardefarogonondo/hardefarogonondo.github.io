@@ -775,16 +775,16 @@ video {
   height: 2.25rem;
 }
 
-.h-\[475px\] {
-  height: 475px;
-}
-
 .h-\[50px\] {
   height: 50px;
 }
 
 .h-\[75px\] {
   height: 75px;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .max-h-full {
@@ -1236,10 +1236,6 @@ video {
   opacity: 0.5;
 }
 
-.opacity-100 {
-  opacity: 1;
-}
-
 .opacity-75 {
   opacity: 0.75;
 }
@@ -1267,38 +1263,8 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.blur-\[15px\] {
-  --tw-blur: blur(15px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.blur-\[25px\] {
-  --tw-blur: blur(25px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.blur-sm {
-  --tw-blur: blur(4px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.blur {
-  --tw-blur: blur(8px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.blur-md {
-  --tw-blur: blur(12px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .blur-lg {
   --tw-blur: blur(16px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.blur-xl {
-  --tw-blur: blur(24px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -1585,6 +1551,10 @@ a.hover\:soft-violet:hover .text-color {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:h-\[475px\] {
+    height: 475px;
   }
 
   .lg\:w-1\/2 {
