@@ -622,6 +622,10 @@ video {
   top: 100%;
 }
 
+.z-0 {
+  z-index: 0;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -632,10 +636,6 @@ video {
 
 .z-\[999\] {
   z-index: 999;
-}
-
-.z-0 {
-  z-index: 0;
 }
 
 .mx-2 {
@@ -783,28 +783,8 @@ video {
   height: 50px;
 }
 
-.h-\[700px\] {
-  height: 700px;
-}
-
-.h-\[70px\] {
-  height: 70px;
-}
-
-.h-\[90px\] {
-  height: 90px;
-}
-
-.h-\[60px\] {
-  height: 60px;
-}
-
 .h-\[75px\] {
   height: 75px;
-}
-
-.h-\[25px\] {
-  height: 25px;
 }
 
 .max-h-full {
@@ -847,32 +827,16 @@ video {
   width: 100px;
 }
 
-.w-full {
-  width: 100%;
-}
-
-.w-\[70px\] {
-  width: 70px;
-}
-
-.w-\[90px\] {
-  width: 90px;
-}
-
-.w-\[110px\] {
-  width: 110px;
-}
-
-.w-\[120px\] {
-  width: 120px;
-}
-
 .w-\[125px\] {
   width: 125px;
 }
 
 .w-\[75px\] {
   width: 75px;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .max-w-64 {
@@ -965,10 +929,6 @@ video {
   scroll-behavior: smooth;
 }
 
-.break-words {
-  overflow-wrap: break-word;
-}
-
 .break-all {
   word-break: break-all;
 }
@@ -987,14 +947,6 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
-.rounded-3xl {
-  border-radius: 1.5rem;
 }
 
 .rounded-b-3xl {
@@ -1284,8 +1236,12 @@ video {
   opacity: 0.5;
 }
 
-.opacity-70 {
-  opacity: 0.7;
+.opacity-100 {
+  opacity: 1;
+}
+
+.opacity-75 {
+  opacity: 0.75;
 }
 
 .shadow {
@@ -1311,28 +1267,8 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.blur-xl {
-  --tw-blur: blur(24px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.blur-\[30px\] {
-  --tw-blur: blur(30px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.blur-\[50px\] {
-  --tw-blur: blur(50px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.blur-\[10px\] {
-  --tw-blur: blur(10px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.blur-\[20px\] {
-  --tw-blur: blur(20px);
+.blur-\[15px\] {
+  --tw-blur: blur(15px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -1341,13 +1277,28 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.blur-\[1px\] {
-  --tw-blur: blur(1px);
+.blur-sm {
+  --tw-blur: blur(4px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.blur-\[15px\] {
-  --tw-blur: blur(15px);
+.blur {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blur-md {
+  --tw-blur: blur(12px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blur-lg {
+  --tw-blur: blur(16px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blur-xl {
+  --tw-blur: blur(24px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -1706,10 +1657,6 @@ a.hover\:soft-violet:hover .text-color {
 @media (max-width: 359px) {
   .xxs\:hidden {
     display: none;
-  }
-
-  .xxs\:break-all {
-    word-break: break-all;
   }
 }
 
