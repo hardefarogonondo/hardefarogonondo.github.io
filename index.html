@@ -3119,7 +3119,7 @@
             </p>
           </div>
         </div>
-        <form action="">
+        <form id="contact-form" onsubmit="sendEmail(event)">
           <div class="w-full px-4 lg:mx-auto lg:w-2/3">
             <div class="mb-8 w-full px-4">
               <label
@@ -3131,6 +3131,7 @@
                 type="text"
                 id="name"
                 class="w-full rounded-2xl bg-soft-cloud p-3 font-montserrat leading-relaxed text-night focus:border-soft-violet focus:outline-none focus:ring-2 focus:ring-soft-violet dark:bg-charcoal dark:text-off-white"
+                required
               />
             </div>
             <div class="mb-8 w-full px-4">
@@ -3143,6 +3144,7 @@
                 type="text"
                 id="email"
                 class="w-full rounded-2xl bg-soft-cloud p-3 font-montserrat leading-relaxed text-night focus:border-soft-violet focus:outline-none focus:ring-2 focus:ring-soft-violet dark:bg-charcoal dark:text-off-white"
+                required
               />
             </div>
             <div class="mb-8 w-full px-4">
@@ -3154,6 +3156,7 @@
               <textarea
                 id="messages"
                 class="h-32 w-full rounded-2xl bg-soft-cloud p-3 font-montserrat leading-relaxed text-night focus:border-soft-violet focus:outline-none focus:ring-2 focus:ring-soft-violet dark:bg-charcoal dark:text-off-white"
+                required
               ></textarea>
             </div>
             <div class="w-full px-4">
@@ -3415,6 +3418,15 @@
     ></a>
     <!-- Back to Top Button End -->
     <div></div>
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("PvHudeERdkidaP5VH");
+      })();
+    </script>
     <script src="dist/js/script.js"></script>
   </body>
 </html>
