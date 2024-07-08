@@ -116,6 +116,11 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // Send Emails
+(function () {
+    emailjs.init("PvHudeERdkidaP5VH");
+})();
+
+
 function sendEmail(event) {
     event.preventDefault();
     const name = document.getElementById("name").value;
