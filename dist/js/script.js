@@ -126,7 +126,7 @@ function sendEmail(event) {
         from_email: email,
         message: message
     };
-    emailjs.send("service_f4d5sc4", "template_3wria0w", emailParams)
+    emailjs.send("service_b903pvg", "template_1euz35e", emailParams)
         .then(function(response) {
             alert("Email sent successfully!");
             document.getElementById("contact-form").reset();
