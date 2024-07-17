@@ -15,8 +15,9 @@ module.exports = {
         "lavender-love": "#BA6AE3",
         "soft-cloud": "#F2F2F6",
         "charcoal": "#212121",
-        "misty-lilac": "#F0EDFC",
         "sky-light": "#C5D1F5",
+        "mint-green": "#98FF98",
+        "soft-teal": "#A4D3EE"
       },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
