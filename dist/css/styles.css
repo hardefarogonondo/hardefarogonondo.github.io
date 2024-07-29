@@ -1596,6 +1596,10 @@ a.hover\:soft-violet:hover .text-color {
     display: block;
   }
 
+  .xl\:flex {
+    display: flex;
+  }
+
   .xl\:hidden {
     display: none;
   }
