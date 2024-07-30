@@ -115,6 +115,23 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// Zoomable Images
+const zoomableImages = document.querySelectorAll('[data-zoom="true"]');
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+zoomableImages.forEach(img => {
+    img.addEventListener("click", () => {
+        lightboxImage.src = img.src;
+        lightbox.classList.remove("hidden");
+        lightbox.classList.add("flex");
+    });
+});
+
+lightbox.addEventListener("click", () => {
+    lightbox.classList.add("hidden");
+    lightbox.classList.remove("flex");
+});
+
 // Send Emails
 (function () {
     emailjs.init("PvHudeERdkidaP5VH");
