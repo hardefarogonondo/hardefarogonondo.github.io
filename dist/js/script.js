@@ -100,6 +100,37 @@ document.getElementById("skills-see-more-button").addEventListener("click", () =
     document.getElementById("skills-see-more-button").textContent = isSkillsHidden ? "See More" : "See Less";
 });
 
+// Experience Duration Counter
+function calculateDuration(startDate, endDate = null) {
+    const start = new Date(startDate);
+    const end = endDate ? new Date(endDate) : new Date();
+    let years = end.getFullYear() - start.getFullYear();
+    let months = end.getMonth() - start.getMonth() + 1;
+    let days = end.getDate() - start.getDate();
+    if (days < 0) {
+        months--;
+        days += new Date(end.getFullYear(), end.getMonth(), 0).getDate();
+    }
+    if (months < 0) {
+        years--;
+        months += 12;
+    }
+    let duration = "";
+    if (years > 0) {
+        duration += years + (years > 1 ? " years" : " year");
+    }
+    if (months > 0 || (months === 0 && years === 0)) {
+        if (duration) duration += " ";
+        duration += months + (months > 1 ? " months" : " month");
+    }
+    return duration.trim();
+}
+document.querySelectorAll(".expDuration").forEach(function(element) {
+    const startDate = element.getAttribute("data-start");
+    const endDate = element.getAttribute("data-end");
+    element.textContent = calculateDuration(startDate, endDate);
+});
+
 // Key Achivements and Key Responsibilities Buttons
 document.addEventListener("DOMContentLoaded", function() {
     const workEntries = document.querySelectorAll(".work-entry");
