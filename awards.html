@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hardefa Rogonondo | Awards</title>
+    <link rel="stylesheet" href="dist/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap"
+    />
+    <!-- Logo -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="dist/assets/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="dist/assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="dist/assets/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="dist/assets/images/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="dist/assets/images/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <!-- Header Section Start -->
+    <header
+      class="absolute flex w-full items-center justify-between bg-transparent"
+    >
+      <div class="container">
+        <div class="relative flex items-center justify-between">
+          <div class="px-4">
+            <div class="flex items-center justify-between">
+              <a href="#home" class="hover:soft-violet flex items-center">
+                <!-- Logo -->
+                <img
+                  src="dist/assets/images/navbar/HR Logo.png"
+                  alt="Hardefa Rogonondo's Logo"
+                  class="w-10 py-4"
+                />
+                <p
+                  class="text-color ml-4 font-montserrat text-night dark:text-off-white"
+                >
+                  <span class="font-bold">Hardefa</span>
+                  <span class="font-normal">Rogonondo</span>
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="z-50 flex items-center justify-between px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="absolute right-4 block xl:hidden"
+            >
+              <span
+                class="hamburger-line origin-top-right transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line origin-bottom-right transition duration-300 ease-in-out"
+              ></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="absolute right-4 top-full hidden w-full max-w-64 rounded-b-3xl bg-off-white py-4 shadow-sm shadow-night dark:bg-night dark:shadow-soft-cloud xl:static xl:block xl:max-w-full xl:rounded-none xl:bg-transparent xl:shadow-none xl:dark:bg-transparent"
+            >
+              <ul class="block items-center xl:flex">
+                <li class="group">
+                  <a
+                    href="index.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="mx-8 flex py-2 font-montserrat text-base text-night group-hover:text-soft-violet dark:text-off-white"
+                    >Home</a
+                  >
+                </li>
+                <li class="flex items-center pl-8">
+                  <div class="flex">
+                    <button
+                      id="theme-toggle-button"
+                      type="button"
+                      class="hover:bg-gradient-light dark:hover:bg-gradient-dark z-50 rounded-xl p-2.5 text-night dark:text-off-white"
+                    >
+                      <svg
+                        id="theme-toggle-button-dark-icon"
+                        class="h-5 w-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                        ></path>
+                      </svg>
+                      <svg
+                        id="theme-toggle-button-light-icon"
+                        class="h-5 w-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End -->
+    <!-- Awards Section Start -->
+    <section id="awards" class="bg-off-white pb-20 pt-20 dark:bg-night">
+      <div class="container">
+        <h2
+          class="gradient-text mb-8 text-center font-montserrat text-3xl font-bold lg:text-4xl"
+        >
+          Awards
+        </h2>
+        <div class="w-full px-4">
+          <div class="flex flex-wrap items-center justify-center gap-8">
+            <!-- Pacmann Natural Language Processing -->
+            <div
+              class="max-w-sm space-y-2 rounded-2xl border-l-4 border-mint-green bg-soft-cloud p-8 shadow-lg dark:bg-charcoal lg:mx-auto lg:w-1/2 xl:w-1/3"
+            >
+              <div class="flex flex-col items-center justify-center">
+                <div class="relative h-48 w-64 bg-soft-cloud dark:bg-charcoal">
+                  <img
+                    src="dist/assets/images/awards/20240418_pacmann_nlp/20240418_pacmann_nlp.png"
+                    alt="Natural Language Processing Certification"
+                    class="h-full w-full cursor-pointer rounded-2xl object-contain"
+                    data-zoom="true"
+                  />
+                </div>
+              </div>
+              <h3
+                class="font-montserrat text-xl font-semibold text-night dark:text-off-white"
+              >
+                Natural Language Processing
+              </h3>
+              <span
+                class="inline-block rounded-full bg-mint-green px-2 py-1 font-montserrat text-xs font-semibold text-night"
+                >Training</span
+              >
+              <p class="font-montserrat text-night dark:text-off-white">
+                Successfully completed the Natural Language Processing
+                certification course.
+              </p>
+              <ul class="font-montserrat text-night dark:text-off-white">
+                <li class="flex items-center">
+                  <div class="w-32 flex-shrink-0">
+                    <strong>Issuer</strong>
+                  </div>
+                  <div class="flex flex-grow items-center">
+                    <span class="mr-2 flex-shrink-0">:</span>
+                    <a
+                      href="https://pacmann.io/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-soft-violet hover:text-lavender-love"
+                    >
+                      Pacmann (PT Algoritma Cerdas Indonesia)
+                    </a>
+                  </div>
+                </li>
+                <li class="flex items-center">
+                  <div class="w-32 flex-shrink-0">
+                    <strong>Issue Date</strong>
+                  </div>
+                  <div class="flex flex-grow items-center">
+                    <span class="mr-2 flex-shrink-0">:</span>
+                    <span>April 2024</span>
+                  </div>
+                </li>
+                <li class="flex items-center">
+                  <div class="w-32 flex-shrink-0">
+                    <strong>Credential ID</strong>
+                  </div>
+                  <div class="flex flex-grow items-center">
+                    <span class="mr-2 flex-shrink-0">:</span>
+                    <span>IAHJeNtZF7RP41C</span>
+                  </div>
+                </li>
+                <li class="flex items-center">
+                  <div class="w-32 flex-shrink-0">
+                    <strong>Credential URL</strong>
+                  </div>
+                  <div class="flex flex-grow items-center">
+                    <span class="mr-2 flex-shrink-0">:</span>
+                    <a
+                      href="https://sertifikat.pacmann.ai/IAHJeNtZF7RP41C"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-soft-violet hover:text-lavender-love"
+                    >
+                      View Credential
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Pacmann Deep Learning -->
+            <div
+              class="max-w-sm space-y-2 rounded-2xl border-l-4 border-mint-green bg-soft-cloud p-8 shadow-lg dark:bg-charcoal lg:mx-auto lg:w-1/2 xl:w-1/3"
+            >
+              <div class="flex flex-col items-center justify-center">
+                <div class="relative h-48 w-64 bg-soft-cloud dark:bg-charcoal">
+                  <img
+                    src="dist/assets/images/awards/20240124_pacmann_dl/20240124_pacmann_dl.png"
+                    alt="Deep Learning Certification"
+                    class="h-full w-full cursor-pointer rounded-2xl object-contain"
+                    data-zoom="true"
+                  />
+                </div>
+              </div>
+              <h3
+                class="font-montserrat text-xl font-semibold text-night dark:text-off-white"
+              >
+                Deep Learning
+              </h3>
+              <span
+                class="inline-block rounded-full bg-mint-green px-2 py-1 font-montserrat text-xs font-semibold text-night"
+                >Training</span
+              >
+              <p class="font-montserrat text-night dark:text-off-white">
+                Successfully completed the Deep Learning certification course.
+              </p>
+              <ul class="font-montserrat text-night dark:text-off-white">
+                <li class="flex items-center">
+                  <div class="w-32 flex-shrink-0">
+                    <strong>Issuer</strong>
+                  </div>
+                  <div class="flex flex-grow items-center">
+                    <span class="mr-2 flex-shrink-0">:</span>
+                    <a
+                      href="https://pacmann.io/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-soft-violet hover:text-lavender-love"
+                    >
+                      Pacmann (PT Algoritma Cerdas Indonesia)
+                    </a>
+                  </div>
+                </li>
+                <li class="flex items-center">
+                  <div class="w-32 flex-shrink-0">
+                    <strong>Issue Date</strong>
+                  </div>
+                  <div class="flex flex-grow items-center">
+                    <span class="mr-2 flex-shrink-0">:</span>
+                    <span>January 2024</span>
+                  </div>
+                </li>
+                <li class="flex items-center">
+                  <div class="w-32 flex-shrink-0">
+                    <strong>Credential ID</strong>
+                  </div>
+                  <div class="flex flex-grow items-center">
+                    <span class="mr-2 flex-shrink-0">:</span>
+                    <span>OFgtIJpJI5j8tlB</span>
+                  </div>
+                </li>
+                <li class="flex items-center">
+                  <div class="w-32 flex-shrink-0">
+                    <strong>Credential URL</strong>
+                  </div>
+                  <div class="flex flex-grow items-center">
+                    <span class="mr-2 flex-shrink-0">:</span>
+                    <a
+                      href="https://sertifikat.pacmann.ai/OFgtIJpJI5j8tlB"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-soft-violet hover:text-lavender-love"
+                    >
+                      View Credential
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Pacmann Advanced Machine Learning -->
+            <div
+              class="max-w-sm space-y-2 rounded-2xl border-l-4 border-mint-green bg-soft-cloud p-8 shadow-lg dark:bg-charcoal lg:mx-auto lg:w-1/2 xl:w-1/3"
+            >
+              <div class="flex flex-col items-center justify-center">
+                <div class="relative h-48 w-64 bg-soft-cloud dark:bg-charcoal">
+                  <img
+                    src="dist/assets/images/awards/20231115_pacmann_aml/20231115_pacmann_aml.png"
+                    alt="Advanced Machine Learning Certification"
+                    class="h-full w-full cursor-pointer rounded-2xl object-contain"
+                    data-zoom="true"
+                  />
+                </div>
+              </div>
+              <h3
+                class="font-montserrat text-xl font-semibold text-night dark:text-off-white"
+              >
+                Advanced Machine Learning
+              </h3>
+              <span
+                class="inline-block rounded-full bg-mint-green px-2 py-1 font-montserrat text-xs font-semibold text-night"
+                >Training</span
+              >
+              <p class="font-montserrat text-night dark:text-off-white">
+                Successfully completed the Advanced Machine Learning
+                certification course.
+              </p>
+              <ul class="font-montserrat text-night dark:text-off-white">
+                <li class="flex items-center">
+                  <div class="w-32 flex-shrink-0">
+                    <strong>Issuer</strong>
+                  </div>
+                  <div class="flex flex-grow items-center">
+                    <span class="mr-2 flex-shrink-0">:</span>
+                    <a
+                      href="https://pacmann.io/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-soft-violet hover:text-lavender-love"
+                    >
+                      Pacmann (PT Algoritma Cerdas Indonesia)
+                    </a>
+                  </div>
+                </li>
+                <li class="flex items-center">
+                  <div class="w-32 flex-shrink-0">
+                    <strong>Issue Date</strong>
+                  </div>
+                  <div class="flex flex-grow items-center">
+                    <span class="mr-2 flex-shrink-0">:</span>
+                    <span>November 2023</span>
+                  </div>
+                </li>
+                <li class="flex items-center">
+                  <div class="w-32 flex-shrink-0">
+                    <strong>Credential ID</strong>
+                  </div>
+                  <div class="flex flex-grow items-center">
+                    <span class="mr-2 flex-shrink-0">:</span>
+                    <span>UbUxzXGOw4wXlFM</span>
+                  </div>
+                </li>
+                <li class="flex items-center">
+                  <div class="w-32 flex-shrink-0">
+                    <strong>Credential URL</strong>
+                  </div>
+                  <div class="flex flex-grow items-center">
+                    <span class="mr-2 flex-shrink-0">:</span>
+                    <a
+                      href="https://sertifikat.pacmann.ai/UbUxzXGOw4wXlFM"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-soft-violet hover:text-lavender-love"
+                    >
+                      View Credential
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="lightbox"
+        class="fixed inset-0 z-50 hidden items-center justify-center bg-off-white bg-opacity-75 dark:bg-night"
+      >
+        <img
+          id="lightboxImage"
+          class="max-h-screen-md max-w-screen-md rounded-2xl"
+        />
+      </div>
+    </section>
+    <!-- Awards Section End -->
+    <!-- Footer Start -->
+    <footer class="bg-soft-cloud pt-20 dark:bg-charcoal">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div
+            class="flex w-full flex-col items-center justify-between border-soft-violet px-4 text-center font-montserrat text-night dark:text-off-white md:w-1/2 md:items-start md:border-r md:text-left"
+          >
+            <div class="flex items-center justify-between">
+              <a href="#home" class="hover:soft-violet flex items-center">
+                <!-- Logo -->
+                <img
+                  src="dist/assets/images/navbar/HR Logo.png"
+                  alt="Hardefa Rogonondo's Logo"
+                  class="w-10"
+                />
+                <p class="text-color ml-4">
+                  <span class="font-bold">Hardefa</span>
+                  <span class="font-normal">Rogonondo</span>
+                </p>
+              </a>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold">Get in Touch!</h3>
+              <p class="mt-2 text-base">
+                For business inquiry, kindly send email to
+              </p>
+              <a
+                href="mailto:hardefarogonondo@gmail.com"
+                class="text-base text-soft-violet transition duration-300 hover:text-lavender-love"
+              >
+                hardefarogonondo@gmail.com
+              </a>
+            </div>
+            <div class="flex items-center justify-center">
+              <!-- LinkedIn -->
+              <a
+                href="https://www.linkedin.com/in/hardefa-rogonondo/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:bg-gradient-light dark:hover:bg-gradient-dark mr-4 flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>LinkedIn</title>
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+              </a>
+              <!-- GitHub -->
+              <a
+                href="https://github.com/hardefarogonondo"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:bg-gradient-light dark:hover:bg-gradient-dark mr-4 flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>GitHub</title>
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  />
+                </svg>
+              </a>
+              <!-- Medium -->
+              <a
+                href="https://medium.com/@hardefarogonondo"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:bg-gradient-light dark:hover:bg-gradient-dark mr-4 flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Medium</title>
+                  <path
+                    d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"
+                  />
+                </svg>
+              </a>
+              <!-- Instagram -->
+              <a
+                href="https://www.instagram.com/hardefarogonondo/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:bg-gradient-light dark:hover:bg-gradient-dark mr-4 flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Instagram</title>
+                  <path
+                    d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+                  />
+                </svg>
+              </a>
+              <!-- YouTube -->
+              <a
+                href="https://www.youtube.com/channel/UCEJgqE_JIv4VL0kySzMk4Vw"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            class="flex w-full flex-col items-center justify-between px-4 text-center font-montserrat text-night dark:text-off-white md:w-1/2 md:items-end md:text-right"
+          >
+            <h3 class="text-2xl font-bold">Links</h3>
+            <ul class="mt-2 space-y-2">
+              <li>
+                <a
+                  href="index.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hover:text-soft-violet"
+                  >Home</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="mt-4 w-full border-t border-soft-violet px-4 py-4 text-center font-montserrat text-xs text-charcoal dark:text-soft-cloud"
+        >
+          <p>
+            Copyright &copy; 2024
+            <a
+              href="https://www.linkedin.com/in/hardefa-rogonondo/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="font-bold text-soft-violet transition duration-300 hover:text-lavender-love"
+              >Hardefa Rogonondo</a
+            >. All rights reserved.
+          </p>
+          <p>
+            Made with ☕ &
+            <a
+              href="https://tailwindcss.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="font-bold text-soft-violet transition duration-300 hover:text-lavender-love"
+              >Tailwind CSS</a
+            >
+          </p>
+          <p>
+            I stand with Palestine
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Palestine.svg"
+              alt="Palestine Flag"
+              class="inline-block h-4 w-4"
+            />
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- Back to Top Button Start -->
+    <a
+      id="to-top-button"
+      href="#home"
+      class="fixed bottom-4 right-4 z-[999] hidden h-14 w-14 items-center justify-center rounded-full bg-sky-light p-4 hover:animate-pulse"
+    >
+      <span
+        class="mt-3 block h-5 w-5 rotate-45 border-l-2 border-t-2 border-lavender-love"
+      ></span
+    ></a>
+    <!-- Back to Top Button End -->
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>
