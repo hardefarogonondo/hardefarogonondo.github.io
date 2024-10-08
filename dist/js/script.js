@@ -24,15 +24,17 @@ function initTheme() {
 // Navbar Behavior
 function handleNavbarBehavior() {
     const header = document.querySelector("header");
-    const fixedNav = header ? header.offsetTop : null;
-    const toTop = document.querySelector("#to-top-button");
-    if (header && toTop) {
-        window.onscroll = function () {
-            const isScrolled = window.scrollY > fixedNav;
-            header.classList.toggle("navbar-fixed", isScrolled);
-            toTop.classList.toggle("hidden", !isScrolled);
-            toTop.classList.toggle("flex", isScrolled);
-        };
+    if (header) {
+        const fixedNav = header.offsetTop;
+        const toTop = document.querySelector("#to-top-button");
+        if (toTop) {
+            window.onscroll = function () {
+                const isScrolled = window.scrollY > fixedNav;
+                header.classList.toggle("navbar-fixed", isScrolled);
+                toTop.classList.toggle("hidden", !isScrolled);
+                toTop.classList.toggle("flex", isScrolled);
+            };
+        }
     }
 }
 
@@ -186,9 +188,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Send Emails
-(function () {
-    emailjs.init("PvHudeERdkidaP5VH");
-})();
+if (typeof emailjs !== "undefined") {
+    (function () {
+        emailjs.init("PvHudeERdkidaP5VH");
+    })();
+}
 function sendEmail(event) {
     event.preventDefault();
     const name = document.getElementById("name")?.value;
