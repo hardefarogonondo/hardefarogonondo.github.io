@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["index.html"],
+  content: ["index.html", "awards.html"],
   darkMode: "class",
   theme: {
     container: {
@@ -17,7 +17,7 @@ module.exports = {
         "charcoal": "#212121",
         "sky-light": "#C5D1F5",
         "mint-green": "#98FF98",
-        "soft-teal": "#A4D3EE"
+        "cornflower-blue": "#6495ED"
       },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],

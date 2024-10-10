@@ -49,7 +49,7 @@ a.hover\:soft-violet:hover .text-color {
     -webkit-text-fill-color: transparent;
 }
 
-.active {
+.button-active {
     opacity: 0.75;
     transform: scale(0.975);
 }

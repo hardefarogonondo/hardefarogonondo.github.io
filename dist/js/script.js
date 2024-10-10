@@ -161,7 +161,7 @@ if (workEntries.length > 0) {
         buttons.forEach((button, index) => {
             button.addEventListener("click", function () {
                 lists[index].classList.toggle("hidden");
-                button.classList.toggle("active");
+                button.classList.toggle("button-active");
             });
         });
     });
@@ -213,3 +213,62 @@ function sendEmail(event) {
             });
     }
 }
+
+// Awards Carousel
+let slideInterval;
+function prevSlide(button) {
+    clearInterval(slideInterval);
+    const carousel = button.parentElement.querySelector(".carousel");
+    const items = carousel.querySelectorAll(".carousel-item");
+    const currentIndex = Array.from(items).findIndex((item) => item.classList.contains("carousel-active"));
+    const nextIndex = (currentIndex - 1 + items.length) % items.length;
+    updateSlidePosition(items, nextIndex);
+    startAutoSlide();
+}
+function nextSlide(button) {
+    clearInterval(slideInterval);
+    const carousel = button.parentElement.querySelector(".carousel");
+    const items = carousel.querySelectorAll(".carousel-item");
+    const currentIndex = Array.from(items).findIndex((item) => item.classList.contains("carousel-active"));
+    const nextIndex = (currentIndex + 1) % items.length;
+    updateSlidePosition(items, nextIndex);
+    startAutoSlide();
+}
+function updateSlidePosition(items, newIndex) {
+    items.forEach((item, index) => {
+        if (index === newIndex) {
+            item.classList.add("carousel-active");
+            item.classList.remove("hidden");
+        } else {
+            item.classList.remove("carousel-active");
+            item.classList.add("hidden");
+        }
+    });
+}
+function startAutoSlide() {
+    clearInterval(slideInterval);
+    const carousels = document.querySelectorAll(".carousel");
+    let index = 0;
+    slideInterval = setInterval(() => {
+        index++;
+        carousels.forEach((carousel) => {
+            const items = carousel.querySelectorAll(".carousel-item");
+            updateSlidePosition(items, index % items.length);
+        });
+    }, 3000); // Delay before change slide
+}
+document.addEventListener("DOMContentLoaded", () => {
+    const carousels = document.querySelectorAll(".carousel");
+    carousels.forEach((carousel) => {
+        const items = carousel.querySelectorAll(".carousel-item");
+        items.forEach((item, index) => {
+            if (index === 0) {
+                item.classList.add("carousel-active");
+                item.classList.remove("hidden");
+            } else {
+                item.classList.add("hidden");
+            }
+        });
+    });
+    startAutoSlide();
+});
