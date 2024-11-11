@@ -991,6 +991,10 @@ video {
   scroll-behavior: smooth;
 }
 
+.break-words {
+  overflow-wrap: break-word;
+}
+
 .break-all {
   word-break: break-all;
 }
