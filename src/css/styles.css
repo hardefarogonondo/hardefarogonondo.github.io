@@ -3,73 +3,73 @@
 @tailwind utilities;
 
 body {
-    font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .navbar-fixed {
-    @apply fixed z-[9999] bg-off-white bg-opacity-50 backdrop-blur-sm dark:bg-night dark:bg-opacity-50;
+  @apply fixed z-[9999] bg-off-white bg-opacity-50 backdrop-blur-sm dark:bg-night dark:bg-opacity-50;
 }
 
 a.hover\:soft-violet:hover .text-color {
-    color: #9A84E8;
+  color: #9a84e8;
 }
 
 .hamburger-line {
-    @apply my-2 block h-[2px] w-[30px];
-    background: linear-gradient(to right, #9A84E8, #BA6AE3);
+  @apply my-2 block h-[2px] w-[30px];
+  background: linear-gradient(to right, #9a84e8, #ba6ae3);
 }
 
 .hamburger-active > span:nth-child(1) {
-    @apply -rotate-45;
+  @apply -rotate-45;
 }
 
 .hamburger-active > span:nth-child(2) {
-    @apply scale-0;
+  @apply scale-0;
 }
 
 .hamburger-active > span:nth-child(3) {
-    @apply rotate-45;
+  @apply rotate-45;
 }
 
 .hover\:bg-gradient-light:hover {
-    background-image: linear-gradient(to right, #9A84E8, #BA6AE3);
-    color: #F9FBFD;
+  background-image: linear-gradient(to right, #9a84e8, #ba6ae3);
+  color: #f9fbfd;
 }
 
 .dark .dark\:hover\:bg-gradient-dark:hover {
-    background-image: linear-gradient(to right, #9A84E8, #BA6AE3);
-    color: #171717;
+  background-image: linear-gradient(to right, #9a84e8, #ba6ae3);
+  color: #171717;
 }
 
 .gradient-text {
-    background: linear-gradient(to right, #9A84E8, #BA6AE3);
-    background-clip: text;
-    color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(to right, #9a84e8, #ba6ae3);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .button-active {
-    opacity: 0.75;
-    transform: scale(0.975);
+  opacity: 0.75;
+  transform: scale(0.975);
 }
 
 @media (max-width: 415px) {
-    .custom-box {
-      width: 3rem;
-      height: 3rem;
-      border-radius: 0.75rem;
-    }
-    .custom-img {
-      width: 2.5rem;
-      height: 2.5rem;
-    }
+  .custom-box {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+  }
+  .custom-img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
 
 @media (max-width: 368px) {
-    .custom-box {
-      display: none;
-    }
+  .custom-box {
+    display: none;
+  }
 }
 
 /* * {

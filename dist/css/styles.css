@@ -667,6 +667,11 @@ video {
   margin-right: auto;
 }
 
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -1362,7 +1367,7 @@ body {
 }
 
 a.hover\:soft-violet:hover .text-color {
-  color: #9A84E8;
+  color: #9a84e8;
 }
 
 .hamburger-line {
@@ -1371,7 +1376,7 @@ a.hover\:soft-violet:hover .text-color {
   display: block;
   height: 2px;
   width: 30px;
-  background: linear-gradient(to right, #9A84E8, #BA6AE3);
+  background: linear-gradient(to right, #9a84e8, #ba6ae3);
 }
 
 .hamburger-active > span:nth-child(1) {
@@ -1391,17 +1396,17 @@ a.hover\:soft-violet:hover .text-color {
 }
 
 .hover\:bg-gradient-light:hover {
-  background-image: linear-gradient(to right, #9A84E8, #BA6AE3);
-  color: #F9FBFD;
+  background-image: linear-gradient(to right, #9a84e8, #ba6ae3);
+  color: #f9fbfd;
 }
 
 .dark .dark\:hover\:bg-gradient-dark:hover {
-  background-image: linear-gradient(to right, #9A84E8, #BA6AE3);
+  background-image: linear-gradient(to right, #9a84e8, #ba6ae3);
   color: #171717;
 }
 
 .gradient-text {
-  background: linear-gradient(to right, #9A84E8, #BA6AE3);
+  background: linear-gradient(to right, #9a84e8, #ba6ae3);
   background-clip: text;
   color: transparent;
   -webkit-background-clip: text;
