@@ -4,15 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./src/css/styles.css -o ./dist/css/styles.css",
-    "dev": "tailwindcss -i ./src/css/styles.css -o ./dist/css/styles.css --watch"
+    "build": "npx @tailwindcss/cli -i ./src/css/styles.css -o ./dist/css/styles.css",
+    "dev": "npx @tailwindcss/cli -i ./src/css/styles.css -o ./dist/css/styles.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "prettier": "^3.2.5",
-    "prettier-plugin-tailwindcss": "^0.5.14",
-    "tailwindcss": "^3.4.1"
+    "prettier": "^3.2.5"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.17",
+    "tailwindcss": "^4.1.17"
   }
 }

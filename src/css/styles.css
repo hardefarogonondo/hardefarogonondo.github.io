@@ -1,48 +1,62 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-off-white: #F9FBFD;
+  --color-night: #171717;
+  --color-soft-violet: #9A84E8;
+  --color-lavender-love: #BA6AE3;
+  --color-soft-cloud: #F2F2F6;
+  --color-charcoal: #212121;
+  --color-sky-light: #C5D1F5;
+  --color-mint-green: #98FF98;
+  --color-cornflower-blue: #6495ED;
+  --font-montserrat: "Montserrat", sans-serif;
+  --breakpoint-lg-md: 1024px;
+  --breakpoint-2xl: 1320px;
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant xxs (@media (max-width: 359px));
+@custom-variant xs (@media (max-width: 639px));
 
 body {
   font-family: "Inter", sans-serif;
 }
 
 .navbar-fixed {
-  @apply fixed z-[9999] bg-off-white bg-opacity-50 backdrop-blur-sm dark:bg-night dark:bg-opacity-50;
+  @apply fixed z-[9999] bg-off-white/50 backdrop-blur-sm dark:bg-night/50;
 }
 
 a.hover\:soft-violet:hover .text-color {
-  color: #9a84e8;
+  color: var(--color-soft-violet);
 }
 
 .hamburger-line {
   @apply my-2 block h-[2px] w-[30px];
-  background: linear-gradient(to right, #9a84e8, #ba6ae3);
+  background: linear-gradient(to right, var(--color-soft-violet), var(--color-lavender-love));
 }
 
-.hamburger-active > span:nth-child(1) {
-  @apply -rotate-45;
-}
-
-.hamburger-active > span:nth-child(2) {
-  @apply scale-0;
-}
-
-.hamburger-active > span:nth-child(3) {
-  @apply rotate-45;
-}
+.hamburger-active > span:nth-child(1) { @apply -rotate-45; }
+.hamburger-active > span:nth-child(2) { @apply scale-0; }
+.hamburger-active > span:nth-child(3) { @apply rotate-45; }
 
 .hover\:bg-gradient-light:hover {
-  background-image: linear-gradient(to right, #9a84e8, #ba6ae3);
-  color: #f9fbfd;
+  background-image: linear-gradient(to right, var(--color-soft-violet), var(--color-lavender-love));
+  color: var(--color-off-white);
 }
 
 .dark .dark\:hover\:bg-gradient-dark:hover {
-  background-image: linear-gradient(to right, #9a84e8, #ba6ae3);
-  color: #171717;
+  background-image: linear-gradient(to right, var(--color-soft-violet), var(--color-lavender-love));
+  color: var(--color-night);
 }
 
 .gradient-text {
-  background: linear-gradient(to right, #9a84e8, #ba6ae3);
+  background: linear-gradient(to right, var(--color-soft-violet), var(--color-lavender-love));
   background-clip: text;
   color: transparent;
   -webkit-background-clip: text;
@@ -71,7 +85,3 @@ a.hover\:soft-violet:hover .text-color {
     display: none;
   }
 }
-
-/* * {
-    border: 1px solid red !important;
-} */
