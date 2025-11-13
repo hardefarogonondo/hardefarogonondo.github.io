@@ -232,6 +232,12 @@
   .bottom-4 {
     bottom: calc(var(--spacing) * 4);
   }
+  .-left-\[10px\] {
+    left: calc(10px * -1);
+  }
+  .-left-\[14px\] {
+    left: calc(14px * -1);
+  }
   .-left-\[18px\] {
     left: calc(18px * -1);
   }
