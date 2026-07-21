@@ -123,6 +123,9 @@ if (skillsSeeMoreButton) {
     isSkillsHidden = !isSkillsHidden;
     moreSkillsElements.forEach((elem) => {
       elem.classList.toggle("hidden", isSkillsHidden);
+      if (elem.classList.contains("medium-preview-skill")) {
+        elem.classList.toggle("xl:hidden", isSkillsHidden);
+      }
     });
     skillsSeeMoreButton.textContent = isSkillsHidden ? "See More" : "See Less";
   });

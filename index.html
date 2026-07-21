@@ -1,61 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hardefa Rogonondo | Data Science & AI Solutions Expert</title>
-    <link rel="stylesheet" href="dist/css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardefa Rogonondo | Data Science &amp; AI Solutions Expert</title>
+    <link rel="stylesheet" href="dist/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap"
-    />
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap">
     <!-- Logo -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="dist/assets/images/favicon/apple-touch-icon.png"
-    />
+      href="dist/assets/images/favicon/apple-touch-icon.png">
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="dist/assets/images/favicon/favicon-32x32.png"
-    />
+      href="dist/assets/images/favicon/favicon-32x32.png">
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="dist/assets/images/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="dist/assets/images/favicon/site.webmanifest" />
+      href="dist/assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="dist/assets/images/favicon/site.webmanifest">
     <link
       rel="mask-icon"
       href="dist/assets/images/favicon/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
+      color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
     <!-- Header Section Start -->
     <header
-      class="absolute flex w-full items-center justify-between bg-transparent"
+      class="absolute z-[9999] flex w-full items-center justify-between bg-transparent"
     >
       <div class="container">
         <div class="relative flex items-center justify-between">
           <div class="px-4">
             <div class="flex items-center justify-between">
-              <a href="#home" class="hover:soft-violet flex items-center">
+              <a href="#home" class="flex items-center">
                 <!-- Logo -->
                 <img
                   src="dist/assets/images/navbar/HR Logo.png"
                   alt="Hardefa Rogonondo's Logo"
-                  class="w-10 py-4"
-                />
+                  class="my-3 h-11 w-11 rounded-full border border-mist bg-white p-1.5 shadow-sm dark:border-white/10 dark:bg-white/90">
                 <p
-                  class="text-color ml-4 font-montserrat text-night dark:text-off-white"
+                  class="ml-4 font-montserrat text-sm text-ink dark:text-frost md:text-base"
                 >
                   <span class="font-bold">Hardefa</span>
                   <span class="font-normal">Rogonondo</span>
@@ -63,11 +57,99 @@
               </a>
             </div>
           </div>
-          <div class="z-50 flex items-center justify-between px-4">
+          <div class="z-[10000] flex items-center justify-between px-4">
+            <nav
+              id="nav-menu"
+              class="absolute right-4 top-full hidden w-full max-w-72 rounded-3xl border border-mist bg-frost/95 py-4 shadow-xl shadow-slate-900/10 backdrop-blur-xl dark:border-white/10 dark:bg-graphite/95 xl:static xl:block xl:max-w-full xl:rounded-none xl:border-0 xl:bg-transparent xl:py-0 xl:shadow-none xl:backdrop-blur-none xl:dark:bg-transparent"
+            >
+              <ul class="block items-center xl:flex">
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="nav-link"
+                    >About</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#skills"
+                    class="nav-link"
+                    >Skills</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#journey"
+                    class="nav-link"
+                    >Journey</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#awards"
+                    class="nav-link"
+                    >Awards</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#projects"
+                    class="nav-link"
+                    >Projects</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#clients"
+                    class="nav-link"
+                    >Clients</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#contacts"
+                    class="nav-link"
+                    >Contacts</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <button
+              id="theme-toggle-button"
+              type="button"
+              aria-label="Toggle color theme"
+              class="icon-button z-50 mr-14 xl:ml-3 xl:mr-0"
+            >
+              <svg
+                id="theme-toggle-button-dark-icon"
+                class="h-5 w-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                ></path>
+              </svg>
+              <svg
+                id="theme-toggle-button-light-icon"
+                class="h-5 w-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
             <button
               id="hamburger"
               name="hamburger"
               type="button"
+              aria-label="Open navigation menu"
               class="absolute right-4 block xl:hidden"
             >
               <span
@@ -80,203 +162,84 @@
                 class="hamburger-line origin-bottom-right transition duration-300 ease-in-out"
               ></span>
             </button>
-            <nav
-              id="nav-menu"
-              class="absolute right-4 top-full hidden w-full max-w-64 rounded-b-3xl bg-off-white py-4 shadow-sm shadow-night dark:bg-night dark:shadow-soft-cloud xl:static xl:block xl:max-w-full xl:rounded-none xl:bg-transparent xl:shadow-none xl:dark:bg-transparent"
-            >
-              <ul class="block items-center xl:flex">
-                <li class="group">
-                  <a
-                    href="#about"
-                    class="mx-8 flex py-2 font-montserrat text-base text-night group-hover:text-soft-violet dark:text-off-white"
-                    >About</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#skills"
-                    class="mx-8 flex py-2 font-montserrat text-base text-night group-hover:text-soft-violet dark:text-off-white"
-                    >Skills</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#journey"
-                    class="mx-8 flex py-2 font-montserrat text-base text-night group-hover:text-soft-violet dark:text-off-white"
-                    >Journey</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#awards"
-                    class="mx-8 flex py-2 font-montserrat text-base text-night group-hover:text-soft-violet dark:text-off-white"
-                    >Awards</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#projects"
-                    class="mx-8 flex py-2 font-montserrat text-base text-night group-hover:text-soft-violet dark:text-off-white"
-                    >Projects</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#clients"
-                    class="mx-8 flex py-2 font-montserrat text-base text-night group-hover:text-soft-violet dark:text-off-white"
-                    >Clients</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#contacts"
-                    class="mx-8 flex py-2 font-montserrat text-base text-night group-hover:text-soft-violet dark:text-off-white"
-                    >Contacts</a
-                  >
-                </li>
-                <li class="flex items-center pl-8">
-                  <div class="flex">
-                    <button
-                      id="theme-toggle-button"
-                      type="button"
-                      class="hover:bg-gradient-light dark:hover:bg-gradient-dark z-50 rounded-xl p-2.5 text-night dark:text-off-white"
-                    >
-                      <svg
-                        id="theme-toggle-button-dark-icon"
-                        class="h-5 w-5"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-                        ></path>
-                      </svg>
-                      <svg
-                        id="theme-toggle-button-light-icon"
-                        class="h-5 w-5"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                    </button>
-                  </div>
-                </li>
-              </ul>
-            </nav>
           </div>
         </div>
       </div>
     </header>
     <!-- Header Section End -->
     <!-- Hero Section Start -->
-    <section id="home" class="bg-off-white pb-20 pt-40 dark:bg-night">
+    <section
+      id="home"
+      class="relative overflow-hidden bg-slate-100 pb-20 pt-32 dark:bg-graphite md:pt-40"
+    >
       <div class="container">
-        <div class="flex flex-wrap">
+        <div class="flex flex-wrap items-center gap-y-12">
           <div class="my-auto w-full px-4 lg:w-1/2">
-            <p
-              class="font-montserrat text-base text-night dark:text-off-white md:text-xl"
-            >
-              👋🏻 Hey, welcome to my personal website! I'm
-            </p>
+            <p class="section-kicker">AI, Data &amp; Robotics</p>
             <h1
-              class="gradient-text block pb-1 font-montserrat text-4xl font-bold lg:text-5xl"
+              class="mb-3 font-montserrat text-5xl font-bold leading-tight text-graphite dark:text-frost lg:text-7xl"
             >
               Hardefa Rogonondo
             </h1>
             <h2
-              class="font-montserrat text-lg font-semibold text-night dark:text-off-white lg:text-2xl"
+              class="font-montserrat text-2xl font-semibold text-ink dark:text-frost lg:text-4xl"
             >
-              Data Scientist
-              <span class="text-soft-violet">|</span>
-              <span class="typing"></span>
+              <span>Data Scientist</span>
+              <span
+                class="mt-2 block min-h-[1.25em] text-xl md:text-2xl lg:text-3xl"
+              >
+                <span class="text-cyan-tech">|</span>
+                <span class="typing gradient-text"></span>
+              </span>
             </h2>
             <h3
-              class="my-4 font-montserrat text-base text-night dark:text-off-white md:text-xl"
+              class="my-5 font-montserrat text-base font-medium text-slate-600 dark:text-slate-300 md:text-xl"
             >
-              Currently an AI & Data Engineer at
+              Currently a Senior Data Scientist at
               <a
-                href="https://shipper.id/"
+                href="https://venturesea.co/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="text-soft-violet hover:font-medium hover:text-lavender-love"
-                >Shipper</a
+                class="font-semibold text-blue-tech hover:text-cyan-tech dark:text-cyan-tech"
+                >VentureSEA Consulting</a
               >
             </h3>
             <p
-              class="font-montserrat text-lg font-medium text-night dark:text-off-white lg:text-2xl"
+              class="max-w-2xl font-montserrat text-lg leading-8 text-slate-600 dark:text-slate-300 lg:text-xl"
             >
               Elevate your business with
-              <span class="font-semibold text-lavender-love"
+              <span class="font-semibold text-blue-tech dark:text-cyan-tech"
                 >data-driven strategies</span
               >
               and
-              <span class="font-semibold text-soft-violet"
+              <span class="font-semibold text-blue-tech dark:text-cyan-tech"
                 >AI-enhanced solutions</span
               >
             </p>
-            <div class="mt-4 flex flex-wrap gap-4 sm:mb-4 xs:mb-4 lg-md:mb-0">
-              <a
-                href="#contacts"
-                class="rounded-2xl bg-gradient-to-r from-lavender-love to-soft-violet px-8 py-4 font-montserrat text-base font-semibold text-off-white transition duration-300 ease-in-out hover:opacity-75"
-              >
-                Let's Talk
-              </a>
+            <div class="mt-8 flex flex-wrap gap-3 sm:mb-4 xs:mb-4 lg-md:mb-0">
               <a
                 href="https://drive.google.com/file/d/1gR1WhUyRD16uoqm0hwt_p-RCEMaf8SS4/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="rounded-2xl bg-gradient-to-r from-lavender-love to-soft-violet px-8 py-4 font-montserrat text-base font-semibold text-off-white transition duration-300 ease-in-out hover:opacity-75"
+                class="btn-primary"
               >
-                Download My Resume
+                Download Resume
               </a>
+              <a href="#contacts" class="btn-secondary">Let's Talk</a>
+              <a href="#projects" class="btn-secondary">Explore Work</a>
+            </div>
+            <div class="mt-6">
+              <span class="status-pill">Portfolio refresh in progress</span>
             </div>
           </div>
           <div class="w-full lg:w-1/2">
-            <div class="relative">
+            <div class="relative min-h-[430px]">
+              <div class="hero-orbit"></div>
               <!-- TODO: Change Picture Later -->
               <img
                 src="dist/assets/images/hero/hero.png"
                 alt="Hardefa Rogonondo"
-                class="relative z-10 mx-auto max-w-full"
-              />
-              <span
-                class="absolute bottom-0 left-1/2 -translate-x-1/2 sm:scale-100 md:scale-125 xxs:hidden xs:scale-75"
-              >
-                <!-- TODO: Change SVG Later and Center the SVG with Picture -->
-                <svg
-                  width="400"
-                  height="400"
-                  viewBox="0 0 200 200"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <defs>
-                    <linearGradient
-                      id="blob-gradient"
-                      x1="0%"
-                      y1="0%"
-                      x2="100%"
-                      y2="100%"
-                    >
-                      <stop offset="0%" style="stop-color: #ffffff" />
-                      <stop offset="20%" style="stop-color: #dcbced" />
-                      <stop offset="50%" style="stop-color: #9a84e8" />
-                      <stop offset="100%" style="stop-color: #ba6ae3" />
-                    </linearGradient>
-                  </defs>
-                  <path
-                    fill="url(#blob-gradient)"
-                    d="M32.6,-53.8C42.1,-50.9,49.7,-42,52,-32C54.2,-22.1,51.2,-11,55.7,2.6C60.3,16.3,72.5,32.6,69.5,41.4C66.6,50.3,48.6,51.6,34.5,58.7C20.4,65.7,10.2,78.3,0,78.3C-10.1,78.2,-20.3,65.5,-31.2,56.6C-42.2,47.8,-53.9,42.9,-64.7,34.1C-75.5,25.3,-85.2,12.6,-80.4,2.8C-75.5,-7,-56.1,-14.1,-46.9,-25.6C-37.7,-37.1,-38.8,-53.2,-32.7,-58C-26.6,-62.9,-13.3,-56.5,-0.9,-55C11.5,-53.4,23,-56.7,32.6,-53.8Z"
-                    transform="translate(100 100)"
-                  />
-                </svg>
-              </span>
+                class="relative z-10 mx-auto max-h-[520px] max-w-full object-contain">
             </div>
           </div>
         </div>
@@ -284,17 +247,18 @@
     </section>
     <!-- Hero Section End -->
     <!-- About Section Start -->
-    <section id="about" class="bg-off-white pb-20 pt-20 dark:bg-night">
+    <section id="about" class="bg-slate-50 pb-24 pt-24 dark:bg-graphite">
       <div class="container">
-        <div class="flex flex-wrap">
+        <div class="flex flex-wrap items-start gap-y-10">
           <div class="w-full px-4 lg:w-1/2">
+            <p class="section-kicker">About</p>
             <h2
-              class="gradient-text mb-8 max-w-md font-montserrat text-3xl font-bold lg:text-4xl"
+              class="section-title mb-8 max-w-md"
             >
-              About Me
+              Building data products where AI meets operational reality.
             </h2>
             <p
-              class="max-w-xl font-montserrat text-base text-night dark:text-off-white lg:text-lg"
+              class="section-copy max-w-xl"
             >
               AI Engineer and Data Scientist with nearly 5 years of experience
               in fintech and digital logistics. Initially specializing in
@@ -307,24 +271,25 @@
             </p>
           </div>
           <div class="my-auto w-full px-4 lg:w-1/2">
+            <div class="surface-card p-8">
             <h3
-              class="mb-4 font-montserrat text-2xl font-semibold text-night dark:text-off-white sm:mt-4 lg:text-3xl xs:mt-4 lg-md:mt-0"
+              class="mb-4 font-montserrat text-2xl font-semibold text-graphite dark:text-frost lg:text-3xl"
             >
               Connect with Me
             </h3>
             <p
-              class="mb-4 font-montserrat text-base text-night dark:text-off-white lg:text-lg"
+              class="mb-6 font-montserrat text-base leading-7 text-slate-600 dark:text-slate-300 lg:text-lg"
             >
-              Got a project or idea you’re excited about? Let’s talk over coffee
+              Got a project or idea you're excited about? Let's talk over coffee
               and see what we can create together.
             </p>
-            <div class="flex items-center">
+            <div class="flex flex-wrap items-center">
               <!-- LinkedIn -->
               <a
                 href="https://www.linkedin.com/in/hardefa-rogonondo/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark mr-4 flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+                class="social-link"
               >
                 <svg
                   role="img"
@@ -344,7 +309,7 @@
                 href="https://github.com/hardefarogonondo"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark mr-4 flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+                class="social-link"
               >
                 <svg
                   role="img"
@@ -364,7 +329,7 @@
                 href="https://medium.com/@hardefarogonondo"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark mr-4 flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+                class="social-link"
               >
                 <svg
                   role="img"
@@ -384,7 +349,7 @@
                 href="https://www.instagram.com/hardefarogonondo/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark mr-4 flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+                class="social-link"
               >
                 <svg
                   role="img"
@@ -404,7 +369,7 @@
                 href="https://www.youtube.com/channel/UCEJgqE_JIv4VL0kySzMk4Vw"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+                class="social-link mr-0"
               >
                 <svg
                   role="img"
@@ -423,31 +388,37 @@
           </div>
         </div>
       </div>
+      </div>
     </section>
     <!-- About Section End -->
     <!-- Skills Section Start -->
-    <section id="skills" class="bg-soft-cloud pb-20 pt-20 dark:bg-charcoal">
+    <section id="skills" class="bg-white pb-24 pt-24 dark:bg-slate-950">
       <div class="container">
+        <p class="section-kicker text-center">Capabilities</p>
         <h2
-          class="gradient-text mb-8 text-center font-montserrat text-3xl font-bold lg:text-4xl"
+          class="section-title mb-4 text-center"
         >
           Skills
         </h2>
-        <div class="flex flex-wrap justify-center gap-4 px-4 md:gap-8">
+        <p class="section-copy mx-auto mb-10 max-w-3xl text-center">
+          A practical stack for building, deploying, and explaining intelligent
+          data products.
+        </p>
+        <div class="grid gap-5 px-4 md:grid-cols-2 xl:grid-cols-3">
           <!-- Programming Languages -->
-          <div class="text-center">
+          <div class="surface-card surface-card-hover p-6 text-left">
             <h3
-              class="mb-4 font-montserrat text-2xl font-semibold text-night dark:text-off-white lg:text-3xl"
+              class="mb-5 font-montserrat text-lg font-bold text-graphite dark:text-frost"
             >
               Programming Languages
             </h3>
-            <div class="flex flex-wrap justify-center gap-4">
+            <div class="flex flex-wrap gap-3">
               <!-- Python -->
               <a
                 href="https://www.python.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -467,7 +438,7 @@
                 href="https://www.postgresql.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -487,7 +458,7 @@
                 href="https://www.gnu.org/software/bash/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -507,7 +478,7 @@
                 href="https://isocpp.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -524,7 +495,7 @@
               </a>
               <!-- HTML -->
               <div
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -541,7 +512,7 @@
               </div>
               <!-- CSS -->
               <div
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -558,7 +529,7 @@
               </div>
               <!-- JavaScript -->
               <div
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -576,19 +547,19 @@
             </div>
           </div>
           <!-- Data Science Libraries -->
-          <div class="text-center">
+          <div class="surface-card surface-card-hover p-6 text-left">
             <h3
-              class="mb-4 font-montserrat text-2xl font-semibold text-night dark:text-off-white lg:text-3xl"
+              class="mb-5 font-montserrat text-lg font-bold text-graphite dark:text-frost"
             >
               Data Science Libraries
             </h3>
-            <div class="flex flex-wrap justify-center gap-4">
+            <div class="flex flex-wrap gap-3">
               <!-- NumPy -->
               <a
                 href="https://numpy.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -608,7 +579,7 @@
                 href="https://pandas.pydata.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -628,7 +599,7 @@
                 href="https://pola.rs/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -648,7 +619,7 @@
                 href="https://scipy.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -668,7 +639,7 @@
                 href="https://plotly.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -688,7 +659,7 @@
                 href="https://scikit-learn.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -708,7 +679,7 @@
                 href="https://www.tensorflow.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -728,7 +699,7 @@
                 href="https://keras.io/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -748,7 +719,7 @@
                 href="https://pytorch.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -768,7 +739,7 @@
                 href="https://opencv.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -788,7 +759,7 @@
                 href="https://huggingface.co/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -808,7 +779,7 @@
                 href="https://rasa.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -828,7 +799,7 @@
                 href="https://ai.google.dev/edge/mediapipe/solutions/guide"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -846,19 +817,19 @@
             </div>
           </div>
           <!-- Big Data Platforms -->
-          <div class="more-skills hidden text-center">
+          <div class="surface-card surface-card-hover p-6 text-left">
             <h3
-              class="mb-4 font-montserrat text-2xl font-semibold text-night dark:text-off-white lg:text-3xl"
+              class="mb-5 font-montserrat text-lg font-bold text-graphite dark:text-frost"
             >
               Big Data Platforms
             </h3>
-            <div class="flex flex-wrap justify-center gap-4">
+            <div class="flex flex-wrap gap-3">
               <!-- Apache Airflow -->
               <a
                 href="https://airflow.apache.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -878,7 +849,7 @@
                 href="https://www.databricks.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -898,7 +869,7 @@
                 href="https://cloud.google.com/bigquery"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -918,7 +889,7 @@
                 href="https://lookerstudio.google.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -936,19 +907,19 @@
             </div>
           </div>
           <!-- Databases -->
-          <div class="more-skills hidden text-center">
+          <div class="more-skills medium-preview-skill hidden surface-card surface-card-hover p-6 text-left md:block xl:hidden">
             <h3
-              class="mb-4 font-montserrat text-2xl font-semibold text-night dark:text-off-white lg:text-3xl"
+              class="mb-5 font-montserrat text-lg font-bold text-graphite dark:text-frost"
             >
               Databases
             </h3>
-            <div class="flex flex-wrap justify-center gap-4">
+            <div class="flex flex-wrap gap-3">
               <!-- PostgreSQL -->
               <a
                 href="https://www.postgresql.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -968,7 +939,7 @@
                 href="https://www.mongodb.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -986,19 +957,19 @@
             </div>
           </div>
           <!-- Cloud Platforms -->
-          <div class="more-skills hidden text-center">
+          <div class="more-skills hidden surface-card surface-card-hover p-6 text-left">
             <h3
-              class="mb-4 font-montserrat text-2xl font-semibold text-night dark:text-off-white lg:text-3xl"
+              class="mb-5 font-montserrat text-lg font-bold text-graphite dark:text-frost"
             >
               Cloud Platforms
             </h3>
-            <div class="flex flex-wrap justify-center gap-4">
+            <div class="flex flex-wrap gap-3">
               <!-- Google Cloud -->
               <a
                 href="https://cloud.google.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1018,7 +989,7 @@
                 href="https://aws.amazon.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1036,19 +1007,19 @@
             </div>
           </div>
           <!-- Web Frameworks -->
-          <div class="more-skills hidden text-center">
+          <div class="more-skills hidden surface-card surface-card-hover p-6 text-left">
             <h3
-              class="mb-4 font-montserrat text-2xl font-semibold text-night dark:text-off-white lg:text-3xl"
+              class="mb-5 font-montserrat text-lg font-bold text-graphite dark:text-frost"
             >
               Web Frameworks
             </h3>
-            <div class="flex flex-wrap justify-center gap-4">
+            <div class="flex flex-wrap gap-3">
               <!-- FastAPI -->
               <a
                 href="https://fastapi.tiangolo.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1068,7 +1039,7 @@
                 href="https://streamlit.io/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1088,7 +1059,7 @@
                 href="https://flask.palletsprojects.com/en/3.0.x/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1108,7 +1079,7 @@
                 href="https://tailwindcss.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1128,7 +1099,7 @@
                 href="https://scrapy.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1148,7 +1119,7 @@
                 href="https://www.selenium.dev/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1168,7 +1139,7 @@
                 href="https://codeigniter.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1186,19 +1157,19 @@
             </div>
           </div>
           <!-- Developer Tools -->
-          <div class="more-skills hidden text-center">
+          <div class="more-skills hidden surface-card surface-card-hover p-6 text-left">
             <h3
-              class="mb-4 font-montserrat text-2xl font-semibold text-night dark:text-off-white lg:text-3xl"
+              class="mb-5 font-montserrat text-lg font-bold text-graphite dark:text-frost"
             >
               Developer Tools
             </h3>
-            <div class="flex flex-wrap justify-center gap-4">
+            <div class="flex flex-wrap gap-3">
               <!-- Git -->
               <a
                 href="https://git-scm.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1218,7 +1189,7 @@
                 href="https://pypi.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1238,7 +1209,7 @@
                 href="https://pdm-project.org/en/latest/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1258,7 +1229,7 @@
                 href="https://docs.pytest.org/en/stable/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1278,7 +1249,7 @@
                 href="https://www.docker.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1298,7 +1269,7 @@
                 href="https://www.npmjs.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1318,7 +1289,7 @@
                 href="https://www.postman.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1338,7 +1309,7 @@
                 href="https://www.figma.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1358,7 +1329,7 @@
                 href="https://www.autodesk.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1378,7 +1349,7 @@
                 href="https://www.ros.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1396,19 +1367,19 @@
             </div>
           </div>
           <!-- Development Environments -->
-          <div class="more-skills hidden text-center">
+          <div class="more-skills hidden surface-card surface-card-hover p-6 text-left">
             <h3
-              class="mb-4 font-montserrat text-2xl font-semibold text-night dark:text-off-white lg:text-3xl"
+              class="mb-5 font-montserrat text-lg font-bold text-graphite dark:text-frost"
             >
               Development Environments
             </h3>
-            <div class="flex flex-wrap justify-center gap-4">
+            <div class="flex flex-wrap gap-3">
               <!-- Anaconda -->
               <a
                 href="https://www.anaconda.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1428,7 +1399,7 @@
                 href="https://jupyter.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1448,7 +1419,7 @@
                 href="https://code.visualstudio.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1468,7 +1439,7 @@
                 href="https://colab.research.google.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1488,7 +1459,7 @@
                 href="https://notepad-plus-plus.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1508,7 +1479,7 @@
                 href="https://www.arduino.cc/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1528,7 +1499,7 @@
                 href="https://www.codeblocks.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1549,7 +1520,7 @@
                 href="https://www.apachefriends.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1568,19 +1539,19 @@
             </div>
           </div>
           <!-- Operating Systems -->
-          <div class="more-skills hidden text-center">
+          <div class="more-skills hidden surface-card surface-card-hover p-6 text-left">
             <h3
-              class="mb-4 font-montserrat text-2xl font-semibold text-night dark:text-off-white lg:text-3xl"
+              class="mb-5 font-montserrat text-lg font-bold text-graphite dark:text-frost"
             >
               Operating Systems
             </h3>
-            <div class="flex flex-wrap justify-center gap-4">
+            <div class="flex flex-wrap gap-3">
               <!-- Windows -->
               <a
                 href="https://www.microsoft.com/en-us/windows"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1600,7 +1571,7 @@
                 href="https://ubuntu.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1620,7 +1591,7 @@
                 href="https://www.apple.com/os/macos/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1638,19 +1609,19 @@
             </div>
           </div>
           <!-- Collaboration Tools-->
-          <div class="more-skills hidden text-center">
+          <div class="more-skills hidden surface-card surface-card-hover p-6 text-left">
             <h3
-              class="mb-4 font-montserrat text-2xl font-semibold text-night dark:text-off-white lg:text-3xl"
+              class="mb-5 font-montserrat text-lg font-bold text-graphite dark:text-frost"
             >
               Collaboration Tools
             </h3>
-            <div class="flex flex-wrap justify-center gap-4">
+            <div class="flex flex-wrap gap-3">
               <!-- GitHub -->
               <a
                 href="https://github.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1670,7 +1641,7 @@
                 href="https://www.notion.so/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1690,7 +1661,7 @@
                 href="https://miro.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1710,7 +1681,7 @@
                 href="https://www.atlassian.com/software/jira"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1730,7 +1701,7 @@
                 href="https://www.atlassian.com/software/confluence"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1750,7 +1721,7 @@
                 href="https://www.atlassian.com/software/bitbucket"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1770,7 +1741,7 @@
                 href="https://www.metabase.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1790,7 +1761,7 @@
                 href="https://trello.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex items-center rounded-full bg-sky-light px-4 py-2 font-montserrat text-base dark:bg-night dark:text-off-white"
+                class="skill-chip"
               >
                 <svg
                   role="img"
@@ -1811,7 +1782,8 @@
         <div class="mt-12 text-center">
           <button
             id="skills-see-more-button"
-            class="rounded-2xl bg-gradient-to-r from-lavender-love to-soft-violet px-4 py-2 font-montserrat text-base font-semibold text-off-white transition duration-300 ease-in-out hover:opacity-75"
+            type="button"
+            class="btn-primary"
           >
             See More
           </button>
@@ -1820,24 +1792,27 @@
     </section>
     <!-- Skills Section End -->
     <!-- Journey Section Start -->
-    <section id="journey" class="bg-off-white pb-20 pt-20 dark:bg-night">
+    <section id="journey" class="bg-slate-50 pb-24 pt-24 dark:bg-graphite">
       <div class="container">
-        <h2
-          class="gradient-text mb-8 text-center font-montserrat text-3xl font-bold lg:text-4xl"
-        >
+        <p class="section-kicker text-center">Career Timeline</p>
+        <h2 class="section-title mb-4 text-center">
           Journey
         </h2>
+        <p class="section-copy mx-auto mb-10 max-w-3xl text-center">
+          A timeline of roles, education, and applied engineering work across
+          data science, AI systems, and robotics.
+        </p>
         <!-- Professional Experience Subsection -->
         <div class="mb-12 px-4">
           <h3
-            class="mb-4 text-center font-montserrat text-2xl font-semibold text-night dark:text-off-white lg:text-3xl"
+            class="mb-6 text-center font-montserrat text-2xl font-semibold text-graphite dark:text-frost lg:text-3xl"
           >
             Professional Experience
           </h3>
-          <!-- PT Shippindo Teknologi Logistik -->
-          <div class="relative flex items-start border-l-4 border-soft-violet">
+                    <!-- PT Shippindo Teknologi Logistik -->
+          <div class="relative flex items-start border-l-[3px] border-cyan-tech/70 pt-4">
             <div
-              class="absolute -left-[18px] h-8 w-8 rounded-full border-8 border-soft-violet bg-off-white dark:bg-night"
+              class="absolute -left-[10.5px] h-6 w-6 rounded-full border-4 border-cyan-tech bg-slate-50 shadow-lg shadow-cyan-tech/20 dark:bg-graphite"
             ></div>
             <div
               class="custom-box ml-6 mr-4 flex h-24 w-24 items-center justify-center rounded-2xl bg-white shadow"
@@ -1850,27 +1825,314 @@
                 <img
                   src="dist/assets/images/journey/professional_experience/shipper.svg"
                   alt="PT Shippindo Teknologi Logistik"
-                  class="custom-img h-20 w-20 object-contain"
-                />
+                  class="custom-img h-20 w-20 object-contain">
               </a>
             </div>
             <div
-              class="flex-1 rounded-2xl bg-white p-4 shadow dark:bg-charcoal"
+              class="surface-card surface-card-hover flex-1 p-6"
             >
               <h4
-                class="font-montserrat text-xl font-semibold text-night dark:text-off-white"
+                class="font-montserrat text-xl font-semibold text-graphite dark:text-frost"
               >
-                Artificial Intelligence and Data Engineer
+                Senior Data Scientist
               </h4>
               <div
-                class="flex items-center font-montserrat text-base text-night dark:text-off-white"
+                class="flex items-center font-montserrat text-base text-slate-600 dark:text-slate-300"
               >
                 <h5 class="text-lg font-semibold">
                   <a
                     href="https://shipper.id/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="text-soft-violet hover:text-lavender-love"
+                    class="text-accent-link"
+                    >VentureSEA Consulting</a
+                  >
+                </h5>
+                <span class="mx-2">·</span>
+                <p>Full-Time</p>
+              </div>
+              <p
+                class="font-montserrat text-base text-night dark:text-off-white"
+              >
+                April 2026 - Present
+                <span class="mx-2">·</span>
+                <span
+                  class="expDuration"
+                  data-start="2026-04-06"
+                  data-end=""
+                ></span>
+              </p>
+              <div
+                class="mb-2 flex items-center font-montserrat text-base text-night dark:text-off-white"
+              >
+                <p>Singapore</p>
+                <span class="mx-2">·</span>
+                <p>Remote</p>
+              </div>
+              <p
+                class="mb-2 font-montserrat text-base text-night dark:text-off-white"
+              >
+                <a
+                  href="https://shipper.id/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-accent-link"
+                  >VentureSEA</a
+                >
+                -
+              </p>
+              <div class="work-entry">
+                <div
+                  class="flex flex-wrap gap-2 font-montserrat text-base font-semibold text-off-white"
+                >
+                  <button
+                    type="button"
+                    class="toggle-button btn-secondary px-4 py-2 xs:py-1 xs:font-medium"
+                  >
+                    Key Achievements
+                  </button>
+                  <button
+                    type="button"
+                    class="toggle-button btn-secondary px-4 py-2 xs:py-1 xs:font-medium"
+                  >
+                    Key Responsibilities
+                  </button>
+                </div>
+                <div
+                  class="lists pl-6 font-montserrat text-base text-night dark:text-off-white"
+                >
+                  <ul class="achievements mt-2 hidden list-disc">
+                    <li class="list-none"><h6 class="font-semibold">Key Achievements:</h6></li>
+                    <li>
+                      Pioneered the research and implementation of a
+                      <a
+                        href="https://www.nvidia.com/en-us/ai-data-science/ai-workflows/multi-camera-tracking/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-accent-link"
+                        >Multi-Camera Tracking</a
+                      >
+                      and
+                      <a
+                        href="https://www.nvidia.com/en-us/autonomous-machines/intelligent-video-analytics-platform/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-accent-link"
+                        >Occupancy Analytics</a
+                      >
+                      project as part of the
+                      <a
+                        href="https://developer.nvidia.com/metropolis"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-accent-link"
+                        >NVIDIA Metropolis</a
+                      >
+                      program, utilizing NVIDIA Jetson devices for edge
+                      computing to enable real-time analytics and enhance
+                      operational efficiency across warehouses.
+                    </li>
+                    <li>
+                      Led the AI project to translate insights from rich data
+                      and dashboards within
+                      <a
+                        href="https://lookerstudio.google.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-accent-link"
+                        >Google Looker Studio</a
+                      >, automating the extraction and generation of actionable
+                      insights to help the cross-functional team make
+                      data-driven decisions more efficiently.
+                    </li>
+                    <li>
+                      Engineered a new data pipeline to extract and process
+                      Point of Sale (POS) data from
+                      <a
+                        href="https://www.isellercommerce.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-accent-link"
+                        >a third-party partner</a
+                      >
+                      using bulk API extraction logic and web scraping
+                      techniques, providing the Business Intelligence team with
+                      critical data for market analysis.
+                    </li>
+                    <li>
+                      Enhanced data pipeline flexibility by parameterizing
+                      <a
+                        href="https://airflow.apache.org/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-accent-link"
+                        >Apache Airflow</a
+                      >
+                      DAGs, empowering non-technical teams to trigger custom
+                      data extractions independently and significantly reducing
+                      the data team's operational load.
+                    </li>
+                  </ul>
+                  <ul class="responsibilities mt-2 hidden list-disc">
+                    <li class="list-none"><h6 class="font-semibold">Key Responsibilities:</h6></li>
+                    <li>
+                      Maintain the company’s data pipeline using
+                      <a
+                        href="https://pdm-project.org/en/latest/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-accent-link"
+                        >PDM</a
+                      >
+                      for dependency management,
+                      <a
+                        href="https://www.docker.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-accent-link"
+                        >Docker</a
+                      >
+                      for containerization, and
+                      <a
+                        href="https://docs.pytest.org/en/stable/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-accent-link"
+                        >Pytest</a
+                      >
+                      for testing, ensuring reliable and efficient data
+                      processing to support critical business operations.
+                    </li>
+                    <li>
+                      Resolve live service issues across key data systems,
+                      including
+                      <a
+                        href="https://airflow.apache.org/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-accent-link"
+                        >Apache Airflow</a
+                      >
+                      workflows and automated
+                      <a
+                        href="https://workspace.google.com/products/drive/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-accent-link"
+                        >Google Drive</a
+                      >
+                      pipelines, using
+                      <a
+                        href="https://www.databricks.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-accent-link"
+                        >Databricks</a
+                      >
+                      for debugging to minimize disruptions and ensure data
+                      availability.
+                    </li>
+                    <li>
+                      Provide ad hoc support to the fulfillment team by
+                      performing manual data injections from
+                      <a
+                        href="https://aws.amazon.com/s3/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-accent-link"
+                        >AWS S3</a
+                      >
+                      to
+                      <a
+                        href="https://cloud.google.com/bigquery"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-accent-link"
+                        >Google BigQuery</a
+                      >, expediting data pipeline troubleshooting and ensuring
+                      data integrity.
+                    </li>
+                    <li>
+                      Document query logic in
+                      <a
+                        href="https://www.metabase.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-accent-link"
+                        >Metabase</a
+                      >
+                      and
+                      <a
+                        href="https://cloud.google.com/bigquery"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-accent-link"
+                        >Google BigQuery</a
+                      >, centralizing knowledge in
+                      <a
+                        href="https://www.atlassian.com/software/confluence"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-accent-link"
+                        >Confluence</a
+                      >
+                      to improve team productivity and align expectations with
+                      project goals, and update queries as needed for improved
+                      data access and reporting.
+                    </li>
+                    <li>
+                      Collaborate with network engineers and site reliability
+                      teams to address network and infrastructure needs,
+                      enabling seamless integration and uninterrupted
+                      performance of data pipelines and projects.
+                    </li>
+                    <li>
+                      Manage pipeline documentation for all pipelines owned by
+                      the AI and Data team, ensuring proper cross-checking with
+                      other teams to determine pipeline usage and deactivating
+                      unused pipelines to reduce operational costs.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- PT Shippindo Teknologi Logistik -->
+          <div class="relative flex items-start border-l-[3px] border-cyan-tech/70 pt-4">
+            <div
+              class="absolute -left-[10.5px] h-6 w-6 rounded-full border-4 border-cyan-tech bg-slate-50 shadow-lg shadow-cyan-tech/20 dark:bg-graphite"
+            ></div>
+            <div
+              class="custom-box ml-6 mr-4 flex h-24 w-24 items-center justify-center rounded-2xl bg-white shadow"
+            >
+              <a
+                href="https://shipper.id/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="dist/assets/images/journey/professional_experience/shipper.svg"
+                  alt="PT Shippindo Teknologi Logistik"
+                  class="custom-img h-20 w-20 object-contain">
+              </a>
+            </div>
+            <div
+              class="surface-card surface-card-hover flex-1 p-6"
+            >
+              <h4
+                class="font-montserrat text-xl font-semibold text-graphite dark:text-frost"
+              >
+                Artificial Intelligence and Data Engineer
+              </h4>
+              <div
+                class="flex items-center font-montserrat text-base text-slate-600 dark:text-slate-300"
+              >
+                <h5 class="text-lg font-semibold">
+                  <a
+                    href="https://shipper.id/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-accent-link"
                     >PT Shippindo Teknologi Logistik</a
                   >
                 </h5>
@@ -1902,7 +2164,7 @@
                   href="https://shipper.id/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="text-soft-violet hover:text-lavender-love"
+                  class="text-accent-link"
                   >Shipper</a
                 >
                 is Indonesia's leading digital logistics company, specializing
@@ -1915,12 +2177,14 @@
                   class="flex flex-wrap gap-2 font-montserrat text-base font-semibold text-off-white"
                 >
                   <button
-                    class="toggle-button rounded-2xl bg-gradient-to-r from-lavender-love to-soft-violet px-4 py-2 transition duration-300 ease-in-out hover:opacity-75 xs:py-1 xs:font-medium"
+                    type="button"
+                    class="toggle-button btn-secondary px-4 py-2 xs:py-1 xs:font-medium"
                   >
                     Key Achievements
                   </button>
                   <button
-                    class="toggle-button rounded-2xl bg-gradient-to-r from-lavender-love to-soft-violet px-4 py-2 transition duration-300 ease-in-out hover:opacity-75 xs:py-1 xs:font-medium"
+                    type="button"
+                    class="toggle-button btn-secondary px-4 py-2 xs:py-1 xs:font-medium"
                   >
                     Key Responsibilities
                   </button>
@@ -1929,14 +2193,14 @@
                   class="lists pl-6 font-montserrat text-base text-night dark:text-off-white"
                 >
                   <ul class="achievements mt-2 hidden list-disc">
-                    <h6 class="font-semibold">Key Achievements:</h6>
+                    <li class="list-none"><h6 class="font-semibold">Key Achievements:</h6></li>
                     <li>
                       Pioneered the research and implementation of a
                       <a
                         href="https://www.nvidia.com/en-us/ai-data-science/ai-workflows/multi-camera-tracking/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Multi-Camera Tracking</a
                       >
                       and
@@ -1944,7 +2208,7 @@
                         href="https://www.nvidia.com/en-us/autonomous-machines/intelligent-video-analytics-platform/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Occupancy Analytics</a
                       >
                       project as part of the
@@ -1952,7 +2216,7 @@
                         href="https://developer.nvidia.com/metropolis"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >NVIDIA Metropolis</a
                       >
                       program, utilizing NVIDIA Jetson devices for edge
@@ -1966,7 +2230,7 @@
                         href="https://lookerstudio.google.com/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Google Looker Studio</a
                       >, automating the extraction and generation of actionable
                       insights to help the cross-functional team make
@@ -1979,7 +2243,7 @@
                         href="https://www.isellercommerce.com/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >a third-party partner</a
                       >
                       using bulk API extraction logic and web scraping
@@ -1992,7 +2256,7 @@
                         href="https://airflow.apache.org/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Apache Airflow</a
                       >
                       DAGs, empowering non-technical teams to trigger custom
@@ -2001,14 +2265,14 @@
                     </li>
                   </ul>
                   <ul class="responsibilities mt-2 hidden list-disc">
-                    <h6 class="font-semibold">Key Responsibilities:</h6>
+                    <li class="list-none"><h6 class="font-semibold">Key Responsibilities:</h6></li>
                     <li>
                       Maintain the company’s data pipeline using
                       <a
                         href="https://pdm-project.org/en/latest/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >PDM</a
                       >
                       for dependency management,
@@ -2016,7 +2280,7 @@
                         href="https://www.docker.com/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Docker</a
                       >
                       for containerization, and
@@ -2024,7 +2288,7 @@
                         href="https://docs.pytest.org/en/stable/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Pytest</a
                       >
                       for testing, ensuring reliable and efficient data
@@ -2037,7 +2301,7 @@
                         href="https://airflow.apache.org/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Apache Airflow</a
                       >
                       workflows and automated
@@ -2045,7 +2309,7 @@
                         href="https://workspace.google.com/products/drive/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Google Drive</a
                       >
                       pipelines, using
@@ -2053,7 +2317,7 @@
                         href="https://www.databricks.com/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Databricks</a
                       >
                       for debugging to minimize disruptions and ensure data
@@ -2066,7 +2330,7 @@
                         href="https://aws.amazon.com/s3/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >AWS S3</a
                       >
                       to
@@ -2074,7 +2338,7 @@
                         href="https://cloud.google.com/bigquery"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Google BigQuery</a
                       >, expediting data pipeline troubleshooting and ensuring
                       data integrity.
@@ -2085,7 +2349,7 @@
                         href="https://www.metabase.com/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Metabase</a
                       >
                       and
@@ -2093,14 +2357,14 @@
                         href="https://cloud.google.com/bigquery"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Google BigQuery</a
                       >, centralizing knowledge in
                       <a
                         href="https://www.atlassian.com/software/confluence"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Confluence</a
                       >
                       to improve team productivity and align expectations with
@@ -2126,16 +2390,16 @@
           </div>
           <!-- Madrasah Aliyah Negeri 2 Kota Malang -->
           <div
-            class="relative flex items-start border-l-4 border-soft-violet pt-4"
+            class="relative flex items-start border-l-[3px] border-cyan-tech/70 pt-4"
           >
             <div
-              class="absolute bottom-0 left-[-15px] h-[4px] w-[40px] origin-top-right translate-y-[50%] rotate-[315deg] bg-mint-green"
+              class="absolute bottom-0 left-[-15px] h-[3px] w-[40px] origin-top-right translate-y-[50%] rotate-[315deg] rounded-full bg-cyan-tech/70"
             ></div>
             <div
-              class="relative ml-6 flex items-start border-l-4 border-mint-green"
+              class="relative ml-6 flex items-start border-l-[3px] border-cyan-tech/70"
             >
               <div
-                class="absolute -left-[18px] h-8 w-8 rounded-full border-8 border-mint-green bg-off-white dark:bg-night"
+                class="absolute -left-[10.5px] h-6 w-6 rounded-full border-4 border-cyan-tech bg-slate-50 shadow-lg shadow-cyan-tech/20 dark:bg-graphite"
               ></div>
               <div
                 class="custom-box ml-6 mr-4 flex h-24 w-24 items-center justify-center rounded-2xl bg-white shadow"
@@ -2148,27 +2412,26 @@
                   <img
                     src="dist/assets/images/journey/professional_experience/man.png"
                     alt="Madrasah Aliyah Negeri 2 Kota Malang"
-                    class="custom-img h-20 w-20 object-contain"
-                  />
+                    class="custom-img h-20 w-20 object-contain">
                 </a>
               </div>
               <div
-                class="flex-1 rounded-2xl bg-white p-4 shadow dark:bg-charcoal"
+                class="surface-card surface-card-hover flex-1 p-6"
               >
                 <h4
-                  class="font-montserrat text-xl font-semibold text-night dark:text-off-white"
+                  class="font-montserrat text-xl font-semibold text-graphite dark:text-frost"
                 >
                   Engineering Research Consultant
                 </h4>
                 <div
-                  class="flex items-center font-montserrat text-base text-night dark:text-off-white"
+                  class="flex items-center font-montserrat text-base text-slate-600 dark:text-slate-300"
                 >
                   <h5 class="text-lg font-semibold">
                     <a
                       href="https://man2kotamalang.sch.id/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="text-soft-violet hover:text-lavender-love"
+                      class="text-accent-link"
                       >Madrasah Aliyah Negeri 2 Kota Malang</a
                     >
                   </h5>
@@ -2200,7 +2463,7 @@
                     href="https://man2kotamalang.sch.id/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="text-soft-violet hover:text-lavender-love"
+                    class="text-accent-link"
                     >Madrasah Aliyah Negeri 2 Kota Malang</a
                   >
                   is an Islamic high school renowned for its integrated
@@ -2212,12 +2475,14 @@
                     class="flex flex-wrap gap-2 font-montserrat text-base font-semibold text-off-white"
                   >
                     <button
-                      class="toggle-button rounded-2xl bg-gradient-to-r from-lavender-love to-soft-violet px-4 py-2 transition duration-300 ease-in-out hover:opacity-75 xs:py-1 xs:font-medium"
+                      type="button"
+                      class="toggle-button btn-secondary px-4 py-2 xs:py-1 xs:font-medium"
                     >
                       Key Achievements
                     </button>
                     <button
-                      class="toggle-button rounded-2xl bg-gradient-to-r from-lavender-love to-soft-violet px-4 py-2 transition duration-300 ease-in-out hover:opacity-75 xs:py-1 xs:font-medium"
+                      type="button"
+                      class="toggle-button btn-secondary px-4 py-2 xs:py-1 xs:font-medium"
                     >
                       Key Responsibilities
                     </button>
@@ -2226,7 +2491,7 @@
                     class="lists pl-6 font-montserrat text-base text-night dark:text-off-white"
                   >
                     <ul class="achievements mt-2 hidden list-disc">
-                      <h6 class="font-semibold">Key Achievements:</h6>
+                      <li class="list-none"><h6 class="font-semibold">Key Achievements:</h6></li>
                       <li>
                         Mentored students to achieve 3rd Place in the Scientific
                         Paper Competition at
@@ -2234,7 +2499,7 @@
                           href="https://unisla.ac.id/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          class="text-soft-violet hover:text-lavender-love"
+                          class="text-accent-link"
                           >Universitas Islam Lamongan</a
                         >
                         with the project "Innovative Technology for Preventing
@@ -2246,7 +2511,7 @@
                           href="https://sma.pusatprestasinasional.kemdikbud.go.id/opsi/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          class="text-soft-violet hover:text-lavender-love"
+                          class="text-accent-link"
                           >Olimpiade Penelitian Siswa Indonesia - Ketegori
                           Matematika, Sains, dan Teknologi (Indonesian Student
                           Research Olympiad - Mathematics, Science, and
@@ -2260,7 +2525,7 @@
                       </li>
                     </ul>
                     <ul class="responsibilities mt-2 hidden list-disc">
-                      <h6 class="font-semibold">Key Responsibilities:</h6>
+                      <li class="list-none"><h6 class="font-semibold">Key Responsibilities:</h6></li>
                       <li>
                         Interpret competition rules, guiding students towards
                         objectives and providing engineering expertise that
@@ -2298,10 +2563,10 @@
           </div>
           <!-- PT Aiforesee Inovasi Skor -->
           <div
-            class="relative flex items-start border-l-4 border-soft-violet pt-4"
+            class="relative flex items-start border-l-[3px] border-cyan-tech/70 pt-4"
           >
             <div
-              class="absolute -left-[18px] h-8 w-8 rounded-full border-8 border-soft-violet bg-off-white dark:bg-night"
+              class="absolute -left-[10.5px] h-6 w-6 rounded-full border-4 border-cyan-tech bg-slate-50 shadow-lg shadow-cyan-tech/20 dark:bg-graphite"
             ></div>
             <div
               class="custom-box ml-6 mr-4 flex h-24 w-24 items-center justify-center rounded-2xl bg-white shadow"
@@ -2314,27 +2579,26 @@
                 <img
                   src="dist/assets/images/journey/professional_experience/aiforesee.png"
                   alt="PT Aiforesee Inovasi Skor"
-                  class="custom-img h-20 w-20 object-contain"
-                />
+                  class="custom-img h-20 w-20 object-contain">
               </a>
             </div>
             <div
-              class="flex-1 rounded-2xl bg-white p-4 shadow dark:bg-charcoal"
+              class="surface-card surface-card-hover flex-1 p-6"
             >
               <h4
-                class="font-montserrat text-xl font-semibold text-night dark:text-off-white"
+                class="font-montserrat text-xl font-semibold text-graphite dark:text-frost"
               >
                 Data Scientist
               </h4>
               <div
-                class="flex items-center font-montserrat text-base text-night dark:text-off-white"
+                class="flex items-center font-montserrat text-base text-slate-600 dark:text-slate-300"
               >
                 <h5 class="text-lg font-semibold">
                   <a
                     href="https://aiforesee.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="text-soft-violet hover:text-lavender-love"
+                    class="text-accent-link"
                     >PT Aiforesee Inovasi Skor</a
                   >
                 </h5>
@@ -2366,7 +2630,7 @@
                   href="https://aiforesee.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="text-soft-violet hover:text-lavender-love"
+                  class="text-accent-link"
                   >AIForesee</a
                 >
                 is a credit scoring and consulting company focused on empowering
@@ -2379,12 +2643,14 @@
                   class="flex flex-wrap gap-2 font-montserrat text-base font-semibold text-off-white"
                 >
                   <button
-                    class="toggle-button rounded-2xl bg-gradient-to-r from-lavender-love to-soft-violet px-4 py-2 transition duration-300 ease-in-out hover:opacity-75 xs:py-1 xs:font-medium"
+                    type="button"
+                    class="toggle-button btn-secondary px-4 py-2 xs:py-1 xs:font-medium"
                   >
                     Key Achievements
                   </button>
                   <button
-                    class="toggle-button rounded-2xl bg-gradient-to-r from-lavender-love to-soft-violet px-4 py-2 transition duration-300 ease-in-out hover:opacity-75 xs:py-1 xs:font-medium"
+                    type="button"
+                    class="toggle-button btn-secondary px-4 py-2 xs:py-1 xs:font-medium"
                   >
                     Key Responsibilities
                   </button>
@@ -2393,13 +2659,13 @@
                   class="lists pl-6 font-montserrat text-base text-night dark:text-off-white"
                 >
                   <ul class="achievements mt-2 hidden list-disc">
-                    <h6 class="font-semibold">Key Achievements:</h6>
+                    <li class="list-none"><h6 class="font-semibold">Key Achievements:</h6></li>
                     <li>
                       <a
                         href="https://github.com/hardefarogonondo/data-science-project-folder-structure"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Standardized SOPs and boilerplates</a
                       >
                       for library and package usage, streamlining analysis and
@@ -2412,7 +2678,7 @@
                         href="https://www.mbiz.co.id/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >an e-procurement firm</a
                       >, contributing $16,060 in revenue.
                     </li>
@@ -2422,7 +2688,7 @@
                         href="https://www.pefindo.com/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >a national credit bureau</a
                       >
                       to develop and deploy a credit scoring model in a joint
@@ -2435,7 +2701,7 @@
                         href="https://bankraya.co.id/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >a state-owned bank client</a
                       >, optimizing credit scoring and loan decision processes.
                     </li>
@@ -2445,7 +2711,7 @@
                         href="https://investree.id/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >peer-to-peer lending client</a
                       >, ensuring quarterly performance excellence.
                     </li>
@@ -2457,14 +2723,14 @@
                         href="https://bprindra.com/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >a rural bank</a
                       >
                       in Indonesia.
                     </li>
                   </ul>
                   <ul class="responsibilities mt-2 hidden list-disc">
-                    <h6 class="font-semibold">Key Responsibilities:</h6>
+                    <li class="list-none"><h6 class="font-semibold">Key Responsibilities:</h6></li>
                     <li>
                       Applied CRISP-DM methodology comprehensively in all
                       end-to-end data science projects, from business
@@ -2476,7 +2742,7 @@
                         href="https://www.postgresql.org/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >SQL</a
                       >
                       for data querying and
@@ -2484,7 +2750,7 @@
                         href="https://www.python.org/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Python</a
                       >
                       for cleaning, processing, and integrity checks; performed
@@ -2498,28 +2764,28 @@
                         href="https://scikit-learn.org/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >scikit-learn</a
                       >,
                       <a
                         href="https://scipy.org/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >SciPy</a
                       >,
                       <a
                         href="https://interpret.ml/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >InterpretML</a
                       >, and
                       <a
                         href="https://xgboost.readthedocs.io/en/stable/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >XGBoost</a
                       >
                       for developing advanced machine learning classifiers
@@ -2532,21 +2798,21 @@
                         href="https://pytorch.org/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >PyTorch</a
                       >,
                       <a
                         href="https://www.tensorflow.org/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >TensorFlow</a
                       >, and
                       <a
                         href="https://keras.io/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Keras</a
                       >
                       with a specialization in large language models (LLMs).
@@ -2559,7 +2825,7 @@
                         href="https://www.iso.org/standard/27001"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >ISO/IEC 27001</a
                       >
                       standards.
@@ -2570,7 +2836,7 @@
                         href="https://fastapi.tiangolo.com/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >FastAPI</a
                       >
                       and
@@ -2578,7 +2844,7 @@
                         href="https://flask.palletsprojects.com/en/3.0.x/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Flask</a
                       >, ensuring robust and scalable model implementations.
                     </li>
@@ -2589,10 +2855,10 @@
           </div>
           <!-- PT Bersama Kreatif Teknologi -->
           <div
-            class="relative flex items-start border-l-4 border-soft-violet pt-4"
+            class="relative flex items-start border-l-[3px] border-cyan-tech/70 pt-4"
           >
             <div
-              class="absolute -left-[18px] h-8 w-8 rounded-full border-8 border-soft-violet bg-off-white dark:bg-night"
+              class="absolute -left-[10.5px] h-6 w-6 rounded-full border-4 border-cyan-tech bg-slate-50 shadow-lg shadow-cyan-tech/20 dark:bg-graphite"
             ></div>
             <div
               class="custom-box ml-6 mr-4 flex h-24 w-24 items-center justify-center rounded-2xl bg-white shadow"
@@ -2605,27 +2871,26 @@
                 <img
                   src="dist/assets/images/journey/professional_experience/berkat.png"
                   alt="PT Bersama Kreatif Teknologi"
-                  class="custom-img h-20 w-20 object-contain"
-                />
+                  class="custom-img h-20 w-20 object-contain">
               </a>
             </div>
             <div
-              class="flex-1 rounded-2xl bg-white p-4 shadow dark:bg-charcoal"
+              class="surface-card surface-card-hover flex-1 p-6"
             >
               <h4
-                class="font-montserrat text-xl font-semibold text-night dark:text-off-white"
+                class="font-montserrat text-xl font-semibold text-graphite dark:text-frost"
               >
                 Internet of Things Engineer
               </h4>
               <div
-                class="flex items-center font-montserrat text-base text-night dark:text-off-white"
+                class="flex items-center font-montserrat text-base text-slate-600 dark:text-slate-300"
               >
                 <h5 class="text-lg font-semibold">
                   <a
                     href="https://seafreshing.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="text-soft-violet hover:text-lavender-love"
+                    class="text-accent-link"
                     >PT Bersama Kreatif Teknologi</a
                   >
                 </h5>
@@ -2660,7 +2925,7 @@
                   href="https://seafreshing.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="text-soft-violet hover:text-lavender-love"
+                  class="text-accent-link"
                   >Seafreshing</a
                 >, an innovative food distribution company.
               </p>
@@ -2669,12 +2934,14 @@
                   class="flex flex-wrap gap-2 font-montserrat text-base font-semibold text-off-white"
                 >
                   <button
-                    class="toggle-button rounded-2xl bg-gradient-to-r from-lavender-love to-soft-violet px-4 py-2 transition duration-300 ease-in-out hover:opacity-75 xs:py-1 xs:font-medium"
+                    type="button"
+                    class="toggle-button btn-secondary px-4 py-2 xs:py-1 xs:font-medium"
                   >
                     Key Achievements
                   </button>
                   <button
-                    class="toggle-button rounded-2xl bg-gradient-to-r from-lavender-love to-soft-violet px-4 py-2 transition duration-300 ease-in-out hover:opacity-75 xs:py-1 xs:font-medium"
+                    type="button"
+                    class="toggle-button btn-secondary px-4 py-2 xs:py-1 xs:font-medium"
                   >
                     Key Responsibilities
                   </button>
@@ -2683,7 +2950,7 @@
                   class="lists pl-6 font-montserrat text-base text-night dark:text-off-white"
                 >
                   <ul class="achievements mt-2 hidden list-disc">
-                    <h6 class="font-semibold">Key Achievements:</h6>
+                    <li class="list-none"><h6 class="font-semibold">Key Achievements:</h6></li>
                     <li>
                       Completed and launched an IoT-integrated electric bike
                       project, maintaining collaborative ties with a
@@ -2691,7 +2958,7 @@
                         href="https://www.xl.co.id/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >telecommunications operator</a
                       >.
                     </li>
@@ -2701,7 +2968,7 @@
                     </li>
                   </ul>
                   <ul class="responsibilities mt-2 hidden list-disc">
-                    <h6 class="font-semibold">Key Responsibilities:</h6>
+                    <li class="list-none"><h6 class="font-semibold">Key Responsibilities:</h6></li>
                     <li>
                       Developed and enhanced IoT systems, focusing on software
                       and hardware performance analysis using
@@ -2709,7 +2976,7 @@
                         href="https://www.autodesk.com/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Autodesk</a
                       >
                       Inventor and Eagle.
@@ -2721,7 +2988,7 @@
                         href="https://www.postman.com/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Postman</a
                       >.
                     </li>
@@ -2746,21 +3013,21 @@
                         href="https://www.tensorflow.org/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >TensorFlow</a
                       >,
                       <a
                         href="https://pytorch.org/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >PyTorch</a
                       >, and
                       <a
                         href="https://flask.palletsprojects.com/en/3.0.x/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Flask</a
                       >.
                     </li>
@@ -2775,13 +3042,13 @@
           </div>
           <!-- PT Schneider Indonesia -->
           <div class="relative flex items-start pt-4">
-            <div class="absolute top-0 h-4 w-1 bg-soft-violet"></div>
-            <div class="relative flex items-start border-l-4 border-mint-green">
+            <div class="absolute top-0 h-4 w-[3px] bg-cyan-tech/70"></div>
+            <div class="relative flex items-start border-l-[3px] border-cyan-tech/70">
               <div
-                class="absolute -left-[18px] h-8 w-8 rounded-full border-8 border-mint-green bg-off-white dark:bg-night"
+                class="absolute -left-[10.5px] h-6 w-6 rounded-full border-4 border-cyan-tech bg-slate-50 shadow-lg shadow-cyan-tech/20 dark:bg-graphite"
               ></div>
               <div
-                class="absolute bottom-0 -left-[10px] h-4 w-4 rounded-full bg-mint-green"
+                class="absolute bottom-0 -left-[6.5px] h-4 w-4 rounded-full bg-cyan-tech shadow-md shadow-cyan-tech/20"
               ></div>
               <div
                 class="custom-box ml-6 mr-4 flex h-24 w-24 items-center justify-center rounded-2xl bg-white shadow"
@@ -2794,27 +3061,26 @@
                   <img
                     src="dist/assets/images/journey/professional_experience/schneider.png"
                     alt="PT Schneider Indonesia"
-                    class="custom-img h-20 w-20 object-contain"
-                  />
+                    class="custom-img h-20 w-20 object-contain">
                 </a>
               </div>
               <div
-                class="flex-1 rounded-2xl bg-white p-4 shadow dark:bg-charcoal"
+                class="surface-card surface-card-hover flex-1 p-6"
               >
                 <h4
-                  class="font-montserrat text-xl font-semibold text-night dark:text-off-white"
+                  class="font-montserrat text-xl font-semibold text-graphite dark:text-frost"
                 >
                   Maintenance Support
                 </h4>
                 <div
-                  class="flex items-center font-montserrat text-base text-night dark:text-off-white"
+                  class="flex items-center font-montserrat text-base text-slate-600 dark:text-slate-300"
                 >
                   <h5 class="text-lg font-semibold">
                     <a
                       href="https://www.se.com/id/en/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="text-soft-violet hover:text-lavender-love"
+                      class="text-accent-link"
                       >PT Schneider Indonesia</a
                     >
                   </h5>
@@ -2846,7 +3112,7 @@
                     href="https://www.se.com/id/en/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="text-soft-violet hover:text-lavender-love"
+                    class="text-accent-link"
                     >Schneider Electric</a
                   >
                   in Cikarang is a pivotal branch of the global energy
@@ -2855,7 +3121,7 @@
                     href="https://www.se.com/id/en/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="text-soft-violet hover:text-lavender-love"
+                    class="text-accent-link"
                     >Schneider Electric</a
                   >, offering cutting-edge solutions to boost energy efficiency
                   and sustainability for local businesses and communities.
@@ -2865,7 +3131,8 @@
                     class="flex flex-wrap gap-2 font-montserrat text-base font-semibold text-off-white"
                   >
                     <button
-                      class="toggle-button rounded-2xl bg-gradient-to-r from-lavender-love to-soft-violet px-4 py-2 transition duration-300 ease-in-out hover:opacity-75 xs:py-1 xs:font-medium"
+                      type="button"
+                      class="toggle-button btn-secondary px-4 py-2 xs:py-1 xs:font-medium"
                     >
                       Key Responsibilities
                     </button>
@@ -2874,7 +3141,7 @@
                     class="lists pl-6 font-montserrat text-base text-night dark:text-off-white"
                   >
                     <ul class="responsibilities mt-2 hidden list-disc">
-                      <h6 class="font-semibold">Key Responsibilities:</h6>
+                      <li class="list-none"><h6 class="font-semibold">Key Responsibilities:</h6></li>
                       <li>
                         Developed an IoT-enabled warehouse management system,
                         integrating cloud storage and microcontroller indicators
@@ -2883,7 +3150,7 @@
                           href="https://codeigniter.com/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          class="text-soft-violet hover:text-lavender-love"
+                          class="text-accent-link"
                           >CodeIgniter</a
                         >
                         for system development.
@@ -2895,7 +3162,7 @@
                           href="https://www.autodesk.com/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          class="text-soft-violet hover:text-lavender-love"
+                          class="text-accent-link"
                           >Autodesk</a
                         >
                         Inventor, enhancing production sector efficiency.
@@ -2915,17 +3182,17 @@
         <!-- Education Subsection -->
         <div class="mb-12 px-4">
           <h3
-            class="mb-4 text-center font-montserrat text-2xl font-semibold text-night dark:text-off-white lg:text-3xl"
+            class="mb-6 text-center font-montserrat text-2xl font-semibold text-graphite dark:text-frost lg:text-3xl"
           >
             Education
           </h3>
           <!-- Politeknik Elektronika Negeri Surabaya -->
-          <div class="relative flex items-start border-l-4 border-mint-green">
+          <div class="relative flex items-start border-l-[3px] border-cyan-tech/70">
             <div
-              class="absolute -left-[18px] h-8 w-8 rounded-full border-8 border-mint-green bg-off-white dark:bg-night"
+              class="absolute -left-[10.5px] h-6 w-6 rounded-full border-4 border-cyan-tech bg-slate-50 shadow-lg shadow-cyan-tech/20 dark:bg-graphite"
             ></div>
             <div
-              class="absolute bottom-0 -left-[10px] h-4 w-4 rounded-full bg-mint-green"
+              class="absolute bottom-0 -left-[6.5px] h-4 w-4 rounded-full bg-cyan-tech shadow-md shadow-cyan-tech/20"
             ></div>
             <div
               class="custom-box ml-6 mr-4 flex h-24 w-24 items-center justify-center rounded-2xl bg-white shadow"
@@ -2938,27 +3205,26 @@
                 <img
                   src="dist/assets/images/journey/education/pens.png"
                   alt="Politeknik Elektronika Negeri Surabaya"
-                  class="custom-img h-20 w-20 object-contain"
-                />
+                  class="custom-img h-20 w-20 object-contain">
               </a>
             </div>
             <div
-              class="flex-1 rounded-2xl bg-white p-4 shadow dark:bg-charcoal"
+              class="surface-card surface-card-hover flex-1 p-6"
             >
               <h4
-                class="font-montserrat text-xl font-semibold text-night dark:text-off-white"
+                class="font-montserrat text-xl font-semibold text-graphite dark:text-frost"
               >
                 Bachelor of Engineering in Applied Mechatronics Engineering
               </h4>
               <div
-                class="flex items-center font-montserrat text-base text-night dark:text-off-white"
+                class="flex items-center font-montserrat text-base text-slate-600 dark:text-slate-300"
               >
                 <h5 class="text-lg font-semibold">
                   <a
                     href="https://www.pens.ac.id/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="text-soft-violet hover:text-lavender-love"
+                    class="text-accent-link"
                     >Politeknik Elektronika Negeri Surabaya</a
                   >
                 </h5>
@@ -2991,12 +3257,14 @@
                   class="flex flex-wrap gap-2 font-montserrat text-base font-semibold text-off-white"
                 >
                   <button
-                    class="toggle-button rounded-2xl bg-gradient-to-r from-lavender-love to-soft-violet px-4 py-2 transition duration-300 ease-in-out hover:opacity-75 xs:py-1 xs:font-medium"
+                    type="button"
+                    class="toggle-button btn-secondary px-4 py-2 xs:py-1 xs:font-medium"
                   >
                     Key Achievements
                   </button>
                   <button
-                    class="toggle-button rounded-2xl bg-gradient-to-r from-lavender-love to-soft-violet px-4 py-2 transition duration-300 ease-in-out hover:opacity-75 xs:py-1 xs:font-medium"
+                    type="button"
+                    class="toggle-button btn-secondary px-4 py-2 xs:py-1 xs:font-medium"
                   >
                     Thesis
                   </button>
@@ -3005,7 +3273,7 @@
                   class="lists pl-6 font-montserrat text-base text-night dark:text-off-white"
                 >
                   <ul class="achievements mt-2 hidden list-disc">
-                    <h6 class="font-semibold">Key Achievements:</h6>
+                    <li class="list-none"><h6 class="font-semibold">Key Achievements:</h6></li>
                     <li>
                       Presenter at International Seminar on Aerospace Science
                       and Technology, organized by
@@ -3013,7 +3281,7 @@
                         href="https://brin.go.id/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Aeronautics Technology Center of National Institute of
                         Aeronautics and Space of Indonesia</a
                       >, 2020.
@@ -3024,7 +3292,7 @@
                         href="https://dikti.kemdikbud.go.id/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Ministry of Research, Technology, and Higher Education
                         of Indonesia</a
                       >, 2019.
@@ -3036,7 +3304,7 @@
                         href="https://brin.go.id/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Aeronautics Technology Center of National Institute of
                         Aeronautics and Space of Indonesia</a
                       >, 2019.
@@ -3048,7 +3316,7 @@
                         href="https://www.pens.ac.id/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Politeknik Elektronika Negeri Surabaya</a
                       >
                       Electronics Engineering Student Association, 2019.
@@ -3061,15 +3329,15 @@
                         href="https://www.uajy.ac.id/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Universitas Atma Jaya Yogyakarta</a
                       >
-                      & Faculty of Creative Industry of
+                      &amp; Faculty of Creative Industry of
                       <a
                         href="https://kalbis.ac.id/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Institut Teknologi dan Bisnis Kalbis</a
                       >, 2019.
                     </li>
@@ -3081,7 +3349,7 @@
                         href="https://www.unhas.ac.id/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Universitas Hasanuddin</a
                       >, 2018.
                     </li>
@@ -3093,7 +3361,7 @@
                         href="https://capstonedesign.or.kr/e2festa"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Korea Association of Innovation Centers for Engineering
                         Education</a
                       >, 2017.
@@ -3106,7 +3374,7 @@
                         href="https://www.ui.ac.id/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Universitas Indonesia</a
                       >, 2017.
                     </li>
@@ -3117,36 +3385,40 @@
                         href="https://www.its.ac.id/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-soft-violet hover:text-lavender-love"
+                        class="text-accent-link"
                         >Institut Teknologi Sepuluh Nopember</a
                       >
                       Marine Engineering Student Association, 2017.
                     </li>
                   </ul>
                   <ul class="responsibilities mt-2 hidden list-disc">
-                    <h6 class="font-semibold">Thesis Title:</h6>
-                    <p>
-                      TSUPORT (Tsunami Post Disaster Robot): Aerial Path
-                      Planning in Unknown Environment
-                    </p>
-                    <h6 class="font-semibold">Thesis Summary:</h6>
-                    <p>
-                      The implementation of Vector Field Histogram+ as a 2D
-                      local aerial path planning algorithm with obstacle
-                      avoidance for quadcopters, serving as aerial disaster
-                      robots, with simulation in ROS and prototype development
-                      using DroneKit.
-                    </p>
-                    <div class="mt-2 text-off-white">
+                    <li class="list-none">
+                      <h6 class="font-semibold">Thesis Title:</h6>
+                      <p>
+                        TSUPORT (Tsunami Post Disaster Robot): Aerial Path
+                        Planning in Unknown Environment
+                      </p>
+                    </li>
+                    <li class="list-none">
+                      <h6 class="font-semibold">Thesis Summary:</h6>
+                      <p>
+                        The implementation of Vector Field Histogram+ as a 2D
+                        local aerial path planning algorithm with obstacle
+                        avoidance for quadcopters, serving as aerial disaster
+                        robots, with simulation in ROS and prototype development
+                        using DroneKit.
+                      </p>
+                    </li>
+                    <li class="mt-4 list-none">
                       <a
                         href="https://pubs.aip.org/aip/acp/article-abstract/2366/1/020010/675930/Tsunami-post-disaster-robot-Simulation-and"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="rounded-xl bg-gradient-to-r from-lavender-love to-soft-violet px-4 py-2 transition duration-300 ease-in-out hover:opacity-75"
+                        class="btn-secondary px-4 py-2"
                       >
                         Read Thesis Paper
                       </a>
-                    </div>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -3157,33 +3429,35 @@
     </section>
     <!-- Journey Section End -->
     <!-- Awards Section Start -->
-    <section id="awards" class="bg-soft-cloud pb-20 pt-20 dark:bg-charcoal">
+    <section id="awards" class="bg-white pb-24 pt-24 dark:bg-slate-950">
       <div class="container">
-        <h2
-          class="gradient-text mb-8 text-center font-montserrat text-3xl font-bold lg:text-4xl"
-        >
+        <p class="section-kicker text-center">Recognition</p>
+        <h2 class="section-title mb-4 text-center">
           Awards
         </h2>
+        <p class="section-copy mx-auto mb-10 max-w-3xl text-center">
+          Certifications, competition results, and technical achievements that
+          document the learning path behind the work.
+        </p>
         <div class="w-full px-4">
           <div class="flex flex-wrap items-center justify-center gap-8">
             <!-- Pacmann Natural Language Processing -->
             <div
-              class="max-w-sm space-y-2 rounded-2xl border-l-4 border-mint-green bg-off-white p-8 shadow-lg dark:bg-night lg:mx-auto lg:w-1/2 xl:w-1/3"
+              class="surface-card surface-card-hover max-w-sm space-y-4 p-6 lg:mx-auto lg:w-1/2 xl:w-1/3"
             >
               <div class="flex items-center justify-center">
                 <div
-                  class="relative flex h-48 w-64 items-center justify-center bg-off-white dark:bg-night"
+                  class="relative flex h-48 w-64 items-center justify-center rounded-2xl bg-frost dark:bg-white/5"
                 >
                   <img
                     src="dist/assets/images/awards/20240418_pacmann_nlp/20240418_pacmann_nlp.png"
                     alt="Natural Language Processing Certification"
                     class="h-auto max-h-48 max-w-full cursor-pointer rounded-2xl object-contain"
-                    data-zoom="true"
-                  />
+                    data-zoom="true">
                 </div>
               </div>
               <h3
-                class="font-montserrat text-xl font-semibold text-night dark:text-off-white"
+                class="font-montserrat text-xl font-semibold text-graphite dark:text-frost"
               >
                 Natural Language Processing
               </h3>
@@ -3206,7 +3480,7 @@
                       href="https://pacmann.io/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="text-soft-violet hover:text-lavender-love"
+                      class="text-accent-link"
                     >
                       Pacmann (PT Algoritma Cerdas Indonesia)
                     </a>
@@ -3240,7 +3514,7 @@
                       href="https://sertifikat.pacmann.ai/IAHJeNtZF7RP41C"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="text-soft-violet hover:text-lavender-love"
+                      class="text-accent-link"
                     >
                       View Credential
                     </a>
@@ -3250,22 +3524,21 @@
             </div>
             <!-- Pacmann Deep Learning -->
             <div
-              class="max-w-sm space-y-2 rounded-2xl border-l-4 border-mint-green bg-off-white p-8 shadow-lg dark:bg-night lg:mx-auto lg:w-1/2 xl:w-1/3"
+              class="surface-card surface-card-hover max-w-sm space-y-4 p-6 lg:mx-auto lg:w-1/2 xl:w-1/3"
             >
               <div class="flex items-center justify-center">
                 <div
-                  class="relative flex h-48 w-64 items-center justify-center bg-off-white dark:bg-night"
+                  class="relative flex h-48 w-64 items-center justify-center rounded-2xl bg-frost dark:bg-white/5"
                 >
                   <img
                     src="dist/assets/images/awards/20240124_pacmann_dl/20240124_pacmann_dl.png"
                     alt="Deep Learning Certification"
                     class="h-auto max-h-48 max-w-full cursor-pointer rounded-2xl object-contain"
-                    data-zoom="true"
-                  />
+                    data-zoom="true">
                 </div>
               </div>
               <h3
-                class="font-montserrat text-xl font-semibold text-night dark:text-off-white"
+                class="font-montserrat text-xl font-semibold text-graphite dark:text-frost"
               >
                 Deep Learning
               </h3>
@@ -3287,7 +3560,7 @@
                       href="https://pacmann.io/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="text-soft-violet hover:text-lavender-love"
+                      class="text-accent-link"
                     >
                       Pacmann (PT Algoritma Cerdas Indonesia)
                     </a>
@@ -3321,7 +3594,7 @@
                       href="https://sertifikat.pacmann.ai/OFgtIJpJI5j8tlB"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="text-soft-violet hover:text-lavender-love"
+                      class="text-accent-link"
                     >
                       View Credential
                     </a>
@@ -3331,22 +3604,21 @@
             </div>
             <!-- Pacmann Advanced Machine Learning -->
             <div
-              class="max-w-sm space-y-2 rounded-2xl border-l-4 border-mint-green bg-off-white p-8 shadow-lg dark:bg-night lg:mx-auto lg:w-1/2 xl:w-1/3"
+              class="surface-card surface-card-hover max-w-sm space-y-4 p-6 lg:mx-auto lg:w-1/2 xl:w-1/3"
             >
               <div class="flex items-center justify-center">
                 <div
-                  class="relative flex h-48 w-64 items-center justify-center bg-off-white dark:bg-night"
+                  class="relative flex h-48 w-64 items-center justify-center rounded-2xl bg-frost dark:bg-white/5"
                 >
                   <img
                     src="dist/assets/images/awards/20231115_pacmann_aml/20231115_pacmann_aml.png"
                     alt="Advanced Machine Learning Certification"
                     class="h-auto max-h-48 max-w-full cursor-pointer rounded-2xl object-contain"
-                    data-zoom="true"
-                  />
+                    data-zoom="true">
                 </div>
               </div>
               <h3
-                class="font-montserrat text-xl font-semibold text-night dark:text-off-white"
+                class="font-montserrat text-xl font-semibold text-graphite dark:text-frost"
               >
                 Advanced Machine Learning
               </h3>
@@ -3369,7 +3641,7 @@
                       href="https://pacmann.io/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="text-soft-violet hover:text-lavender-love"
+                      class="text-accent-link"
                     >
                       Pacmann (PT Algoritma Cerdas Indonesia)
                     </a>
@@ -3403,7 +3675,7 @@
                       href="https://sertifikat.pacmann.ai/UbUxzXGOw4wXlFM"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="text-soft-violet hover:text-lavender-love"
+                      class="text-accent-link"
                     >
                       View Credential
                     </a>
@@ -3418,7 +3690,7 @@
             href="awards.html"
             target="_blank"
             rel="noopener noreferrer"
-            class="rounded-2xl bg-gradient-to-r from-lavender-love to-soft-violet px-4 py-3 font-montserrat text-base font-semibold text-off-white transition duration-300 ease-in-out hover:opacity-75"
+            class="btn-primary"
           >
             See More Awards
           </a>
@@ -3426,42 +3698,45 @@
       </div>
       <div
         id="lightbox"
-        class="fixed inset-0 z-50 hidden items-center justify-center bg-off-white bg-opacity-75 dark:bg-night"
+        class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/70 backdrop-blur-sm"
       >
         <img
           id="lightboxImage"
-          class="max-h-screen-md max-w-screen-md rounded-2xl"
-        />
+          src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+          alt="Expanded award preview"
+          class="max-h-screen-md max-w-screen-md rounded-2xl">
       </div>
     </section>
     <!-- Awards Section End -->
     <!-- Projects Section Start -->
-    <section id="projects" class="bg-off-white pb-20 pt-20 dark:bg-night">
+    <section id="projects" class="bg-slate-50 pb-24 pt-24 dark:bg-graphite">
       <div class="container">
-        <h2
-          class="gradient-text mb-8 text-center font-montserrat text-3xl font-bold lg:text-4xl"
-        >
+        <p class="section-kicker text-center">Selected Builds</p>
+        <h2 class="section-title mb-4 text-center">
           Projects
         </h2>
+        <p class="section-copy mx-auto mb-10 max-w-3xl text-center">
+          Practical AI and data projects focused on recommendation systems,
+          NLP, predictive modeling, and reusable engineering patterns.
+        </p>
         <div class="flex flex-wrap">
           <!-- Research Paper Summarization Engine -->
           <div class="w-full px-4 lg:mx-auto lg:w-1/2 xl:w-1/3">
             <div
-              class="mb-8 flex h-auto flex-col overflow-hidden rounded-2xl bg-soft-cloud shadow-lg dark:bg-charcoal lg:h-[475px]"
+              class="surface-card surface-card-hover mb-8 flex h-auto flex-col overflow-hidden lg:h-[475px]"
             >
               <img
                 src="dist/assets/images/projects/research_paper_summarization_engine.png"
                 alt="Research Paper Summarization Engine"
-                class="w-full"
-              />
+                class="w-full">
               <div class="flex flex-grow flex-col justify-between px-6 py-6">
                 <h3
-                  class="font-montserrat text-xl font-semibold text-night dark:text-off-white"
+                  class="font-montserrat text-xl font-semibold text-graphite dark:text-frost"
                 >
                   Research Paper Summarization Engine
                 </h3>
                 <p
-                  class="font-montserrat font-medium text-night dark:text-off-white"
+                  class="font-montserrat font-medium leading-7 text-slate-600 dark:text-slate-300"
                 >
                   LLM-based summarization engine transforming scientific papers
                   into concise summaries using T5 and PEGASUS models on the
@@ -3472,7 +3747,7 @@
                     href="https://github.com/hardefarogonondo/research-paper-summarization-engine"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="hover:bg-gradient-light dark:hover:bg-gradient-dark mr-4 flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+                    class="social-link"
                   >
                     <svg
                       role="img"
@@ -3491,7 +3766,7 @@
                     href="https://medium.com/@hardefarogonondo/the-art-of-synthesis-ai-enhanced-summarization-engine-for-scientist-b3661305ad6a"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="hover:bg-gradient-light dark:hover:bg-gradient-dark mr-4 flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+                    class="social-link"
                   >
                     <svg
                       role="img"
@@ -3513,21 +3788,20 @@
           <!-- IMDb Sentiment Prediction Engine -->
           <div class="w-full px-4 lg:mx-auto lg:w-1/2 xl:w-1/3">
             <div
-              class="mb-8 flex h-auto flex-col overflow-hidden rounded-2xl bg-soft-cloud shadow-lg dark:bg-charcoal lg:h-[475px]"
+              class="surface-card surface-card-hover mb-8 flex h-auto flex-col overflow-hidden lg:h-[475px]"
             >
               <img
                 src="dist/assets/images/projects/imdb_sentiment_prediction_engine.png"
                 alt="IMDb Sentiment Prediction Engine"
-                class="w-full"
-              />
+                class="w-full">
               <div class="flex flex-grow flex-col justify-between px-6 py-6">
                 <h3
-                  class="font-montserrat text-xl font-semibold text-night dark:text-off-white"
+                  class="font-montserrat text-xl font-semibold text-graphite dark:text-frost"
                 >
                   IMDb Sentiment Prediction Engine
                 </h3>
                 <p
-                  class="font-montserrat font-medium text-night dark:text-off-white"
+                  class="font-montserrat font-medium leading-7 text-slate-600 dark:text-slate-300"
                 >
                   Deep learning-based sentiment prediction engine utilizing NLP
                   techniques to predict IMDb movie review sentiments.
@@ -3537,7 +3811,7 @@
                     href="https://github.com/hardefarogonondo/IMDb-sentiment-prediction-engine"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="hover:bg-gradient-light dark:hover:bg-gradient-dark mr-4 flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+                    class="social-link"
                   >
                     <svg
                       role="img"
@@ -3556,7 +3830,7 @@
                     href="https://medium.com/@hardefarogonondo/sarcasm-or-praise-the-art-of-sentiment-analysis-with-deep-learning-in-film-reviews-3ee48c49d401"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="hover:bg-gradient-light dark:hover:bg-gradient-dark mr-4 flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+                    class="social-link"
                   >
                     <svg
                       role="img"
@@ -3578,21 +3852,20 @@
           <!-- Tech Talent Recommendation Engine -->
           <div class="full px-4 lg:mx-auto lg:w-1/2 xl:w-1/3">
             <div
-              class="mb-8 flex h-auto flex-col overflow-hidden rounded-2xl bg-soft-cloud shadow-lg dark:bg-charcoal lg:h-[475px]"
+              class="surface-card surface-card-hover mb-8 flex h-auto flex-col overflow-hidden lg:h-[475px]"
             >
               <img
                 src="dist/assets/images/projects/tech_talent_recommendation_engine.png"
                 alt="Tech Talent Recommendation Engine"
-                class="w-full"
-              />
+                class="w-full">
               <div class="flex flex-grow flex-col justify-between px-6 py-6">
                 <h3
-                  class="font-montserrat text-xl font-semibold text-night dark:text-off-white"
+                  class="font-montserrat text-xl font-semibold text-graphite dark:text-frost"
                 >
                   Tech Talent Recommendation Engine
                 </h3>
                 <p
-                  class="font-montserrat font-medium text-night dark:text-off-white"
+                  class="font-montserrat font-medium leading-7 text-slate-600 dark:text-slate-300"
                 >
                   Custom-built machine learning recommendation engine matching
                   HR with tech professionals to hire using Stack Overflow
@@ -3603,7 +3876,7 @@
                     href="https://github.com/hardefarogonondo/tech-talent-recommendation-engine"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="hover:bg-gradient-light dark:hover:bg-gradient-dark mr-4 flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+                    class="social-link"
                   >
                     <svg
                       role="img"
@@ -3622,7 +3895,7 @@
                     href="https://medium.com/@hardefarogonondo/innovating-hr-tech-building-an-ai-powered-tech-talent-recommendation-engine-53cbac3824f1"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="hover:bg-gradient-light dark:hover:bg-gradient-dark mr-4 flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+                    class="social-link"
                   >
                     <svg
                       role="img"
@@ -3641,7 +3914,7 @@
                     href="https://medium.com/@hardefarogonondo/from-concept-to-code-crafting-a-recommendation-engine-from-zero-1e7271ed1079"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="hover:bg-gradient-light dark:hover:bg-gradient-dark mr-4 flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+                    class="social-link"
                   >
                     <svg
                       role="img"
@@ -3663,21 +3936,20 @@
           <!-- Food.com Recipe Recommendation Engine -->
           <div class="full px-4 lg:mx-auto lg:w-1/2 xl:w-1/3">
             <div
-              class="mb-8 flex h-auto flex-col overflow-hidden rounded-2xl bg-soft-cloud shadow-lg dark:bg-charcoal lg:h-[475px]"
+              class="surface-card surface-card-hover mb-8 flex h-auto flex-col overflow-hidden lg:h-[475px]"
             >
               <img
                 src="dist/assets/images/projects/food_dot_com_recipe_recommendation_engine.png"
                 alt="Food.com Recipe Recommendation Engine"
-                class="w-full"
-              />
+                class="w-full">
               <div class="flex flex-grow flex-col justify-between px-6 py-6">
                 <h3
-                  class="font-montserrat text-xl font-semibold text-night dark:text-off-white"
+                  class="font-montserrat text-xl font-semibold text-graphite dark:text-frost"
                 >
                   Food.com Recipe Recommendation Engine
                 </h3>
                 <p
-                  class="font-montserrat font-medium text-night dark:text-off-white"
+                  class="font-montserrat font-medium leading-7 text-slate-600 dark:text-slate-300"
                 >
                   Practical solution for personalized recipe recommendations
                   leveraging machine learning to predict user preferences using
@@ -3688,7 +3960,7 @@
                     href="https://github.com/hardefarogonondo/FoodDotCom-recipe-recommendation-engine"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="hover:bg-gradient-light dark:hover:bg-gradient-dark mr-4 flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+                    class="social-link"
                   >
                     <svg
                       role="img"
@@ -3707,7 +3979,7 @@
                     href="https://medium.com/@hardefarogonondo/recipe-for-retention-how-a-data-driven-recommendation-engine-is-spicing-up-user-engagement-for-518fe347a3dd"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="hover:bg-gradient-light dark:hover:bg-gradient-dark mr-4 flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+                    class="social-link"
                   >
                     <svg
                       role="img"
@@ -3729,21 +4001,20 @@
           <!-- IBRD Credit Scorecard Predictive Engine -->
           <div class="full px-4 lg:mx-auto lg:w-1/2 xl:w-1/3">
             <div
-              class="mb-8 flex h-auto flex-col overflow-hidden rounded-2xl bg-soft-cloud shadow-lg dark:bg-charcoal lg:h-[475px]"
+              class="surface-card surface-card-hover mb-8 flex h-auto flex-col overflow-hidden lg:h-[475px]"
             >
               <img
                 src="dist/assets/images/projects/ibrd_credit_scorecard_predictive_engine.png"
                 alt="IBRD Credit Scorecard Predictive Engine"
-                class="w-full"
-              />
+                class="w-full">
               <div class="flex flex-grow flex-col justify-between px-6 py-6">
                 <h3
-                  class="font-montserrat text-xl font-semibold text-night dark:text-off-white"
+                  class="font-montserrat text-xl font-semibold text-graphite dark:text-frost"
                 >
                   IBRD Credit Scorecard Predictive Engine
                 </h3>
                 <p
-                  class="font-montserrat font-medium text-night dark:text-off-white"
+                  class="font-montserrat font-medium leading-7 text-slate-600 dark:text-slate-300"
                 >
                   Innovative solution for credit scoring leveraging machine
                   learning to predict credit risk using The International Bank
@@ -3754,7 +4025,7 @@
                     href="https://github.com/hardefarogonondo/IBRD-credit-scorecard-predictive-engine"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="hover:bg-gradient-light dark:hover:bg-gradient-dark mr-4 flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+                    class="social-link"
                   >
                     <svg
                       role="img"
@@ -3773,7 +4044,7 @@
                     href="https://medium.com/@hardefarogonondo/logistic-regression-for-loan-risk-assessment-made-easy-ef67ef8885f"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="hover:bg-gradient-light dark:hover:bg-gradient-dark mr-4 flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+                    class="social-link"
                   >
                     <svg
                       role="img"
@@ -3792,7 +4063,7 @@
                     href="https://medium.com/@hardefarogonondo/navigating-the-data-sea-a-detailed-map-of-our-credit-risk-modeling-voyage-48127a041c6f"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="hover:bg-gradient-light dark:hover:bg-gradient-dark mr-4 flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+                    class="social-link"
                   >
                     <svg
                       role="img"
@@ -3814,21 +4085,20 @@
           <!-- Data Science Project Folder Structure -->
           <div class="full px-4 lg:mx-auto lg:w-1/2 xl:w-1/3">
             <div
-              class="mb-8 flex h-auto flex-col overflow-hidden rounded-2xl bg-soft-cloud shadow-lg dark:bg-charcoal lg:h-[475px]"
+              class="surface-card surface-card-hover mb-8 flex h-auto flex-col overflow-hidden lg:h-[475px]"
             >
               <img
                 src="dist/assets/images/projects/data_science_project_folder_structure.png"
                 alt="Data Science Project Folder Structure"
-                class="w-full"
-              />
+                class="w-full">
               <div class="flex flex-grow flex-col justify-between px-6 py-6">
                 <h3
-                  class="font-montserrat text-xl font-semibold text-night dark:text-off-white"
+                  class="font-montserrat text-xl font-semibold text-graphite dark:text-frost"
                 >
                   Data Science Project Folder Structure
                 </h3>
                 <p
-                  class="font-montserrat font-medium text-night dark:text-off-white"
+                  class="font-montserrat font-medium leading-7 text-slate-600 dark:text-slate-300"
                 >
                   Leading template for Data Science directory layouts rooted in
                   professional industry standards. Simplify and enhance your
@@ -3839,7 +4109,7 @@
                     href="https://github.com/hardefarogonondo/data-science-project-folder-structure"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="hover:bg-gradient-light dark:hover:bg-gradient-dark mr-4 flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+                    class="social-link"
                   >
                     <svg
                       role="img"
@@ -3861,23 +4131,22 @@
         </div>
       </div>
     </section>
-    <!-- Portfolio Section End -->
+    <!-- Projects Section End -->
     <!-- Clients Section Start -->
-    <section id="clients" class="bg-soft-cloud pb-20 pt-20 dark:bg-charcoal">
+    <section id="clients" class="bg-white pb-24 pt-24 dark:bg-slate-950">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-8 text-center">
-            <h2
-              class="gradient-text mb-8 text-center font-montserrat text-3xl font-bold lg:text-4xl"
-            >
+            <p class="section-kicker text-center">Collaborations</p>
+            <h2 class="section-title mb-4 text-center">
               Clients
             </h2>
             <p
-              class="font-montserrat font-medium text-night dark:text-off-white md:text-lg"
+              class="section-copy mx-auto max-w-3xl text-center"
             >
-              Throughout my career, I’ve had the opportunity to collaborate with
+              Throughout my career, I've had the opportunity to collaborate with
               a diverse range of clients, each with their unique challenges and
-              goals. Here are the clients I’ve worked with.
+              goals. Here are the clients I've worked with.
             </p>
           </div>
         </div>
@@ -3887,7 +4156,7 @@
               href="https://www.mingpromo.com/"
               target="_blank"
               rel="noopener noreferrer"
-              class="group mx-2 my-4 flex items-center justify-center opacity-50 transition duration-300 hover:opacity-100 lg:mx-4 xl:mx-6"
+              class="group m-2 flex h-24 w-40 items-center justify-center rounded-2xl border border-mist bg-white/80 p-4 opacity-70 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-cyan-tech hover:opacity-100 dark:border-white/10 dark:bg-white/5 lg:m-3"
             >
               <div
                 class="relative flex h-[50px] w-[100px] items-center justify-center"
@@ -3895,20 +4164,18 @@
                 <img
                   src="dist/assets/images/clients/ming.png"
                   alt="MING Promotion"
-                  class="relative z-10 max-h-full max-w-full object-contain dark:hidden"
-                />
+                  class="relative z-10 max-h-full max-w-full object-contain dark:hidden">
                 <img
                   src="dist/assets/images/clients/ming_dark.png"
                   alt="MING Promotion Dark"
-                  class="relative z-10 hidden max-h-full max-w-full object-contain dark:block"
-                />
+                  class="relative z-10 hidden max-h-full max-w-full object-contain dark:block">
               </div>
             </a>
             <a
               href="https://bprindra.com/"
               target="_blank"
               rel="noopener noreferrer"
-              class="group mx-2 my-4 flex items-center justify-center opacity-50 transition duration-300 hover:opacity-100 lg:mx-4 xl:mx-6"
+              class="group m-2 flex h-24 w-40 items-center justify-center rounded-2xl border border-mist bg-white/80 p-4 opacity-70 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-cyan-tech hover:opacity-100 dark:border-white/10 dark:bg-white/5 lg:m-3"
             >
               <div
                 class="relative flex h-[50px] w-[100px] items-center justify-center"
@@ -3916,15 +4183,14 @@
                 <img
                   src="dist/assets/images/clients/bpr_indra_candra.jpg"
                   alt="Bank Perekonomian Rakyat Indra Candra"
-                  class="relative z-10 max-h-full max-w-full object-contain"
-                />
+                  class="relative z-10 max-h-full max-w-full object-contain">
               </div>
             </a>
             <a
               href="https://palm-co.de"
               target="_blank"
               rel="noopener noreferrer"
-              class="group mx-2 my-4 flex items-center justify-center opacity-50 transition duration-300 hover:opacity-100 lg:mx-4 xl:mx-6"
+              class="group m-2 flex h-24 w-40 items-center justify-center rounded-2xl border border-mist bg-white/80 p-4 opacity-70 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-cyan-tech hover:opacity-100 dark:border-white/10 dark:bg-white/5 lg:m-3"
             >
               <div
                 class="relative flex h-[50px] w-[100px] items-center justify-center"
@@ -3932,20 +4198,18 @@
                 <img
                   src="dist/assets/images/clients/palm_code.png"
                   alt="Palm Code"
-                  class="relative z-10 max-h-full max-w-full object-contain dark:hidden"
-                />
+                  class="relative z-10 max-h-full max-w-full object-contain dark:hidden">
                 <img
                   src="dist/assets/images/clients/palm_code_dark.png"
                   alt="Palm Code Dark"
-                  class="relative z-10 hidden max-h-full max-w-full object-contain dark:block"
-                />
+                  class="relative z-10 hidden max-h-full max-w-full object-contain dark:block">
               </div>
             </a>
             <a
               href="https://pacmann.io/"
               target="_blank"
               rel="noopener noreferrer"
-              class="group mx-2 my-4 flex items-center justify-center opacity-50 transition duration-300 hover:opacity-100 lg:mx-4 xl:mx-6"
+              class="group m-2 flex h-24 w-40 items-center justify-center rounded-2xl border border-mist bg-white/80 p-4 opacity-70 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-cyan-tech hover:opacity-100 dark:border-white/10 dark:bg-white/5 lg:m-3"
             >
               <div
                 class="relative flex h-[50px] w-[100px] items-center justify-center"
@@ -3953,20 +4217,18 @@
                 <img
                   src="dist/assets/images/clients/pacmann.png"
                   alt="Pacmann"
-                  class="relative z-10 max-h-full max-w-full object-contain dark:hidden"
-                />
+                  class="relative z-10 max-h-full max-w-full object-contain dark:hidden">
                 <img
                   src="dist/assets/images/clients/pacmann_dark.png"
                   alt="Pacmann Dark"
-                  class="relative z-10 hidden max-h-full max-w-full object-contain dark:block"
-                />
+                  class="relative z-10 hidden max-h-full max-w-full object-contain dark:block">
               </div>
             </a>
             <a
               href="https://neuro.net/"
               target="_blank"
               rel="noopener noreferrer"
-              class="group mx-2 my-4 flex items-center justify-center opacity-50 transition duration-300 hover:opacity-100 lg:mx-4 xl:mx-6"
+              class="group m-2 flex h-24 w-40 items-center justify-center rounded-2xl border border-mist bg-white/80 p-4 opacity-70 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-cyan-tech hover:opacity-100 dark:border-white/10 dark:bg-white/5 lg:m-3"
             >
               <div
                 class="relative flex h-[50px] w-[100px] items-center justify-center"
@@ -3974,20 +4236,18 @@
                 <img
                   src="dist/assets/images/clients/neuro_net.png"
                   alt="Neuro.net"
-                  class="relative z-10 max-h-full max-w-full object-contain dark:hidden"
-                />
+                  class="relative z-10 max-h-full max-w-full object-contain dark:hidden">
                 <img
                   src="dist/assets/images/clients/neuro_net_dark.png"
                   alt="Neuro.net Dark"
-                  class="relative z-10 hidden max-h-full max-w-full object-contain dark:block"
-                />
+                  class="relative z-10 hidden max-h-full max-w-full object-contain dark:block">
               </div>
             </a>
             <a
               href="https://bankraya.co.id/"
               target="_blank"
               rel="noopener noreferrer"
-              class="group mx-2 my-4 flex items-center justify-center opacity-50 transition duration-300 hover:opacity-100 lg:mx-4 xl:mx-6"
+              class="group m-2 flex h-24 w-40 items-center justify-center rounded-2xl border border-mist bg-white/80 p-4 opacity-70 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-cyan-tech hover:opacity-100 dark:border-white/10 dark:bg-white/5 lg:m-3"
             >
               <div
                 class="relative flex h-[50px] w-[100px] items-center justify-center"
@@ -3995,15 +4255,14 @@
                 <img
                   src="dist/assets/images/clients/bank_raya.webp"
                   alt="Bank Raya"
-                  class="relative z-10 max-h-full max-w-full object-contain"
-                />
+                  class="relative z-10 max-h-full max-w-full object-contain">
               </div>
             </a>
             <a
               href="https://www.bankbsi.co.id/"
               target="_blank"
               rel="noopener noreferrer"
-              class="group mx-2 my-4 flex items-center justify-center opacity-50 transition duration-300 hover:opacity-100 lg:mx-4 xl:mx-6"
+              class="group m-2 flex h-24 w-40 items-center justify-center rounded-2xl border border-mist bg-white/80 p-4 opacity-70 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-cyan-tech hover:opacity-100 dark:border-white/10 dark:bg-white/5 lg:m-3"
             >
               <div
                 class="relative flex h-[50px] w-[100px] items-center justify-center"
@@ -4011,20 +4270,18 @@
                 <img
                   src="dist/assets/images/clients/bsi.png"
                   alt="Bank Syariah Indonesia"
-                  class="relative z-10 max-h-full max-w-full object-contain dark:hidden"
-                />
+                  class="relative z-10 max-h-full max-w-full object-contain dark:hidden">
                 <img
                   src="dist/assets/images/clients/bsi_dark.png"
                   alt="Bank Syariah Indonesia Dark"
-                  class="relative z-10 hidden max-h-full max-w-full object-contain dark:block"
-                />
+                  class="relative z-10 hidden max-h-full max-w-full object-contain dark:block">
               </div>
             </a>
             <a
               href="https://www.pefindo.com/"
               target="_blank"
               rel="noopener noreferrer"
-              class="group mx-2 my-4 flex items-center justify-center opacity-50 transition duration-300 hover:opacity-100 lg:mx-4 xl:mx-6"
+              class="group m-2 flex h-24 w-40 items-center justify-center rounded-2xl border border-mist bg-white/80 p-4 opacity-70 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-cyan-tech hover:opacity-100 dark:border-white/10 dark:bg-white/5 lg:m-3"
             >
               <div
                 class="relative flex h-[50px] w-[100px] items-center justify-center"
@@ -4032,20 +4289,18 @@
                 <img
                   src="dist/assets/images/clients/pefindo.png"
                   alt="PT Pemeringkat Efek Indonesia"
-                  class="relative z-10 max-h-full max-w-full object-contain dark:hidden"
-                />
+                  class="relative z-10 max-h-full max-w-full object-contain dark:hidden">
                 <img
                   src="dist/assets/images/clients/pefindo_dark.png"
                   alt="PT Pemeringkat Efek Indonesia Dark"
-                  class="relative z-10 hidden max-h-full max-w-full object-contain dark:block"
-                />
+                  class="relative z-10 hidden max-h-full max-w-full object-contain dark:block">
               </div>
             </a>
             <a
               href="https://www.mbiz.co.id/"
               target="_blank"
               rel="noopener noreferrer"
-              class="group mx-2 my-4 flex items-center justify-center opacity-50 transition duration-300 hover:opacity-100 lg:mx-4 xl:mx-6"
+              class="group m-2 flex h-24 w-40 items-center justify-center rounded-2xl border border-mist bg-white/80 p-4 opacity-70 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-cyan-tech hover:opacity-100 dark:border-white/10 dark:bg-white/5 lg:m-3"
             >
               <div
                 class="relative flex h-[50px] w-[100px] items-center justify-center"
@@ -4053,20 +4308,18 @@
                 <img
                   src="dist/assets/images/clients/mbiz.png"
                   alt="Mbiz"
-                  class="relative z-10 max-h-full max-w-full object-contain dark:hidden"
-                />
+                  class="relative z-10 max-h-full max-w-full object-contain dark:hidden">
                 <img
                   src="dist/assets/images/clients/mbiz_dark.png"
                   alt="Mbiz Dark"
-                  class="relative z-10 hidden max-h-full max-w-full object-contain dark:block"
-                />
+                  class="relative z-10 hidden max-h-full max-w-full object-contain dark:block">
               </div>
             </a>
             <a
               href="https://investree.id/"
               target="_blank"
               rel="noopener noreferrer"
-              class="group mx-2 my-4 flex items-center justify-center opacity-50 transition duration-300 hover:opacity-100 lg:mx-4 xl:mx-6"
+              class="group m-2 flex h-24 w-40 items-center justify-center rounded-2xl border border-mist bg-white/80 p-4 opacity-70 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-cyan-tech hover:opacity-100 dark:border-white/10 dark:bg-white/5 lg:m-3"
             >
               <div
                 class="relative flex h-[50px] w-[100px] items-center justify-center"
@@ -4074,41 +4327,37 @@
                 <img
                   src="dist/assets/images/clients/investree.webp"
                   alt="Investree"
-                  class="relative z-10 max-h-full max-w-full object-contain dark:hidden"
-                />
+                  class="relative z-10 max-h-full max-w-full object-contain dark:hidden">
                 <img
                   src="dist/assets/images/clients/investree_dark.png"
                   alt="Investree Dark"
-                  class="relative z-10 hidden max-h-full max-w-full object-contain dark:block"
-                />
+                  class="relative z-10 hidden max-h-full max-w-full object-contain dark:block">
               </div>
             </a>
             <a
               href="https://poltekad.ac.id/"
               target="_blank"
               rel="noopener noreferrer"
-              class="group mx-2 my-4 flex items-center justify-center opacity-50 transition duration-300 hover:opacity-100 lg:mx-4 xl:mx-6"
+              class="group m-2 flex h-24 w-40 items-center justify-center rounded-2xl border border-mist bg-white/80 p-4 opacity-70 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-cyan-tech hover:opacity-100 dark:border-white/10 dark:bg-white/5 lg:m-3"
             >
               <div class="relative flex h-[50px] items-center justify-center">
                 <img
                   src="dist/assets/images/clients/poltekad.png"
                   alt="Politeknik Angkatan Darat"
-                  class="relative z-10 max-h-full max-w-full object-contain"
-                />
+                  class="relative z-10 max-h-full max-w-full object-contain">
               </div>
             </a>
             <a
               href="https://www.tnial.mil.id/"
               target="_blank"
               rel="noopener noreferrer"
-              class="group mx-2 my-4 flex items-center justify-center opacity-50 transition duration-300 hover:opacity-100 lg:mx-4 xl:mx-6"
+              class="group m-2 flex h-24 w-40 items-center justify-center rounded-2xl border border-mist bg-white/80 p-4 opacity-70 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-cyan-tech hover:opacity-100 dark:border-white/10 dark:bg-white/5 lg:m-3"
             >
               <div class="relative flex h-[50px] items-center justify-center">
                 <img
                   src="dist/assets/images/clients/tni_al.png"
                   alt="Indonesian Navy"
-                  class="relative z-10 max-h-full max-w-full object-contain"
-                />
+                  class="relative z-10 max-h-full max-w-full object-contain">
               </div>
             </a>
           </div>
@@ -4117,7 +4366,7 @@
               href="client-projects.html"
               target="_blank"
               rel="noopener noreferrer"
-              class="rounded-2xl bg-gradient-to-r from-lavender-love to-soft-violet px-4 py-3 font-montserrat text-base font-semibold text-off-white transition duration-300 ease-in-out hover:opacity-75"
+              class="btn-primary"
             >
               See Client Projects
             </a>
@@ -4127,17 +4376,16 @@
     </section>
     <!-- Clients Section End -->
     <!-- Contacts Section Start -->
-    <section id="contacts" class="bg-off-white pb-20 pt-20 dark:bg-night">
+    <section id="contacts" class="bg-slate-50 pb-24 pt-24 dark:bg-graphite">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-8 text-center">
-            <h2
-              class="gradient-text mb-8 text-center font-montserrat text-3xl font-bold lg:text-4xl"
-            >
+            <p class="section-kicker text-center">Start a Conversation</p>
+            <h2 class="section-title mb-4 text-center">
               Contacts
             </h2>
             <p
-              class="font-montserrat font-medium text-night dark:text-off-white md:text-lg"
+              class="section-copy mx-auto max-w-3xl text-center"
             >
               Have an idea or project in mind? Reach out and let's collaborate
               to make it happen.
@@ -4149,44 +4397,43 @@
             <div class="mb-8 w-full px-4">
               <label
                 for="name"
-                class="font-montserrat text-base font-bold text-night dark:text-off-white"
+                class="font-montserrat text-base font-bold text-graphite dark:text-frost"
                 >Name</label
               >
               <input
                 type="text"
                 id="name"
-                class="w-full rounded-2xl bg-soft-cloud p-3 font-montserrat leading-relaxed text-night focus:border-soft-violet focus:outline-none focus:ring-2 focus:ring-soft-violet dark:bg-charcoal dark:text-off-white"
-                required
-              />
+                class="w-full rounded-2xl border border-mist bg-white/85 p-4 font-montserrat leading-relaxed text-graphite outline-none transition focus:border-cyan-tech focus:ring-4 focus:ring-cyan-tech/20 dark:border-white/10 dark:bg-white/5 dark:text-frost"
+                required>
             </div>
             <div class="mb-8 w-full px-4">
               <label
                 for="email"
-                class="font-montserrat text-base font-bold text-night dark:text-off-white"
+                class="font-montserrat text-base font-bold text-graphite dark:text-frost"
                 >Email</label
               >
               <input
                 type="text"
                 id="email"
-                class="w-full rounded-2xl bg-soft-cloud p-3 font-montserrat leading-relaxed text-night focus:border-soft-violet focus:outline-none focus:ring-2 focus:ring-soft-violet dark:bg-charcoal dark:text-off-white"
-                required
-              />
+                class="w-full rounded-2xl border border-mist bg-white/85 p-4 font-montserrat leading-relaxed text-graphite outline-none transition focus:border-cyan-tech focus:ring-4 focus:ring-cyan-tech/20 dark:border-white/10 dark:bg-white/5 dark:text-frost"
+                required>
             </div>
             <div class="mb-8 w-full px-4">
               <label
                 for="messages"
-                class="font-montserrat text-base font-bold text-night dark:text-off-white"
+                class="font-montserrat text-base font-bold text-graphite dark:text-frost"
                 >Messages</label
               >
               <textarea
                 id="messages"
-                class="h-32 w-full rounded-2xl bg-soft-cloud p-3 font-montserrat leading-relaxed text-night focus:border-soft-violet focus:outline-none focus:ring-2 focus:ring-soft-violet dark:bg-charcoal dark:text-off-white"
+                class="h-36 w-full rounded-2xl border border-mist bg-white/85 p-4 font-montserrat leading-relaxed text-graphite outline-none transition focus:border-cyan-tech focus:ring-4 focus:ring-cyan-tech/20 dark:border-white/10 dark:bg-white/5 dark:text-frost"
                 required
               ></textarea>
             </div>
             <div class="w-full px-4">
               <button
-                class="w-full rounded-2xl bg-gradient-to-r from-lavender-love to-soft-violet px-8 py-4 font-montserrat text-base font-semibold text-off-white transition duration-300 ease-in-out hover:opacity-75"
+                type="submit"
+                class="btn-primary w-full"
               >
                 Send
               </button>
@@ -4201,7 +4448,7 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div
-            class="flex w-full flex-col items-center justify-between border-soft-violet px-4 text-center font-montserrat text-night dark:text-off-white md:w-1/2 md:items-start md:border-r md:text-left"
+            class="flex w-full flex-col items-center justify-between border-mist dark:border-white/10 px-4 text-center font-montserrat text-night dark:text-off-white md:w-1/2 md:items-start md:border-r md:text-left"
           >
             <div class="flex items-center justify-between">
               <a href="#home" class="hover:soft-violet flex items-center">
@@ -4209,8 +4456,7 @@
                 <img
                   src="dist/assets/images/navbar/HR Logo.png"
                   alt="Hardefa Rogonondo's Logo"
-                  class="w-10"
-                />
+                  class="w-10">
                 <p class="text-color ml-4">
                   <span class="font-bold">Hardefa</span>
                   <span class="font-normal">Rogonondo</span>
@@ -4224,7 +4470,7 @@
               </p>
               <a
                 href="mailto:hardefarogonondo@gmail.com"
-                class="text-base text-soft-violet transition duration-300 hover:text-lavender-love"
+                class="text-base text-accent-link"
               >
                 hardefarogonondo@gmail.com
               </a>
@@ -4235,7 +4481,7 @@
                 href="https://www.linkedin.com/in/hardefa-rogonondo/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark mr-4 flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+                class="social-link"
               >
                 <svg
                   role="img"
@@ -4255,7 +4501,7 @@
                 href="https://github.com/hardefarogonondo"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark mr-4 flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+                class="social-link"
               >
                 <svg
                   role="img"
@@ -4275,7 +4521,7 @@
                 href="https://medium.com/@hardefarogonondo"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark mr-4 flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+                class="social-link"
               >
                 <svg
                   role="img"
@@ -4295,7 +4541,7 @@
                 href="https://www.instagram.com/hardefarogonondo/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark mr-4 flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+                class="social-link"
               >
                 <svg
                   role="img"
@@ -4315,7 +4561,7 @@
                 href="https://www.youtube.com/channel/UCEJgqE_JIv4VL0kySzMk4Vw"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="hover:bg-gradient-light dark:hover:bg-gradient-dark flex h-10 w-10 items-center justify-center rounded-xl text-night dark:text-off-white"
+                class="social-link mr-0"
               >
                 <svg
                   role="img"
@@ -4338,31 +4584,31 @@
             <h3 class="text-2xl font-bold">Links</h3>
             <ul class="mt-2 space-y-2">
               <li>
-                <a href="#about" class="hover:text-soft-violet">About</a>
+                <a href="#about" class="hover:text-blue-tech dark:hover:text-cyan-tech">About</a>
               </li>
               <li>
-                <a href="#skills" class="hover:text-soft-violet">Skills</a>
+                <a href="#skills" class="hover:text-blue-tech dark:hover:text-cyan-tech">Skills</a>
               </li>
               <li>
-                <a href="#journey" class="hover:text-soft-violet">Journey</a>
+                <a href="#journey" class="hover:text-blue-tech dark:hover:text-cyan-tech">Journey</a>
               </li>
               <li>
-                <a href="#awards" class="hover:text-soft-violet">Awards</a>
+                <a href="#awards" class="hover:text-blue-tech dark:hover:text-cyan-tech">Awards</a>
               </li>
               <li>
-                <a href="#projects" class="hover:text-soft-violet">Projects</a>
+                <a href="#projects" class="hover:text-blue-tech dark:hover:text-cyan-tech">Projects</a>
               </li>
               <li>
-                <a href="#clients" class="hover:text-soft-violet">Clients</a>
+                <a href="#clients" class="hover:text-blue-tech dark:hover:text-cyan-tech">Clients</a>
               </li>
               <li>
-                <a href="#contacts" class="hover:text-soft-violet">Contacts</a>
+                <a href="#contacts" class="hover:text-blue-tech dark:hover:text-cyan-tech">Contacts</a>
               </li>
             </ul>
           </div>
         </div>
         <div
-          class="mt-4 w-full border-t border-soft-violet px-4 py-4 text-center font-montserrat text-xs text-charcoal dark:text-soft-cloud"
+          class="mt-4 w-full border-t border-mist dark:border-white/10 px-4 py-4 text-center font-montserrat text-xs text-charcoal dark:text-soft-cloud"
         >
           <p>
             Copyright &copy; 2024
@@ -4370,17 +4616,17 @@
               href="https://www.linkedin.com/in/hardefa-rogonondo/"
               target="_blank"
               rel="noopener noreferrer"
-              class="font-bold text-soft-violet transition duration-300 hover:text-lavender-love"
+              class="font-bold text-accent-link"
               >Hardefa Rogonondo</a
             >. All rights reserved.
           </p>
           <p>
-            Made with ☕ &
+            Made with coffee &amp;
             <a
               href="https://tailwindcss.com/"
               target="_blank"
               rel="noopener noreferrer"
-              class="font-bold text-soft-violet transition duration-300 hover:text-lavender-love"
+              class="font-bold text-accent-link"
               >Tailwind CSS</a
             >
           </p>
@@ -4389,8 +4635,7 @@
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Palestine.svg"
               alt="Palestine Flag"
-              class="inline-block h-4 w-4"
-            />
+              class="inline-block h-4 w-4">
           </p>
         </div>
       </div>
@@ -4400,17 +4645,15 @@
     <a
       id="to-top-button"
       href="#home"
-      class="fixed bottom-4 right-4 z-[999] hidden h-14 w-14 items-center justify-center rounded-full bg-sky-light p-4 hover:animate-pulse"
+      aria-label="Back to top"
+      class="fixed bottom-4 right-4 z-[999] hidden h-14 w-14 items-center justify-center rounded-full border border-cyan-tech/40 bg-graphite p-4 text-white shadow-lg shadow-cyan-tech/20 transition hover:-translate-y-1 dark:bg-cyan-tech dark:text-graphite"
     >
       <span
-        class="mt-3 block h-5 w-5 rotate-45 border-l-2 border-t-2 border-lavender-love"
+        class="mt-3 block h-5 w-5 rotate-45 border-l-2 border-t-2 border-white dark:border-graphite"
       ></span
     ></a>
     <!-- Back to Top Button End -->
-    <script
-      type="text/javascript"
-      src="https://cdn.emailjs.com/dist/email.min.js"
-    ></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="dist/js/script.js"></script>
   </body>
 </html>

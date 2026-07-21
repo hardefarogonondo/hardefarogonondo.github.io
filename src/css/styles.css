@@ -10,6 +10,12 @@
   --color-sky-light: #C5D1F5;
   --color-mint-green: #98FF98;
   --color-cornflower-blue: #6495ED;
+  --color-graphite: #0F172A;
+  --color-ink: #1E293B;
+  --color-mist: #E2E8F0;
+  --color-frost: #F8FAFC;
+  --color-cyan-tech: #22D3EE;
+  --color-blue-tech: #2563EB;
   --font-montserrat: "Montserrat", sans-serif;
   --breakpoint-lg-md: 1024px;
   --breakpoint-2xl: 1320px;
@@ -26,10 +32,72 @@
 
 body {
   font-family: "Inter", sans-serif;
+  @apply bg-frost text-graphite dark:bg-graphite dark:text-frost;
 }
 
 .navbar-fixed {
-  @apply fixed z-[9999] bg-off-white/50 backdrop-blur-sm dark:bg-night/50;
+  @apply fixed z-[9999] border-b border-mist/70 bg-frost/85 shadow-sm shadow-slate-900/5 backdrop-blur-xl dark:border-white/10 dark:bg-graphite/85 dark:shadow-black/20;
+}
+
+.nav-link {
+  @apply mx-5 flex rounded-full px-3 py-2 font-montserrat text-sm font-medium text-ink transition duration-300 hover:bg-cyan-tech/10 hover:text-blue-tech dark:text-frost dark:hover:bg-cyan-tech/10 dark:hover:text-cyan-tech;
+}
+
+.icon-button {
+  @apply flex h-11 w-11 items-center justify-center rounded-full border border-mist bg-white/80 text-ink shadow-sm transition duration-300 hover:border-cyan-tech hover:text-blue-tech dark:border-white/10 dark:bg-white/5 dark:text-frost dark:hover:border-cyan-tech dark:hover:text-cyan-tech;
+}
+
+.section-kicker {
+  @apply mb-3 font-montserrat text-xs font-bold uppercase tracking-[0.28em] text-blue-tech dark:text-cyan-tech;
+}
+
+.section-title {
+  @apply font-montserrat text-3xl font-bold text-graphite dark:text-frost lg:text-4xl;
+}
+
+.section-copy {
+  @apply font-montserrat text-base leading-8 text-slate-600 dark:text-slate-300 lg:text-lg;
+}
+
+.surface-card {
+  @apply rounded-3xl border border-slate-200 bg-white/95 shadow-lg shadow-slate-900/[0.06] backdrop-blur transition duration-300 dark:border-white/10 dark:bg-white/[0.04] dark:shadow-black/20;
+}
+
+.surface-card-hover {
+  @apply hover:-translate-y-1 hover:border-cyan-tech/50 hover:shadow-xl hover:shadow-cyan-tech/10 dark:hover:border-cyan-tech/50;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-graphite px-6 py-3 font-montserrat text-sm font-bold text-white shadow-lg shadow-slate-900/15 transition duration-300 hover:-translate-y-0.5 hover:bg-blue-tech hover:shadow-blue-tech/20 dark:bg-cyan-tech dark:text-graphite dark:hover:bg-white;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-full border border-mist bg-white/80 px-6 py-3 font-montserrat text-sm font-bold text-ink shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-cyan-tech hover:text-blue-tech dark:border-white/10 dark:bg-white/5 dark:text-frost dark:hover:border-cyan-tech dark:hover:text-cyan-tech;
+}
+
+.status-pill {
+  @apply inline-flex items-center rounded-full border border-cyan-tech/30 bg-cyan-tech/10 px-4 py-2 font-montserrat text-xs font-bold uppercase tracking-[0.18em] text-blue-tech dark:text-cyan-tech;
+}
+
+.skill-chip {
+  @apply flex items-center rounded-full border border-mist bg-white/85 px-4 py-2 font-montserrat text-sm font-semibold text-ink shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-cyan-tech hover:bg-cyan-tech/10 hover:text-blue-tech dark:border-white/10 dark:bg-white/[0.06] dark:text-frost dark:hover:border-cyan-tech dark:hover:text-cyan-tech;
+}
+
+.social-link {
+  @apply mr-4 flex h-11 w-11 items-center justify-center rounded-full border border-mist bg-white/80 text-ink shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-cyan-tech hover:text-blue-tech dark:border-white/10 dark:bg-white/5 dark:text-frost dark:hover:border-cyan-tech dark:hover:text-cyan-tech;
+}
+
+.hero-orbit {
+  background:
+    radial-gradient(circle at 25% 25%, rgb(34 211 238 / 0.36), transparent 34%),
+    radial-gradient(circle at 70% 60%, rgb(37 99 235 / 0.18), transparent 36%),
+    radial-gradient(circle at 70% 60%, rgb(154 132 232 / 0.24), transparent 44%),
+    linear-gradient(135deg, rgb(255 255 255 / 0.96), rgb(219 234 254 / 0.72));
+  @apply absolute inset-x-4 bottom-4 top-8 rounded-[2rem] border border-cyan-tech/30 shadow-2xl shadow-cyan-tech/20 dark:border-white/10 dark:from-white/10;
+}
+
+.text-accent-link {
+  @apply font-semibold text-blue-tech transition duration-300 hover:text-cyan-tech dark:text-cyan-tech dark:hover:text-white;
 }
 
 a.hover\:soft-violet:hover .text-color {
@@ -38,7 +106,7 @@ a.hover\:soft-violet:hover .text-color {
 
 .hamburger-line {
   @apply my-2 block h-[2px] w-[30px];
-  background: linear-gradient(to right, var(--color-soft-violet), var(--color-lavender-love));
+  background: linear-gradient(to right, var(--color-cyan-tech), var(--color-soft-violet));
 }
 
 .hamburger-active > span:nth-child(1) { @apply -rotate-45; }
@@ -46,17 +114,17 @@ a.hover\:soft-violet:hover .text-color {
 .hamburger-active > span:nth-child(3) { @apply rotate-45; }
 
 .hover\:bg-gradient-light:hover {
-  background-image: linear-gradient(to right, var(--color-soft-violet), var(--color-lavender-love));
+  background-image: linear-gradient(to right, var(--color-cyan-tech), var(--color-blue-tech));
   color: var(--color-off-white);
 }
 
 .dark .dark\:hover\:bg-gradient-dark:hover {
-  background-image: linear-gradient(to right, var(--color-soft-violet), var(--color-lavender-love));
-  color: var(--color-night);
+  background-image: linear-gradient(to right, var(--color-cyan-tech), var(--color-soft-violet));
+  color: var(--color-graphite);
 }
 
 .gradient-text {
-  background: linear-gradient(to right, var(--color-soft-violet), var(--color-lavender-love));
+  background: linear-gradient(to right, var(--color-blue-tech), var(--color-cyan-tech), var(--color-soft-violet));
   background-clip: text;
   color: transparent;
   -webkit-background-clip: text;
