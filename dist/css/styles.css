@@ -328,9 +328,6 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
-  .mt-6 {
-    margin-top: calc(var(--spacing) * 6);
-  }
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
   }
@@ -910,6 +907,18 @@
   .text-white {
     color: var(--color-white);
   }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .decoration-cyan-tech\/40 {
+    text-decoration-color: color-mix(in srgb, #22D3EE 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      text-decoration-color: color-mix(in oklab, var(--color-cyan-tech) 40%, transparent);
+    }
+  }
+  .underline-offset-4 {
+    text-underline-offset: 4px;
+  }
   .opacity-70 {
     opacity: 70%;
   }
@@ -1002,10 +1011,10 @@
       }
     }
   }
-  .hover\:text-cyan-tech {
+  .hover\:opacity-80 {
     &:hover {
       @media (hover: hover) {
-        color: var(--color-cyan-tech);
+        opacity: 80%;
       }
     }
   }
