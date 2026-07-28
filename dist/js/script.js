@@ -81,15 +81,31 @@ document.addEventListener("DOMContentLoaded", (event) => {
 // Typing Animation
 const typingElement = document.querySelector(".typing");
 if (typingElement) {
-  const texts = [
+  const fullTexts = [
     "Artificial Intelligence Engineer",
     "Machine Learning Engineer",
     "Robotics Engineer",
   ];
+  const compactTexts = ["AI Engineer", "ML Engineer", "Robotics Engineer"];
+  const compactTypingQuery = window.matchMedia("(max-width: 1279px)");
+  let texts = compactTypingQuery.matches ? compactTexts : fullTexts;
   let count = 0;
   let index = 0;
   let isDeleting = false;
   let timeout;
+
+  function setTypingTexts() {
+    const nextTexts = compactTypingQuery.matches ? compactTexts : fullTexts;
+    if (texts === nextTexts) return;
+    texts = nextTexts;
+    count = 0;
+    index = 0;
+    isDeleting = false;
+    typingElement.textContent = "";
+    clearTimeout(timeout);
+    type();
+  }
+
   function type() {
     let currentText = texts[count % texts.length];
     let actionSpeed;
@@ -110,6 +126,11 @@ if (typingElement) {
       actionSpeed = 250; // Delay before typing next text
     }
     timeout = setTimeout(type, actionSpeed);
+  }
+  if (compactTypingQuery.addEventListener) {
+    compactTypingQuery.addEventListener("change", setTypingTexts);
+  } else {
+    compactTypingQuery.addListener(setTypingTexts);
   }
   type();
 }
