@@ -228,7 +228,9 @@ document.addEventListener("DOMContentLoaded", function () {
 // Send Emails
 if (typeof emailjs !== "undefined") {
   (function () {
-    emailjs.init("PvHudeERdkidaP5VH");
+    emailjs.init({
+      publicKey: "PvHudeERdkidaP5VH",
+    });
   })();
 }
 function sendEmail(event) {
